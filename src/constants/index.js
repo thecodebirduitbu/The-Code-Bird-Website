@@ -54,9 +54,30 @@ const services = [
     icon: backend,
   },
   {
+    title: "Cyber Security",
+    icon: creator,
+  },
+  {
+    title: "DSA & CP",
+    icon: creator,
+  },
+  {
+    title: "Web3 / Blockchain",
+    icon: creator,
+  },
+  {
     title: "Game Development",
     icon: creator,
   },
+  {
+    title: "GATE Exam",
+    icon: creator,
+  },
+  {
+    title: "Hardware",
+    icon: creator,
+  },
+
 ];
 
 const technologies = [
