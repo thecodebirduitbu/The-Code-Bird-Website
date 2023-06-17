@@ -5,9 +5,9 @@
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(220, 68%, 54%);
+  --first-color: hsl(220, 100%, 50%);
   --first-color-lighten: hsl(220, 68%, 97%);
-  --title-color: hsl(220, 48%, 28%);
+  --title-color: hsl(220, 100%, 50%);
   --text-color: hsl(220, 12%, 45%);
   --body-color: hsl(220, 100%, 99%);
   /*========== Font and typography ==========*/
@@ -66,13 +66,16 @@ a {
   left: 0;
   width: 100%;
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   z-index: var(--z-fixed);
+
 }
 
 /*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 .nav__data {
   height: 100%;
@@ -91,6 +94,8 @@ a {
 .logo img {
   height: 60px;
   cursor: pointer;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
 }
 .logo_content {
   display: flex;
@@ -100,6 +105,7 @@ a {
 }
 .nav__logo {
   font-size: 1.25rem;
+  
 }
 .nav__logo:hover {
   color: var(--first-color);
