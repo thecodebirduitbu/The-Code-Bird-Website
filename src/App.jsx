@@ -4,6 +4,7 @@ import "./index.css"
 import Hero from "./components/Hero"
 import  About from "./components/About";
 import { StarsCanvas } from "./components/canvas";
+import Footer from "./components/Footer/Footer"
 
 
 
@@ -25,10 +26,9 @@ function App() {
 
       <StarsCanvas/>
       <About />
-
-
-      </div>
       
+      </div>
+      <Footer/>
       
     
     </div>
