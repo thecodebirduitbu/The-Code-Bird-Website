@@ -7,6 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 
 
@@ -71,14 +73,14 @@ const Footer = () => {
             </div>
           </h3>
           <form>
-            <i className="far fa-envelope"></i>
+            <i className="far "><FaEnvelope/></i>
             <input
               type="email"
               placeholder="Enter your email id"
               required
             ></input>
             <button type="submit">
-              <i className="fas fa-arrow-right"></i>
+              <i className="fas "><FaArrowRight/></i>
             </button>
           </form>
           <div class="social-icons">
