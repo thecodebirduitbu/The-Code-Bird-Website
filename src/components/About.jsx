@@ -7,7 +7,7 @@ import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import "./about.css"
+import "./about.css";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -30,17 +30,9 @@ const About = () => {
 
   const handleSwipe = (dir) => {
     if (dir === 'LEFT') {
-      if (activeIndex === 0) {
-        setActiveIndex(services.length - 1);
-      } else {
-        setActiveIndex(activeIndex - 1);
-      }
+      setActiveIndex((prevIndex) => (prevIndex === 0 ? services.length - 1 : prevIndex - 1));
     } else if (dir === 'RIGHT') {
-      if (activeIndex === services.length - 1) {
-        setActiveIndex(0);
-      } else {
-        setActiveIndex(activeIndex + 1);
-      }
+      setActiveIndex((prevIndex) => (prevIndex === services.length - 1 ? 0 : prevIndex + 1));
     }
   };
 
@@ -50,20 +42,17 @@ const About = () => {
   });
 
   const goToPreviousSlide = () => {
-    if (activeIndex === 0) {
-      setActiveIndex(services.length - 1);
-    } else {
-      setActiveIndex(activeIndex - 1);
-    }
+    const lastIndex = services.length - 1;
+    const newIndex = activeIndex === 0 ? lastIndex : activeIndex - 1;
+    setActiveIndex(newIndex);
   };
-
+  
   const goToNextSlide = () => {
-    if (activeIndex === services.length - 1) {
-      setActiveIndex(0);
-    } else {
-      setActiveIndex(activeIndex + 1);
-    }
+    const lastIndex = services.length - 1;
+    const newIndex = activeIndex === lastIndex ? 0 : activeIndex + 1;
+    setActiveIndex(newIndex);
   };
+  
 
   return (
     <>

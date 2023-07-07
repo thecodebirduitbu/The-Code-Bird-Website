@@ -1,8 +1,14 @@
 .card-slider-container {
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
-  }
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.card-slider-container::-webkit-scrollbar {
+  display: none;
+}
   
   .card-slider {
     display: flex;
@@ -10,8 +16,8 @@
   }
   
   .card {
-    width: 100%;
-    padding: 10px;
+    flex: 0 0 100%;
+  padding: 10px;
   }
   
   .card-content {
