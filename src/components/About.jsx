@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
@@ -52,7 +52,11 @@ const About = () => {
     const newIndex = activeIndex === lastIndex ? 0 : activeIndex + 1;
     setActiveIndex(newIndex);
   };
-  
+
+  useEffect(() => {
+    const timeout = setTimeout(goToNextSlide, 2000);
+    return () => clearTimeout(timeout);
+  }, [activeIndex]);
 
   return (
     <>
