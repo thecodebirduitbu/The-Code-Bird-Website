@@ -3,6 +3,8 @@ import Logo from "../images/logo.png";
 import { Icon } from '@iconify/react';
 import './navbar.css';
 import './assets/scss/styles.scss';
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -72,9 +74,10 @@ const Navbar = () => {
             <li className="dropdown__item">
               <div
                 className="nav__link dropdown__button"
-                onClick={() => toggleDropdown(0)}
-              >
+                onClick={() => toggleDropdown(0)}>
+                <Link to="/aboutus">
                 About <Icon icon="ri:arrow-down-s-line" />
+                </Link>
               </div>
 
               <div className="dropdown__container">

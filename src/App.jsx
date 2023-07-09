@@ -1,10 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar";
 import "./index.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import { StarsCanvas } from "./components/canvas";
 import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Navbar />
           <StarsCanvas />
           <Hero />
+          
         </div>
         <StarsCanvas />
         <About className="h-96" />
