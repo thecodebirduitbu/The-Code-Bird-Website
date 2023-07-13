@@ -66,7 +66,7 @@ const Navbar = () => {
         <div id="nav-menu" className={isMenuVisible ? 'nav__menu show-menu' : 'nav__menu'}>
           <ul className="nav__list">
             <li>
-              <a href="#" className="nav__link">
+              <a href="/" className="nav__link">
                 Home
               </a>
             </li>
@@ -86,17 +86,17 @@ const Navbar = () => {
                     <div className="dropdown__icon">
                       <Icon icon="ri:flashlight-line" />
                     </div>
-
+                    <Link to = "/about-us">
                     <span className="dropdown__title">Codebird Team</span>
-
+                    </Link>
                     <ul className="dropdown__list">
                       <li>
-                        <a href="#" className="dropdown__link">
+                        <a href="/" className="dropdown__link">
                           Our Story
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link">
+                        <a href="/" className="dropdown__link">
                           Our Founders
                         </a>
                       </li>

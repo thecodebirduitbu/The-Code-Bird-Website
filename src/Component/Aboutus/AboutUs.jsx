@@ -4,7 +4,7 @@ import './aboutUs.css';
 const AboutUs = () => {
   return (
     <div className='body1'>
-    <section>
+    <div className='section'>
       <div className="image">
         <img src="/src/assets/walk.gif" alt="Walking GIF" />
       </div>
@@ -27,15 +27,15 @@ const AboutUs = () => {
         </div>
         <ul className="links">
           <li>
-            <a href="#">Our Aim</a>
+            <a href="/">Our Aim</a>
           </li>
           <div className="vertical-line"></div>
           <li>
-            <a href="#">Achievements</a>
+            <a href="/">Achievements</a>
           </li>
           <div className="vertical-line"></div>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="/">Contact Us</a>
           </li>
         </ul>
         <ul className="icons">
@@ -55,7 +55,7 @@ const AboutUs = () => {
       </div>
       <br /><br />
       <div className="credit">&copy;<a href="#">CODEBIRD WEBSITE TEAM</a></div>
-    </section>
+      </div>
     </div>
   );
 };

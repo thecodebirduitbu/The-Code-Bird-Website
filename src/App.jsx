@@ -1,10 +1,10 @@
-import { BrowserRouter} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar";
 import "./index.css";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import { StarsCanvas } from "./components/canvas";
+
 import Footer from "./components/Footer/Footer";
+import HomePages from "./components/Homepages/HomePages";
+import AboutUs from "./Component/Aboutus/AboutUs";
 
 
 function App() {
@@ -13,12 +13,12 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <StarsCanvas />
-          <Hero />
           
+          <Routes>
+          <Route path="/" element={<HomePages/>} />
+          <Route path="/about-us" element={<AboutUs/>} />
+          </Routes>
         </div>
-        <StarsCanvas />
-        <About className="h-96" />
         <Footer />
       </div>
     </BrowserRouter>
