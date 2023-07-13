@@ -1,12 +1,13 @@
 import React from 'react';
 import './aboutUs.css';
+import walk from "./img/walk.gif"
 
 const AboutUs = () => {
   return (
     <div className='body1'>
     <div className='section'>
       <div className="image">
-        <img src="/src/assets/walk.gif" alt="Walking GIF" />
+        <img src={walk} alt="Walking GIF" />
       </div>
 
       <div className="content">
