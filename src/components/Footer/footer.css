@@ -127,7 +127,7 @@ form button{
     overflow: hidden;
 }
 
-.underline span{
+.underline span {
     width: 15px;
     height: 100%;
     background: #fff;
@@ -138,14 +138,15 @@ form button{
     animation: moving 2s linear infinite;
 }
 
-@keyframes moving{
-    0%{
+@keyframes moving {
+    0% {
         left: -20px;
     }
-    100%{
-        left: 100%;
+    100% {
+        left: calc(100% + 20px);
     }
 }
+
 
 @media (max-width: 700px){
     footer{
