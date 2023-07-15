@@ -164,9 +164,11 @@ a {
 
 /* Show menu */
 .show-menu {
+  
   opacity: 1;
   top: 3.5rem;
   pointer-events: initial;
+
 }
 
 /* Show icon */
@@ -183,6 +185,7 @@ a {
 /*=============== DROPDOWN ===============*/
 .dropdown__button {
   cursor: pointer;
+  color: black;
 }
 .dropdown__arrow {
   font-size: 1.5rem;
@@ -191,12 +194,15 @@ a {
 }
 .dropdown__content, .dropdown__group, .dropdown__list {
   display: grid;
+
 }
 .dropdown__container {
-  background-color: var(--first-color-lighten);
+  /* background-color: var(--first-color-lighten); */
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
+
+  
 }
 .dropdown__content {
   row-gap: 1.75rem;
@@ -213,7 +219,7 @@ a {
 }
 .dropdown__icon  {
   font-size: 1.25rem;
-  color: var(--first-color);
+  /* color: var(--first-color); */
 }
 .dropdown__title {
   font-size: var(--small-font-size);

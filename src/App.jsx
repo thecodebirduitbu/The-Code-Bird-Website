@@ -5,6 +5,7 @@ import "./index.css";
 import Footer from "./components/Footer/Footer";
 import HomePages from "./components/Homepages/HomePages";
 import AboutUs from "./Component/Aboutus/AboutUs";
+import FAQComponent from "./components/FAQS/FAQComponent";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Routes>
           <Route path="/" element={<HomePages/>} />
           <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/faQs" element={<FAQComponent/>} />
           </Routes>
         </div>
         <Footer />

@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="logo">
             <div className="logo_content">
               <img src={Logo} alt="Codebird Logo" />
-              <a href="#" className="nav__logo">
+              <a href="/" className="nav__logo">
                 The CodeBird
               </a>
             </div>
@@ -190,13 +190,10 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="dropdown__item">
-              <div
-                className="nav__link dropdown__button"
-                onClick={() => toggleDropdown(2)}
-              >
-                FAQS <Icon icon="ri:arrow-down-s-line dropdown__arrow" />
-              </div>
+            <li>
+              <a href="/faQs" className="nav__link">
+                FAQS
+              </a>
             </li>
 
             <li className="dropdown__item">
