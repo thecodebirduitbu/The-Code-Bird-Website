@@ -23,8 +23,8 @@ const FAQComponent = () => {
   }, []);
 
   return (
-    <div className='body2'>
-      <h1>Frequently Asked Questions</h1>
+    <div className='body3'>
+      <h1 className='question'>Frequently Asked Questions</h1>
 
       <div className="faq-container">
         <div className="faq-question">
