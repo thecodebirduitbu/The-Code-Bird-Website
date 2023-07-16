@@ -3,9 +3,7 @@ import "./style.css"; // Import the custom CSS file
 
 const MyComponent = () => {
   return (
-    
     <section className="text-gray-700 body-font">
-    
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4 text-center">
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">

@@ -75,9 +75,9 @@ const Navbar = () => {
               <div
                 className="nav__link dropdown__button"
                 onClick={() => toggleDropdown(0)}>
-                <Link to="/aboutus">
+                <div className="nav__link">
                 About <Icon icon="ri:arrow-down-s-line" />
-                </Link>
+                </div>
               </div>
 
               <div className="dropdown__container">
@@ -185,9 +185,9 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+            <a href="/event" className="nav__link">
                 Events
-              </a>
+                </a>
             </li>
 
             <li>
