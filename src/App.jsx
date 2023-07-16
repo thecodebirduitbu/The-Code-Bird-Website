@@ -10,7 +10,7 @@ import FAQComponent from "./components/FAQS/FAQComponent";
 
 function App() {
   return (
-    <BrowserRouter basename="/The-Code-Bird-Website">
+    <BrowserRouter >
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
