@@ -101,7 +101,7 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link">
+                        <a href="/team" className="dropdown__link">
                           Core Committee
                         </a>
                       </li>
