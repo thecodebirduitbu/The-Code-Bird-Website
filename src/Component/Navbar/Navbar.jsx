@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Logo from "../images/logo.png";
-import { Icon } from '@iconify/react';
-import './navbar.css';
-import './assets/scss/styles.scss';
+import { Icon } from "@iconify/react";
+import "./navbar.css";
+import "./assets/scss/styles.scss";
 import { Link } from "react-router-dom";
-
+import { CgMenuMotion, CgClose } from "react-icons/cg";
 
 const Navbar = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -20,24 +20,24 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const toggleDropdown = (index) => {
-    const dropdownContainer = document.querySelectorAll('.dropdown__container');
-    const dropdownItems = document.querySelectorAll('.dropdown__item');
+    const dropdownContainer = document.querySelectorAll(".dropdown__container");
+    const dropdownItems = document.querySelectorAll(".dropdown__item");
 
     dropdownContainer.forEach((container, i) => {
       if (i === index) {
-        container.style.height = container.scrollHeight + 'px';
-        dropdownItems[i].classList.add('show-dropdown');
+        container.style.height = container.scrollHeight + "px";
+        dropdownItems[i].classList.add("show-dropdown");
       } else {
-        container.removeAttribute('style');
-        dropdownItems[i].classList.remove('show-dropdown');
+        container.removeAttribute("style");
+        dropdownItems[i].classList.remove("show-dropdown");
       }
     });
   };
@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <div className="nav__data">
+        <div className="nav__data py-2">
           <div className="logo">
             <div className="logo_content">
               <img src={Logo} alt="Codebird Logo" />
@@ -54,16 +54,19 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <button className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-            {isMenuVisible ? (
-              <Icon icon="ri-close-line nav__toggle-close" />
-            ) : (
-              <Icon icon="ri-menu-line nav__toggle-menu" />
-            )}
-          </button>
+          <div
+            className="text-center text-white text-4xl md:hidden"
+            id="nav-toggle"
+            onClick={toggleMenu}
+          >
+            {isMenuVisible ? <CgClose /> : <CgMenuMotion />}
+          </div>
         </div>
 
-        <div id="nav-menu" className={isMenuVisible ? 'nav__menu show-menu' : 'nav__menu'}>
+        <div
+          id="nav-menu"
+          className={isMenuVisible ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list">
             <li>
               <a href="/" className="nav__link" onClick={toggleMenu}>
@@ -74,7 +77,8 @@ const Navbar = () => {
             <li className="dropdown__item">
               <div
                 className="nav__link dropdown__button"
-                onClick={() => toggleDropdown(0)}>
+                onClick={() => toggleDropdown(0)}
+              >
                 <div className="nav__link">
                   About <Icon icon="ri:arrow-down-s-line" />
                 </div>
@@ -86,27 +90,45 @@ const Navbar = () => {
                     <div className="dropdown__icon">
                       <Icon icon="ri:flashlight-line" />
                     </div>
-                    <Link to = "/about-us">
-                    <span className="dropdown__title" onClick={toggleMenu}>Codebird Team</span>
+                    <Link to="/about-us">
+                      <span className="dropdown__title" onClick={toggleMenu}>
+                        Codebird Team
+                      </span>
                     </Link>
                     <ul className="dropdown__list">
                       <li>
-                        <a href="/" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="/"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Our Story
                         </a>
                       </li>
                       <li>
-                        <a href="/" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="/"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Our Founders
                         </a>
                       </li>
                       <li>
-                        <a href="/team" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="/team"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Core Committee
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Website Creating Team
                         </a>
                       </li>
@@ -118,26 +140,44 @@ const Navbar = () => {
                       <Icon icon="ri:heart-3-line" />
                     </div>
 
-                    <span className="dropdown__title" onClick={toggleMenu}>Popular Domains</span>
+                    <span className="dropdown__title" onClick={toggleMenu}>
+                      Popular Domains
+                    </span>
 
                     <ul className="dropdown__list">
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Web
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           App
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           CP/DSA
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           ML/AI/DL
                         </a>
                       </li>
@@ -149,26 +189,44 @@ const Navbar = () => {
                       <Icon icon="ri:book-mark-line" />
                     </div>
 
-                    <span className="dropdown__title" onClick={toggleMenu}>Other Domains</span>
+                    <span className="dropdown__title" onClick={toggleMenu}>
+                      Other Domains
+                    </span>
 
                     <ul className="dropdown__list">
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Cybersecurity
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Blockchain/Web3
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Game Development
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="dropdown__link" onClick={toggleMenu}>
+                        <a
+                          href="#"
+                          className="dropdown__link"
+                          onClick={toggleMenu}
+                        >
                           Hardware
                         </a>
                       </li>
@@ -179,7 +237,10 @@ const Navbar = () => {
             </li>
 
             <li className="dropdown__item">
-              <div className="nav__link dropdown__button" onClick={() => toggleDropdown(1)}>
+              <div
+                className="nav__link dropdown__button"
+                onClick={() => toggleDropdown(1)}
+              >
                 Advisor
               </div>
             </li>
