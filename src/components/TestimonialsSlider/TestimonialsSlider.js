@@ -30,7 +30,7 @@ const TestimonialsSlider = () => {
 //   ];
 
   return (
-<section class="review" id="review">
+<div className="review" id="review">
 
 <h1 className="heading"> Testimonial <span>review</span></h1>
 
@@ -77,7 +77,7 @@ const TestimonialsSlider = () => {
 
 </div>
 
-</section>
+</div>
   );
 };
 

@@ -12,7 +12,7 @@ const HomePages = () => {
       <StarsCanvas />
       <About/>
       <MyComponent/>
-      {/* <TestimonialsSlider/> */}
+      <TestimonialsSlider/>
       <BlogUI1/>
     </div>
   )
