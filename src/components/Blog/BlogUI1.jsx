@@ -3,16 +3,17 @@
 
 // import Image from "next/image";
 import { Link } from "react-router-dom";
-import React from 'react'
+import React from "react";
 
-import unreal from "./images/unreal-engine.webp"
-import react from "./images/react.webp"
-import logo from "./images/logo.png"
-import web3 from "./images/bitcoin.jpeg"
+import unreal from "./images/unreal-engine.webp";
+import react from "./images/react.webp";
+import logo from "./images/logo.png";
+import web3 from "./images/bitcoin.jpeg";
+import "./BlogUI1.css";
 
 const BlogUI1 = () => {
   return (
-<div className="pt-[8rem] px-6 mx-auto">
+    <div className="pt-[8rem] px-6 mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="pt-16 mx-auto">
           <div className="bg-green-500 flex  rounded-full text-gray-50 px-2 py-1 w-fit  uppercase">
@@ -47,14 +48,14 @@ const BlogUI1 = () => {
           </div>
         </div>
         <div className="p-4">
-        <img
-      className="rounded-lg h-60 w-80 mx-auto"
-      src={logo}
-      alt="Image of Developer"
-      sizes="fill"
-      width={100}
-      height={100}
-    />
+          <img
+            className="rounded-lg h-72 w-80 mx-auto"
+            src={logo}
+            alt="Image of Developer"
+            sizes="fill"
+            width={100}
+            height={100}
+          />
         </div>
       </div>
       <div className="pt-12">
@@ -110,12 +111,12 @@ const BlogUI1 = () => {
                   </div>
 
                   <div className="flex flex-row ">
-                  <img
-  className="w-8 h-8 rounded-full"
-  src={logo} // Make sure the path is correct, adjust it if needed
-  alt="Image of Developer"
-  width={10} // No need to specify height here, it will automatically scale proportionally
-/>
+                    <img
+                      className="logo2 w-8 h-8 rounded-full"
+                      src={logo} // Make sure the path is correct, adjust it if needed
+                      alt="Image of Developer"
+                      width={10} // No need to specify height here, it will automatically scale proportionally
+                    />
 
                     <p className="pl-3 text-sm  my-auto ">@codebird</p>
                   </div>
@@ -174,7 +175,7 @@ const BlogUI1 = () => {
                   </div>
                   <div className="flex flex-row ">
                     <img
-                      className=" w-8 h-8   rounded-full "
+                      className="logo2 w-8 h-8   rounded-full "
                       src={logo}
                       alt="Image of Developer"
                       sizes="fill"
@@ -192,7 +193,7 @@ const BlogUI1 = () => {
               <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
                 <div>
                   <img
-                    className=" w-[17rem] h-[10rem]   rounded-2xl "
+                    className="logo2 w-[13rem] h-[10rem] rounded-2xl ml-8"
                     src={logo}
                     alt="Image of Developer"
                     sizes="fill"
@@ -238,7 +239,7 @@ const BlogUI1 = () => {
                   </div>
                   <div className="flex flex-row ">
                     <img
-                      className=" w-8 h-8   rounded-full "
+                      className="logo2 w-8 h-8   rounded-full "
                       src={logo}
                       alt="Image of Developer"
                       sizes="fill"
@@ -302,7 +303,7 @@ const BlogUI1 = () => {
                   </div>
                   <div className="flex flex-row ">
                     <img
-                      className=" w-8 h-8   rounded-full "
+                      className="logo2 w-8 h-8   rounded-full "
                       src={logo}
                       alt="Image of Developer"
                       sizes="fill"
@@ -318,8 +319,7 @@ const BlogUI1 = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogUI1
-
+export default BlogUI1;
