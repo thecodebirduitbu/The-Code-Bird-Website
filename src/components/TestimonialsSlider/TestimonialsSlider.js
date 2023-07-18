@@ -4,30 +4,7 @@ import img1 from "./img/profile-pic.png";
 import img2 from "./img/profile-pic (1).png";
 import img3 from "./img/profile-pic (2).png";
 const TestimonialsSlider = () => {
-//   const testimonialsData = [
-//     {
-//       id: 1,
-//       imgSrc:  profilePic1,
-//       name: "John Doe",
-//       stars: 4,
-//       message: "Hello everyone",
-//     },
-//     {
-//       id: 2,
-//       imgSrc: profilePic2,
-//       name: "Jane Smith",
-//       stars: 5,
-//       message: "Hello everyone",
-//     },
-//     {
-//       id: 3,
-//       imgSrc: profilePic3,
-//       name: "Michael Johnson",
-//       stars: 3,
-//       message: "Hello Everyone",
-//     },
-//     // Add more testimonials data here...
-//   ];
+
 
   return (
 <div className="review" id="review">
