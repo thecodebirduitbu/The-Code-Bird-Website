@@ -10,10 +10,18 @@ import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
 import "./BlogUI1.css";
+import { styles } from "../../styles.js";
+
+
 
 const BlogUI1 = () => {
   return (
-    <div className="pt-[8rem] px-6 mx-auto">
+    <div>
+    <div className="sm:px-16 px-6 sm:py-16 py-10">  
+        <p className={" sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"}>The codebird</p>
+        <h2 className={"text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"}>Blogs</h2>
+  
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="pt-16 mx-auto">
           <div className="bg-green-500 flex  rounded-full text-gray-50 px-2 py-1 w-fit  uppercase">

@@ -3,6 +3,12 @@ import "./style.css"; // Import the custom CSS file
 
 const MyComponent = () => {
   return (
+    <div>
+        <div className="sm:px-16 px-6 ">  
+        <p className={" sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"}>The codebird</p>
+        <h2 className={"text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"}>Achievements</h2>
+  
+      </div>
     <section className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4 text-center">
@@ -20,8 +26,8 @@ const MyComponent = () => {
                 <path d="M8 17l4 4 4-4m-4-5v9"></path>
                 <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
               </svg>
-              <h2 className="title-font font-medium text-3xl text-gray-900">2.7K</h2>
-              <p className="leading-relaxed">Downloads</p>
+              <h2 className="title-font font-medium text-3xl text-gray-900">100+</h2>
+              <p className="leading-relaxed">Resources</p>
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -39,7 +45,7 @@ const MyComponent = () => {
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
               </svg>
-              <h2 className="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+              <h2 className="title-font font-medium text-3xl text-gray-900">150+</h2>
               <p className="leading-relaxed">Users</p>
             </div>
           </div>
@@ -81,6 +87,7 @@ const MyComponent = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
