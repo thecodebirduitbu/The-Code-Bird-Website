@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"; // Import the custom CSS file
 
-const MyComponent = () => {
+const Achivements = () => {
   return (
     <div>
       <div className="sm:px-16 px-6 ">
@@ -110,4 +110,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default Achivements;
