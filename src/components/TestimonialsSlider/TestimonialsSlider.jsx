@@ -10,8 +10,8 @@ function TestimonialsSlider() {
             Don't just take our words... Read reviews from our members
           </h1>
         </div>
-        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-          <div className="flex flex-col max-w-sm  mx-4 my-6 shadow-lg bg-gray-300 rounded-[22px]">
+        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 gap-10">
+          <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12   ">
               <p className="relative px-6 py-1 text-lg   text-center    ">
                 <svg
@@ -50,7 +50,7 @@ function TestimonialsSlider() {
               <p className="text-sm uppercase">Dev</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm  mx-4 my-6 shadow-lg bg-gray-300 rounded-[22px]">
+          <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12   ">
               <p className="relative px-6 py-1 text-lg   text-center    ">
                 <svg
@@ -87,7 +87,7 @@ function TestimonialsSlider() {
               <p className="text-sm uppercase">Dev</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm  mx-4 my-6 shadow-lg bg-gray-300 rounded-[22px]">
+          <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12   ">
               <p className="relative px-6 py-1 text-lg   text-center    ">
                 <svg
@@ -124,7 +124,7 @@ function TestimonialsSlider() {
               <p className="text-sm uppercase">Dev</p>
             </div>
           </div>
-          <div className="flex flex-col max-w-sm  mx-4 my-6 shadow-lg bg-gray-300 rounded-[22px]">
+          <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12   ">
               <p className="relative px-6 py-1 text-lg   text-center    ">
                 <svg
