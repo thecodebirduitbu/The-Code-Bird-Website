@@ -84,7 +84,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="dropdown__container">
+              <div className="dropdown__container rounded-[26px]">
                 <div className="dropdown__content">
                   <div className="dropdown__group">
                     <div className="dropdown__icon">
