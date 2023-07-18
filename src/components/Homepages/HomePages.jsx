@@ -5,8 +5,9 @@ import About from "../About";
 import TestimonialsSlider from "../TestimonialsSlider/TestimonialsSlider";
 import BlogUI1 from "../Blog/BlogUI1";
 import Achivements from "../MyComponent/Achivements";
-const HomePages = () => {
+export default function HomePages() {
   return (
+    //Its the Homepage / Index page of this site
     <div>
       <Hero />
       <StarsCanvas />
@@ -16,6 +17,4 @@ const HomePages = () => {
       <BlogUI1 />
     </div>
   );
-};
-
-export default HomePages;
+}
