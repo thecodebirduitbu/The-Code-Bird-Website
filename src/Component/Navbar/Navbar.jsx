@@ -99,7 +99,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="/"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Our Story
@@ -108,7 +108,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="/"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Our Founders
@@ -117,7 +117,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="/team"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Core Committee
@@ -126,7 +126,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Website Creating Team
@@ -148,7 +148,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Web
@@ -157,7 +157,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           App
@@ -166,7 +166,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           CP/DSA
@@ -175,7 +175,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           ML/AI/DL
@@ -197,7 +197,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Cybersecurity
@@ -206,7 +206,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Blockchain/Web3
@@ -215,7 +215,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Game Development
@@ -224,7 +224,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="#"
-                          className="dropdown__link"
+                          className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Hardware
