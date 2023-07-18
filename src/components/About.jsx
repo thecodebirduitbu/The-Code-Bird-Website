@@ -1,24 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
-import { useSwipeable } from 'react-swipeable';
-import { styles } from '../styles';
-import { services } from '../constants';
-import { SectionWrapper } from '../hoc';
-import { fadeIn, textVariant } from '../utils/motion';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { useSwipeable } from "react-swipeable";
+import { styles } from "../styles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./about.css";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[250px] w-full h-[24rem] m-8 d ">
       <motion.div
-        variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt="web-development" className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <img
+            src={icon}
+            alt="web-development"
+            className="w-16 h-16 object-contain"
+          />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -29,16 +35,20 @@ const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSwipe = (dir) => {
-    if (dir === 'LEFT') {
-      setActiveIndex((prevIndex) => (prevIndex === 0 ? services.length - 1 : prevIndex - 1));
-    } else if (dir === 'RIGHT') {
-      setActiveIndex((prevIndex) => (prevIndex === services.length - 1 ? 0 : prevIndex + 1));
+    if (dir === "LEFT") {
+      setActiveIndex((prevIndex) =>
+        prevIndex === 0 ? services.length - 1 : prevIndex - 1
+      );
+    } else if (dir === "RIGHT") {
+      setActiveIndex((prevIndex) =>
+        prevIndex === services.length - 1 ? 0 : prevIndex + 1
+      );
     }
   };
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => handleSwipe('LEFT'),
-    onSwipedRight: () => handleSwipe('RIGHT'),
+    onSwipedLeft: () => handleSwipe("LEFT"),
+    onSwipedRight: () => handleSwipe("RIGHT"),
   });
 
   const goToPreviousSlide = () => {
@@ -46,7 +56,7 @@ const About = () => {
     const newIndex = activeIndex === 0 ? lastIndex : activeIndex - 1;
     setActiveIndex(newIndex);
   };
-  
+
   const goToNextSlide = () => {
     const lastIndex = services.length - 1;
     const newIndex = activeIndex === lastIndex ? 0 : activeIndex + 1;
@@ -65,7 +75,10 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Our Nests</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
         All the Domains in CodeBird
       </motion.p>
 
@@ -74,11 +87,18 @@ const About = () => {
           <div
             className="card-slider"
             style={{
-              transform: `translateX(-${activeIndex * (100 / services.length)}%)`,
+              transform: `translateX(-${
+                activeIndex * (100 / services.length)
+              }%)`,
             }}
           >
             {services.map((service, index) => (
-              <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} />
+              <ServiceCard
+                key={service.title}
+                index={index}
+                title={service.title}
+                icon={service.icon}
+              />
             ))}
           </div>
         </div>
@@ -93,4 +113,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(About, "about");
