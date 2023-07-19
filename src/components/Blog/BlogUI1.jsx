@@ -43,13 +43,13 @@ const BlogUI1 = () => {
               @codebird
             </a>
             <p className="inline text-sm text-gray-400 font-medium mt-0 mr-1 mb-0 ml-1">
-              · 26th, May 2023 ·
+              · 07th, August 2023 ·
             </p>
           </div>
         </div>
         <div className="mx-auto">
           <img
-            className="rounded-lg h-72 w-72 mx-auto"
+            className="logo2 rounded-lg h-72 w-72 mx-auto"
             src={logo}
             alt="Image of Developer"
             sizes="fill"
@@ -105,8 +105,8 @@ const BlogUI1 = () => {
                       </span>
                     </p>
                     <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">28</span>
-                      <span className=" uppercase">May</span>
+                      <span className="text-3xl font-semibold ">07</span>
+                      <span className=" uppercase">Aug</span>
                     </p>
                   </div>
 
@@ -169,8 +169,8 @@ const BlogUI1 = () => {
                       </span>
                     </p>
                     <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">28</span>
-                      <span className=" uppercase">May</span>
+                      <span className="text-3xl font-semibold ">07</span>
+                      <span className=" uppercase">Aug</span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
@@ -233,8 +233,8 @@ const BlogUI1 = () => {
                       </span>
                     </p>
                     <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">28</span>
-                      <span className=" uppercase">May</span>
+                      <span className="text-3xl font-semibold ">07</span>
+                      <span className=" uppercase">Aug</span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
@@ -297,8 +297,8 @@ const BlogUI1 = () => {
                       </span>
                     </p>
                     <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">28</span>
-                      <span className=" uppercase">May</span>
+                      <span className="text-3xl font-semibold ">07</span>
+                      <span className=" uppercase">Aug</span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
