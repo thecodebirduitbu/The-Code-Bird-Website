@@ -13,9 +13,9 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -26,8 +26,8 @@
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -68,7 +68,6 @@ a {
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
   /* background-color: var(--body-color); */
   z-index: var(--z-fixed);
-
 }
 
 /*=============== NAV ===============*/
@@ -87,7 +86,7 @@ a {
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
-  color: var(--title-color);
+
   font-weight: var(--font-semi-bold);
   transition: color 0.3s;
 }
@@ -105,7 +104,6 @@ a {
 }
 .nav__logo {
   font-size: 1.25rem;
-  
 }
 .nav__logo:hover {
   color: var(--first-color);
@@ -115,9 +113,10 @@ a {
   width: 32px;
   height: 32px;
 }
-.nav__toggle-menu, .nav__toggle-close {
+.nav__toggle-menu,
+.nav__toggle-close {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: white;
   position: absolute;
   display: grid;
   place-items: center;
@@ -164,11 +163,9 @@ a {
 
 /* Show menu */
 .show-menu {
-  
   opacity: 1;
   top: 3.5rem;
   pointer-events: initial;
-
 }
 
 /* Show icon */
@@ -192,17 +189,16 @@ a {
   font-weight: initial;
   transition: transform 0.4s;
 }
-.dropdown__content, .dropdown__group, .dropdown__list {
+.dropdown__content,
+.dropdown__group,
+.dropdown__list {
   display: grid;
-
 }
 .dropdown__container {
   /* background-color: var(--first-color-lighten); */
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
-
-  
 }
 .dropdown__content {
   row-gap: 1.75rem;
@@ -217,7 +213,7 @@ a {
 .dropdown__group:last-child {
   margin-bottom: 1.25rem;
 }
-.dropdown__icon  {
+.dropdown__icon {
   font-size: 1.25rem;
   /* color: var(--first-color); */
 }
@@ -304,7 +300,8 @@ a {
     align-content: baseline;
     row-gap: 1.25rem;
   }
-  .dropdown__group:first-child, .dropdown__group:last-child {
+  .dropdown__group:first-child,
+  .dropdown__group:last-child {
     margin: 0;
   }
   .dropdown__list {
@@ -319,7 +316,7 @@ a {
     place-items: center;
     margin-bottom: 1rem;
   }
-  .dropdown__icon  {
+  .dropdown__icon {
     font-size: 2rem;
   }
   .dropdown__title {
