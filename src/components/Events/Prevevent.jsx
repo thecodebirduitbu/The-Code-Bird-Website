@@ -63,6 +63,7 @@ const prevData = [
       "The CodeBird Poster Making Competition invites participants from all backgrounds and skill levels to showcase their creativity and coding prowess. This competition challenges you to merge the worlds of technology and art by designing captivating posters using your coding skills. Whether you are a seasoned programmer or just starting your coding journey, this event offers a platform to unleash your imagination and show off your unique style.",
   },
 ];
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -85,15 +86,15 @@ const responsive = {
 
 const Prevevent = () => {
   return (
-    <div className="cardCarousel">
-      <Carousel className="gal" responsive={responsive}>
+     <div className="cardCarousel">
+      <Carousel className="gal" responsive={responsive} transitionDuration={1000}>
         {prevData.map((item, key) => {
           return (
-            <div class="card" key={key}>
+            <div className="card" key={key}>
               <img src={item.imgUrl} alt="" />
-              <div class="card__content">
-                <p class="card__title">{item.name}</p>
-                <p class="card__description">{item.description}</p>
+              <div className="card__content">
+                <p className="card__title">{item.name}</p>
+                <p className="card__description">{item.description}</p>
               </div>
             </div>
           );
