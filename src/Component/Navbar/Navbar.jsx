@@ -258,9 +258,9 @@ const Navbar = () => {
             </li>
 
             <li className="dropdown__item">
-              <div className="nav__link dropdown__button" onClick={toggleMenu}>
+            <a href="/register" className="nav__link" onClick={toggleMenu}>
                 Register
-              </div>
+              </a>
             </li>
           </ul>
         </div>

@@ -8,6 +8,7 @@ import AboutUs from "./Component/Aboutus/AboutUs";
 import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
+import Register from "./components/Register/Register";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/faQs" element={<FAQComponent/>} />
           <Route path="/team" element={<Team/>} />
           <Route path="/event" element={<Eventpg/>} />
+          <Route path="/register" element={<Register/>} />
         
           </Routes>
         </div>
