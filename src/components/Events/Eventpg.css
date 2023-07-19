@@ -5,12 +5,16 @@
     background-color:#060b1a ;
     width: 100%;
     min-height: 100vh;
+    position: relative;
+    top: 20px;
+    
 }
 .eventPageContainer h1{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 2.6rem;
     font-weight: 800;
+    top: 100px;
 }
 .logoSpan{
     color: #915eff;

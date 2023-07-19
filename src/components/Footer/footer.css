@@ -11,11 +11,11 @@ box-sizing: border-box;
 
 footer{
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom:0;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
-    padding: 100px 0 30px;
+    padding: 50px 0 30px;
     border-top-left-radius:125px;
     font-size: 13px;
     line-height: 20px;
@@ -95,7 +95,7 @@ form button{
     color: #ccc;
  }
 
- .social-icons .fab{
+ .social-icons .fa {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -127,7 +127,7 @@ form button{
     overflow: hidden;
 }
 
-.underline span{
+.underline span {
     width: 15px;
     height: 100%;
     background: #fff;
@@ -138,14 +138,15 @@ form button{
     animation: moving 2s linear infinite;
 }
 
-@keyframes moving{
-    0%{
+@keyframes moving {
+    0% {
         left: -20px;
     }
-    100%{
-        left: 100%;
+    100% {
+        left: calc(100% + 20px);
     }
 }
+
 
 @media (max-width: 700px){
     footer{

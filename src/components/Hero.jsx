@@ -14,11 +14,11 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div >
           <h1 className={`${styles.heroHeadText} text-white`}>
             The <span className='text-[#915EFF]'>CodeBird</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText}  text-white-100 `}>
             Welcome to Codebird Community <br className='sm:block hidden' />
             Explore the coding world
           </p>

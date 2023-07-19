@@ -1,0 +1,12 @@
+
+  
+  .hover\:scale-110:hover {
+    transform: scale(1.1);
+  }
+  
+  .title-font {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #2d3748;
+  }
+ 
