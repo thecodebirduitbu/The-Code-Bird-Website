@@ -98,7 +98,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="/"
+                          href="/ourstory"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -107,7 +107,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/founders"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -125,7 +125,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/devteam"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -258,7 +258,7 @@ const Navbar = () => {
             </li>
 
             <li className="dropdown__item">
-            <a href="/register" className="nav__link" onClick={toggleMenu}>
+              <a href="/register" className="nav__link" onClick={toggleMenu}>
                 Register
               </a>
             </li>
