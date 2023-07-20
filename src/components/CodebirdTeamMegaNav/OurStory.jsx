@@ -2,9 +2,9 @@ import React from "react";
 
 function OurStory() {
   return (
-    <div>
-      <h1 className="text-xl text-white text-center pt-[2rem]">Our Story</h1>
-      <p className="text-justify text-lg text-white pt-10">
+    <div className="py-[10rem]">
+      <h1 className="text-[3rem] text-white text-center ">Our Story</h1>
+      <p className="text-justify text-lg text-white pt-10 mx-10 md:mx-[2rem]">
         Welcome to The Code Bird, also known as "Code Bird," the heart of coding
         culture at the University Institute of Technology Burdwan (UIT, BU).
         Founded on 23rd August 2016 under the esteemed guidance of Professor

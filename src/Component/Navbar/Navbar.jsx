@@ -236,13 +236,10 @@ const Navbar = () => {
               </div>
             </li>
 
-            <li className="dropdown__item">
-              <div
-                className="nav__link dropdown__button"
-                onClick={() => toggleDropdown(1)}
-              >
+            <li>
+              <a href="/advisor" className="nav__link" onClick={toggleMenu}>
                 Advisor
-              </div>
+              </a>
             </li>
 
             <li>

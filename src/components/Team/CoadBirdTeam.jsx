@@ -97,7 +97,7 @@ const CoadBirdTeam = () => {
         <div className="team__content" data-aos="fade-down">
           {/* <h6 className="subtitle">Our Core Team</h6> */}
           <h2>
-            Our <span className="highlight">CodeBird Team</span>
+            Our <span className="highlight">Core Team</span>
           </h2>
         </div>
         <div className="team__wrapper">
