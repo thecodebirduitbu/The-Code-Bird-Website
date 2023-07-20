@@ -9,6 +9,7 @@ import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
 import Register from "./components/Register/Register";
+import Advisor from "./components/Advisor/Advisor";
 import Founders from "./components/CodebirdTeamMegaNav/Founders";
 import OurStory from "./components/CodebirdTeamMegaNav/OurStory";
 import DevTeam from "./components/CodebirdTeamMegaNav/DevTeam";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/ourstory" element={<OurStory />} />
             <Route path="/founders" element={<Founders />} />
             <Route path="/devteam" element={<DevTeam />} />
+            <Route path="/advisor" element={<Advisor />} />
           </Routes>
         </div>
         <Footer />
