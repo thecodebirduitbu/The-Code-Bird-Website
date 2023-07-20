@@ -2,8 +2,8 @@ import React from "react";
 
 function DevTeam() {
   return (
-    <div>
-      <h1 className="text-xl text-center text-white">
+    <div className="py-[10rem]">
+      <h1 className="text-[3rem] text-center text-white">
         Developers of this Website
       </h1>
     </div>
