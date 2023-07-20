@@ -96,7 +96,7 @@ const OurTechTeam = () => {
     <div className="cardBody">
       <div className="team__content" data-aos="fade-down">
         <h2>
-          Our <span className="highlight">Tech Team</span>
+          Our <span className="highlight">Dev Team</span>
         </h2>
       </div>
       <div className="cardouterlayer">
