@@ -9,7 +9,9 @@ import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
 import Register from "./components/Register/Register";
-
+import Founders from "./components/CodebirdTeamMegaNav/Founders";
+import OurStory from "./components/CodebirdTeamMegaNav/OurStory";
+import DevTeam from "./components/CodebirdTeamMegaNav/DevTeam";
 
 function App() {
   return (
@@ -17,15 +19,17 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          
+
           <Routes>
-          <Route path="/" element={<HomePages/>} />
-          <Route path="/about-us" element={<AboutUs/>} />
-          <Route path="/faQs" element={<FAQComponent/>} />
-          <Route path="/team" element={<Team/>} />
-          <Route path="/event" element={<Eventpg/>} />
-          <Route path="/register" element={<Register/>} />
-        
+            <Route path="/" element={<HomePages />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/faQs" element={<FAQComponent />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/event" element={<Eventpg />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/ourstory" element={<OurStory />} />
+            <Route path="/founders" element={<Founders />} />
+            <Route path="/devteam" element={<DevTeam />} />
           </Routes>
         </div>
         <Footer />
