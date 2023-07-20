@@ -1,19 +1,19 @@
-import React ,{useCallback} from 'react'
+import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import CoadBirdTeam from './Team/CoadBirdTeam';
-import OurTechTeam from './Team/OurTechTeam';
-import './Team/Team.css'
+import CoadBirdTeam from "./Team/CoadBirdTeam";
+
+import "./Team/Team.css";
 
 const Team = () => {
-    const particlesInit = useCallback(async (engine) => {
-      console.log(engine);
-      await loadFull(engine);
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-      await console.log(container);
-    }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
   return (
     <div className="cardCarousel">
       <div>
@@ -90,11 +90,11 @@ const Team = () => {
             detectRetina: true,
           }}
         />
-        <OurTechTeam/>
-        <CoadBirdTeam/>
+
+        <CoadBirdTeam />
       </div>
     </div>
   );
-}
+};
 
 export default Team;
