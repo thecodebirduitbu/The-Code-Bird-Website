@@ -237,6 +237,12 @@ const Navbar = () => {
             </li>
 
             <li>
+              <a href="/advisor" className="nav__link" onClick={toggleMenu}>
+                Advisor
+              </a>
+            </li>
+
+            <li>
               <a href="/event" className="nav__link" onClick={toggleMenu}>
                 Events
               </a>
