@@ -27,6 +27,9 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/event" element={<Eventpg />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/ourstory" element={<OurStory />} />
+            <Route path="/founders" element={<Founders />} />
+            <Route path="/devteam" element={<DevTeam />} />
           </Routes>
         </div>
         <Footer />
