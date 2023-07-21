@@ -1,4 +1,9 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 
 function Advisor() {
   return (
