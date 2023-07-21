@@ -3,9 +3,9 @@ import React from "react";
 function Advisor() {
   return (
     <div className="py-[10rem]">
-      <h1 className="text-[2rem] text-center">Our Advisor</h1>
+      <h1 className="text-[3rem] text-white text-center">Our Advisor</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[3rem] mx-10">
-        <div className="mx-auto rounded-full p-4 ">
+        <div className="mx-auto my-auto rounded-full p-4 ">
           <img
             src="/Images/demoimg.png"
             alt="Image of Advisor"
