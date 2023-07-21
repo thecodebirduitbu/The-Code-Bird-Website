@@ -4,7 +4,7 @@ function Advisor() {
   return (
     <div className="pt-[8rem]">
       <h1 className="text-[2rem] text-center">Our Advisor</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[2rem] ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[3rem] mx-10">
         <div className="mx-auto">
           <h1 className="text-justify mx-auto text-lg">
             Meet Mr. Sumit Gupta, an exceptional Assistant Professor in the
@@ -24,13 +24,13 @@ function Advisor() {
           </h1>
         </div>
 
-        <div className="mx-auto rounded-full w-100 h-100 ">
+        <div className="mx-auto rounded-full p-4 ">
           <img
             src="/Images/demoimg.png"
             alt="Image of Advisor"
             sizes="fill"
-            width={1000}
-            height={1000}
+            width={300}
+            height={300}
           />
         </div>
       </div>
