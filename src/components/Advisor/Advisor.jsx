@@ -36,22 +36,9 @@ function Advisor() {
             Coding Culture at our institution and eagerly anticipate achieving
             many more milestones under his esteemed guidance.
           </h1>
-          <div class="social-icons pt-8">
-            <i className="fa">
-              <FaLinkedin />
-            </i>
-            <i className="fa">
-              <FaFacebook />
-            </i>
-            <i className="fa">
-              <FaWhatsapp />
-            </i>
-            <i className="fa">
-              <FaDiscord />
-            </i>
-            <i className="fa">
-              <FaInstagram />
-            </i>
+          <div className=" pt-6 mx-auto text-center text-white text-3xl space-x-3 flex-row">
+            <FaLinkedin /> <FaFacebook /> <FaInstagram />
+            <FaWhatsapp /> <FaDiscord />
           </div>
         </div>
       </div>
