@@ -4,8 +4,8 @@ function Advisor() {
   return (
     <div className="pt-[8rem]">
       <h1 className="text-[2rem] text-center">Our Advisor</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="p-4 pt-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[2rem] ">
+        <div className="mx-auto">
           <h1 className="text-justify mx-auto text-md">
             &#60; "The Code Bird" is the biggest coding club of UIT, where
             budding tech enthusiasts flock together to spread their wings and
@@ -16,9 +16,9 @@ function Advisor() {
           </h1>
         </div>
 
-        <div className="mx-auto p-6">
-          <Image
-            src="/codebird.png"
+        <div className="mx-auto rounded-full w-100 h-100 ">
+          <img
+            src="/Images/demoimg.png"
             alt="Image of Developer"
             sizes="fill"
             width={1000}
