@@ -19,7 +19,7 @@ function Advisor() {
         <div className="mx-auto rounded-full w-100 h-100 ">
           <img
             src="/Images/demoimg.png"
-            alt="Image of Developer"
+            alt="Image of Advisor"
             sizes="fill"
             width={1000}
             height={1000}
