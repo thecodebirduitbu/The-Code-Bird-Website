@@ -1,30 +1,44 @@
 import React from "react";
-import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
-
+import { TbBrandFlutter, TbBrandKotlin, TbJetpack } from "react-icons/tb";
 function AndroidDev() {
   return (
-    <div className="py-[10rem] mx-16 md:mx-[2rem] text-white">
-      <h1 className="text-[3rem] text-white text-center">
+    <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
+      <h1 className="text-[2rem] text-white text-center">
         Android Development
       </h1>
       <p className="text-lg mb-6 pt-16 text-justify">
-        Welcome to the Android Development domain!
+        Embark on an exciting journey into the world of Android app development!
+        In this domain, you'll master the art of building applications for the
+        world's most used mobile platform. From designing intuitive user
+        interfaces to implementing powerful functionalities, Android development
+        offers endless possibilities. Join us as we explore the Android
+        ecosystem and equip you with the skills to create dynamic and
+        user-friendly apps.
       </p>
 
       <h3 className="text-xl font-semibold mb-2">Tech Stacks</h3>
       <ul className="list-disc pl-6 mb-6">
         <li>
-          <FaReact className="inline-block mr-2 text-blue-500" />
-          React: A powerful JavaScript library for building user interfaces.
+          <TbBrandKotlin className="inline-block mr-2 text-blue-500" />
+          Kotlin: Kotlin is the new language that is used for development in
+          Android. This is fully interoperated with Java, which means you can
+          use Kotlin and Java code in one project. Nowadays, Kotlin is the most
+          preferred language for Android projects and will continue to grow in
+          popularity in 2023.
         </li>
         <li>
-          <FaCss3 className="inline-block mr-2 text-blue-500" />
-          CSS: CSS the styling language, the outfit/dress/makeupkit of any
-          webpage.
+          <TbBrandFlutter className="inline-block mr-2 text-blue-500" />
+          Flutter/Dart: It is used for the Flutter UI software development kit
+          that Google created for cross-platform development. Flutter is used
+          for developing different apps for Android, iOS, Linux, Windows, macOS,
+          and Google Fuchsia platforms.
         </li>
         <li>
-          <FaHtml5 className="inline-block mr-2 text-blue-500" />
-          HTML: The markup language, the backbone of any webpage .
+          <TbJetpack className="inline-block mr-2 text-blue-500" />
+          Android Jetpack Compose: Jetpack Compose is the new UI library made by
+          Google, which uses the declarative method to build native UI. Unlike
+          the pre-built way used XML, Jetpack Compose can be declared right in
+          the code.
         </li>
       </ul>
 
