@@ -3,7 +3,7 @@ import React from "react";
 function TimelineStory() {
   return (
     <div className="py-[4rem] ">
-      <h1>Timeline story here</h1>
+      <h1>TimelineStory Here</h1>
     </div>
   );
 }
