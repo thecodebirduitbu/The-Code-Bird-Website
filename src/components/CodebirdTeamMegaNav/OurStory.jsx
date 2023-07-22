@@ -1,5 +1,5 @@
 import React from "react";
-
+import TimelineStory from "./TimelineStory";
 function OurStory() {
   return (
     <div className="py-[10rem]">
@@ -21,6 +21,9 @@ function OurStory() {
         joy of coding and the thrill of pushing boundaries. Together, we'll soar
         to new heights!
       </p>
+      <div className="pt-16">
+        <TimelineStory />
+      </div>
     </div>
   );
 }
