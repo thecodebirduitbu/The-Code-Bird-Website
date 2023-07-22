@@ -147,7 +147,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="#"
+                          href="/webdev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
