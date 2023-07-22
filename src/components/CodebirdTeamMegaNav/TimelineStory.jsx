@@ -6,12 +6,12 @@ const eventsData = [
     date: "23rd August, 2016",
     description:
       "The Code Bird founded under the guidance of Professor Sumit Gupta.",
-    image: "event1.jpg",
+    image: "demoimg.png",
   },
   {
     date: "September, 2016",
     description: "First coding contest organized: CodeWiz.",
-    image: "event2.jpg",
+    image: "demoimg.png",
   },
   //  more events here
 ];
