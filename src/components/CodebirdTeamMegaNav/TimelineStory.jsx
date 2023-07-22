@@ -13,6 +13,11 @@ const eventsData = [
     description: "First coding contest organized: CodeWiz.",
     image: "demoimg.png",
   },
+  {
+    date: "Meow, 2016",
+    description: "Meow, meow , meow",
+    image: "demoimg.png",
+  },
   //  more events here
 ];
 
