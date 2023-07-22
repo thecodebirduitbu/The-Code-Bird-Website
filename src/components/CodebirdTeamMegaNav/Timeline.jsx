@@ -2,7 +2,7 @@ import React from "react";
 
 function Timeline({ events }) {
   return (
-    <div className="mx-10 md:mx-[2rem] ">
+    <div className="mx-10 md:mx-[3rem] ">
       <div className="relative">
         <div
           className="border-l-2 border-gray-300 absolute h-full top-0"
