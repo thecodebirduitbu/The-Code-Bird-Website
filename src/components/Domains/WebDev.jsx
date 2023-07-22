@@ -3,9 +3,9 @@ import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
 
 function WebDev() {
   return (
-    <div className="py-[10rem]">
+    <div className="py-[10rem] mx-16 md:mx-[2rem] text-white">
       <h1 className="text-[3rem] text-white text-center">Web Development</h1>
-      <p className="text-lg mb-6">
+      <p className="text-lg mb-6 pt-16 text-justify">
         Welcome to the Web Development domain! This exciting field empowers you
         to craft visually stunning and interactive websites. Whether you're
         interested in front-end design or back-end functionality, this domain
@@ -22,11 +22,12 @@ function WebDev() {
         </li>
         <li>
           <FaCss3 className="inline-block mr-2 text-blue-500" />
-          Tailwind CSS: A utility-first CSS framework for rapid UI development.
+          CSS: CSS the styling language, the outfit/dress/makeupkit of any
+          webpage.
         </li>
         <li>
           <FaHtml5 className="inline-block mr-2 text-blue-500" />
-          React Icons: A collection of popular icons as React components.
+          HTML: The markup language, the backbone of any webpage .
         </li>
       </ul>
 
