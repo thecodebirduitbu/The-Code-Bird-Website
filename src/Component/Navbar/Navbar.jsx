@@ -156,11 +156,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/androiddev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          App
+                          Android
                         </a>
                       </li>
                       <li>
