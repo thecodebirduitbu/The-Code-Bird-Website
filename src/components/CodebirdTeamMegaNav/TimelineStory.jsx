@@ -19,7 +19,7 @@ const eventsData = [
 function TimelineStory() {
   return (
     <div className=" text-center text-white">
-      <h1 className="">Its Story Time</h1>
+      <h1 className="text-semibold mb-4">Its Story Time</h1>
       <Timeline events={eventsData} />
     </div>
   );
