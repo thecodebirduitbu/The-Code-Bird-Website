@@ -14,6 +14,7 @@ import Founders from "./components/CodebirdTeamMegaNav/Founders";
 import OurStory from "./components/CodebirdTeamMegaNav/OurStory";
 import DevTeam from "./components/CodebirdTeamMegaNav/DevTeam";
 import WebDev from "./components/Domains/WebDev";
+import AndroidDev from "./components/Domains/AndroidDev";
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
             <Route path="/devteam" element={<DevTeam />} />
             <Route path="/advisor" element={<Advisor />} />
             <Route path="/webdev" element={<WebDev />} />
+            <Route path="/androiddev" element={<AndroidDev />} />
           </Routes>
         </div>
         <Footer />
