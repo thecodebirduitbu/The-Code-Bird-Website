@@ -13,8 +13,8 @@ function Timeline({ events }) {
             <div key={index} className="flex items-start mb-8">
               <div className="w-4 h-4 bg-blue-500 rounded-full outline outline-white z-10"></div>
               <div className="ml-4">
-                <p className="text-gray-800 font-semibold">{event.date}</p>
-                <p className="text-gray-600">{event.description}</p>
+                <p className="text-gray-200 font-semibold">{event.date}</p>
+                <p className="text-gray-400">{event.description}</p>
               </div>
               <img
                 src={`/eventimg/${event.image}`}
