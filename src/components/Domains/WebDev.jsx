@@ -36,7 +36,6 @@ function WebDev() {
         skills:
       </p>
       {/* list of learning resources here */}
-
       <h3 className="text-xl font-semibold mb-2">Events and Workshops</h3>
       <p className="mb-6">
         Join us in exciting web development events and workshops:
