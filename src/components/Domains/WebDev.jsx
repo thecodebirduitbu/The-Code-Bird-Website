@@ -3,8 +3,8 @@ import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
 
 function WebDev() {
   return (
-    <div className="py-[10rem] mx-16 md:mx-[2rem] text-white">
-      <h1 className="text-[3rem] text-white text-center">Web Development</h1>
+    <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
+      <h1 className="text-[2rem] text-white text-center">Web Development</h1>
       <p className="text-lg mb-6 pt-16 text-justify">
         Welcome to the Web Development domain! This exciting field empowers you
         to craft visually stunning and interactive websites. Whether you're
