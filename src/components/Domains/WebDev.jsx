@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaTailwindCss, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
 
 function WebDev() {
   return (
@@ -21,7 +21,7 @@ function WebDev() {
           React: A powerful JavaScript library for building user interfaces.
         </li>
         <li>
-          <FaTailwindCss className="inline-block mr-2 text-blue-500" />
+          <FaCss3 className="inline-block mr-2 text-blue-500" />
           Tailwind CSS: A utility-first CSS framework for rapid UI development.
         </li>
         <li>
