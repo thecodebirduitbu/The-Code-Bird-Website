@@ -9,7 +9,7 @@ function TimelineCard({ date, description, image, index }) {
   });
 
   const variants = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, x: index % 2 === 0 ? -20 : 20 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -20,17 +20,25 @@ function TimelineCard({ date, description, image, index }) {
       animate={inView ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 0.6, delay: 0.2 * index }}
-      className="flex items-start mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96"
+      className={`flex items-start mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96 ${
+        index % 2 === 0 ? "self-start" : "self-end"
+      }`}
     >
-      <div className="w-4 h-4 bg-blue-500 rounded-full z-10"></div>
-      <div className="ml-4">
+      <div
+        className={`w-4 h-4 bg-blue-500 rounded-full z-10 ${
+          index % 2 === 0 ? "mr-4" : "ml-4"
+        }`}
+      ></div>
+      <div>
         <p className="text-gray-800 font-semibold">{date}</p>
         <p className="text-gray-600">{description}</p>
       </div>
       <img
         src={`/eventimg/${image}`}
         alt={`Event ${index + 1}`}
-        className="ml-4 w-20 h-20 rounded-lg object-cover"
+        className={`ml-4 w-20 h-20 rounded-lg object-cover ${
+          index % 2 === 0 ? "order-last" : "order-first"
+        }`}
       />
     </motion.div>
   );
@@ -38,11 +46,11 @@ function TimelineCard({ date, description, image, index }) {
 
 function Timeline({ events }) {
   return (
-    <div className="mx-6 md:mx-[3rem] relative">
-      <div
+    <div className="mx-6 md:mx-[3rem] relative overflow-x-scroll">
+      <motion.div
         className="absolute h-full w-1 left-1/2 bg-gray-300"
-        style={{ transform: "translateX(-50%)" }}
-      ></div>
+        style={{ x: "-50%" }}
+      ></motion.div>
       {events.map((event, index) => (
         <TimelineCard key={index} index={index} {...event} />
       ))}
