@@ -174,11 +174,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/mlandai"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          ML/AI/DL
+                          ML/AI/DS
                         </a>
                       </li>
                     </ul>
