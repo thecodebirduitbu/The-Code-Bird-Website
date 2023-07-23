@@ -1,28 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function TimelineCard({ date, description, image, index }) {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-50px 0px",
-  });
+  AOS.init();
 
-  const variants = {
-    hidden: { opacity: 0, x: index % 2 === 0 ? -20 : 20 },
-    visible: { opacity: 1, x: 0 },
-  };
+  const cardAnimation = index % 2 === 0 ? "fade-right" : "fade-left";
 
   return (
     <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={variants}
-      transition={{ duration: 0.6, delay: 0.2 * index }}
-      className={`flex items-start mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96 ${
+      className={`flex mx-auto mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96 ${
         index % 2 === 0 ? "self-start" : "self-end"
       }`}
+      data-aos={cardAnimation}
+      data-aos-duration="800"
     >
       <div
         className={`w-4 h-4 bg-blue-500 rounded-full z-10 ${
