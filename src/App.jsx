@@ -16,6 +16,7 @@ import DevTeam from "./components/CodebirdTeamMegaNav/DevTeam";
 import WebDev from "./components/Domains/WebDev";
 import AndroidDev from "./components/Domains/AndroidDev";
 import CPandDSA from "./components/Domains/CPandDSA";
+import MLandAI from "./components/Domains/MLandAI";
 function App() {
   return (
     <BrowserRouter>
@@ -37,6 +38,7 @@ function App() {
             <Route path="/webdev" element={<WebDev />} />
             <Route path="/androiddev" element={<AndroidDev />} />
             <Route path="/cpanddsa" element={<CPandDSA />} />
+            <Route path="/mlandai" element={<MLandAI />} />
           </Routes>
         </div>
         <Footer />
