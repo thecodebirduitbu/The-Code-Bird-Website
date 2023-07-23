@@ -20,7 +20,7 @@ function TimelineCard({ date, description, image, index }) {
       animate={inView ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 0.6, delay: 0.2 * index }}
-      className="flex items-start mb-8 px-4 py-2 bg-white shadow-md rounded-2xl"
+      className="flex items-start mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96"
     >
       <div className="w-4 h-4 bg-blue-500 rounded-full z-10"></div>
       <div className="ml-4">
@@ -30,7 +30,7 @@ function TimelineCard({ date, description, image, index }) {
       <img
         src={`/eventimg/${image}`}
         alt={`Event ${index + 1}`}
-        className="ml-4 w-24 h-24 rounded-lg object-cover"
+        className="ml-4 w-20 h-20 rounded-lg object-cover"
       />
     </motion.div>
   );
