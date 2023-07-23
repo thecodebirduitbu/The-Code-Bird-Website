@@ -165,7 +165,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="cpanddsa"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
