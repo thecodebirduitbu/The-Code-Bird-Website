@@ -1,5 +1,6 @@
 import React from "react";
-import { TbBrandFlutter, TbBrandKotlin, TbJetpack } from "react-icons/tb";
+import { SiSolidity, SiEthereum } from "react-icons/si";
+import { HiWallet } from "react-icons/hi";
 function Web3() {
   return (
     <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
@@ -17,7 +18,13 @@ function Web3() {
       <h3 className="text-xl font-semibold mb-2">Tech Stacks</h3>
       <ul className="list-disc pl-6 mb-6">
         <li>
-          <TbBrandKotlin className="inline-block mr-2 text-blue-500" />
+          <SiEthereum className="inline-block mr-2 text-blue-500" />
+        </li>
+        <li>
+          <HiWallet className="inline-block mr-2 text-blue-500" />
+        </li>
+        <li>
+          <SiSolidity className="inline-block mr-2 text-blue-500" />
         </li>
       </ul>
 
