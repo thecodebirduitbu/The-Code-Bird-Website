@@ -205,7 +205,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/web3"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
