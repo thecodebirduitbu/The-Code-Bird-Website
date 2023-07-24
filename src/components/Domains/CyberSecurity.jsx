@@ -20,14 +20,6 @@ function CyberSecurity() {
           <SiGnubash className="inline-block mr-2 text-blue-500" />
           hi
         </li>
-        <li>
-          <TbBrandFlutter className="inline-block mr-2 text-blue-500" />
-          hi
-        </li>
-        <li>
-          <TbJetpack className="inline-block mr-2 text-blue-500" />
-          hi
-        </li>
       </ul>
 
       <h3 className="text-xl font-semibold mb-2">Learning Resources</h3>
