@@ -1,6 +1,6 @@
 import React from "react";
 import { SiSolidity, SiEthereum } from "react-icons/si";
-import { HiWallet } from "react-icons/hi";
+import { HiWallet } from "react-icons/hi2";
 function Web3() {
   return (
     <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
