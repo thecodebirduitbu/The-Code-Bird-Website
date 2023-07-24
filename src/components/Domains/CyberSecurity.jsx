@@ -1,5 +1,5 @@
 import React from "react";
-import { SiGnubash } from "react-icons/si";
+import { SiGnubash, SiKalilinux, SiArchlinux } from "react-icons/si";
 function CyberSecurity() {
   return (
     <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
@@ -18,7 +18,25 @@ function CyberSecurity() {
       <ul className="list-disc pl-6 mb-6">
         <li>
           <SiGnubash className="inline-block mr-2 text-blue-500" />
-          hi
+          Bash: It is the shell, or command language interpreter, for the GNU
+          operating system. The name is an acronym for the 'Bourne-Again SHell',
+          a pun on Stephen Bourne, the author of the direct ancestor of the
+          current Unix shell sh , which appeared in the Seventh Edition Bell
+          Labs Research version of Unix.
+        </li>
+        <li>
+          <SiKalilinux className="inline-block mr-2 text-blue-500" />
+          Kali Linux formerly known as BackTrack Linux, is an open-source
+          Debian-based Linux distribution aimed at advanced Penetration Testing
+          and Security Auditing.
+        </li>
+        <li>
+          <SiArchlinux className="inline-block mr-2 text-blue-500" />
+          It is a minimalist, lightweight, and bleeding edge distro targeting
+          proficient GNU/Linux users over the idea of trying to be appealing to
+          as many users as possible. Arch promotes the do-it-yourself attitude
+          among its users and thus provides you with the freedom to tweak your
+          system according to your needs.
         </li>
       </ul>
 
