@@ -4,7 +4,15 @@ function GameDev() {
   return (
     <div className="py-[10rem] mx-10 md:mx-[2rem] text-white">
       <h1 className="text-[2rem] text-white text-center">Game Development</h1>
-      <p className="text-lg mb-6 pt-16 text-justify">xyz</p>
+      <p className="text-lg mb-6 pt-16 text-justify">
+        Step into the realm of Game Development, where creativity and technology
+        converge to create captivating virtual worlds. In this domain, you'll
+        learn the art of designing gameplay, creating stunning graphics, and
+        programming game mechanics. Unleash your imagination as you bring your
+        game ideas to life and immerse players in unforgettable gaming
+        experiences. Join us on this thrilling adventure and become a game
+        changer in the world of interactive entertainment.
+      </p>
 
       <h3 className="text-xl font-semibold mb-2">Tech Stacks</h3>
       <ul className="list-disc pl-6 mb-6">
