@@ -1,6 +1,5 @@
 import React from "react";
 import "./Prevevent.css";
-import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 import Image1 from "../../assets/Eventpics/event2.png";
 import Image2 from "../../assets/Eventpics/event3.png";
@@ -64,30 +63,12 @@ const prevData = [
   },
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+
 
 const Prevevent = () => {
   return (
      <div className="cardCarousel">
-      <Carousel className="gal" responsive={responsive} transitionDuration={1000}>
+     
         {prevData.map((item, key) => {
           return (
             <div className="card" key={key}>
@@ -99,7 +80,7 @@ const Prevevent = () => {
             </div>
           );
         })}
-      </Carousel>
+  
     </div>
   );
 };
