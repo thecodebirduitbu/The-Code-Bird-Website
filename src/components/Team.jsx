@@ -7,7 +7,7 @@ import "./Team/Team.css";
 
 const Team = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     await loadFull(engine);
   }, []);
 

@@ -1,7 +1,5 @@
 import React from "react";
 import "./CoadBirdTeam.css";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 
 const teamMembers = [
   {
@@ -88,13 +86,10 @@ const teamMembers = [
 ];
 
 const CoadBirdTeam = () => {
-  //  useEffect(() => {
-  //    AOS.init();
-  //  }, []);
   return (
     <section className="our__team">
       <div className="container">
-        <div className="team__content" data-aos="fade-down">
+        <div className="team__content">
           {/* <h6 className="subtitle">Our Core Team</h6> */}
           <h2>
             Our <span className="highlight">Core Team</span>
@@ -102,7 +97,7 @@ const CoadBirdTeam = () => {
         </div>
         <div className="team__wrapper">
           {teamMembers.map((item, index) => (
-            <div className="team__item" data-aos="fade-up" key={index}>
+            <div className="team__item"  key={index}>
               <div className="team__img">
                 <img src={item.imgUrl} alt="" />
               </div>
