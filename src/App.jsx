@@ -17,6 +17,9 @@ import WebDev from "./components/Domains/WebDev";
 import AndroidDev from "./components/Domains/AndroidDev";
 import CPandDSA from "./components/Domains/CPandDSA";
 import MLandAI from "./components/Domains/MLandAI";
+import CyberSecurity from "./components/Domains/CyberSecurity";
+import Web3 from "./components/Domains/Web3";
+import GameDev from "./components/Domains/GameDev";
 function App() {
   return (
     <BrowserRouter>
@@ -39,6 +42,9 @@ function App() {
             <Route path="/androiddev" element={<AndroidDev />} />
             <Route path="/cpanddsa" element={<CPandDSA />} />
             <Route path="/mlandai" element={<MLandAI />} />
+            <Route path="/cybersecurity" element={<CyberSecurity />} />
+            <Route path="/web3" element={<Web3 />} />
+            <Route path="/gamedev" element={<GameDev />} />
           </Routes>
         </div>
         <Footer />
