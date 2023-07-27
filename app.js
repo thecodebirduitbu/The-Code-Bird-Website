@@ -24,7 +24,7 @@ mongoose.connect(mongoURI, {
 // app.use(express.json());
 
 
-app.post('/register', (req, res) => {
+app.post('/register', async (req, res) => {
     const {
     fullName,
     roll,
@@ -36,29 +36,29 @@ app.post('/register', (req, res) => {
     domain
     } = req.body;
 
-    const newUser = new User({
-        fullName,
-        roll,
-        branch,
-        batch,
-        age,
-        contactNumber,
-        dob,
-        domain
-    });
+    try {
+        const newUser = new User({
+            fullName,
+            roll,
+            branch,
+            batch,
+            age,
+            contactNumber,
+            dob,
+            domain
+        })
 
-    newUser.save((err) => {
-        if (err) {
-            console.error('Error saving user:', err);
-            return res.status(500).json({
-                error: "Failed to register user"
-            });
-        }
-
-        return res.status(201).json({
-            message: 'User registered successfully'
+        await newUser.save();
+        res.status(201).json({
+            message: "User registered successfully",
         });
-    });
+    }
+    catch (error) {
+        console.error("Error saving user:", error);
+        res.status(500).json({
+            error: "Failed to register user"
+        });
+    }
 });
 
 
