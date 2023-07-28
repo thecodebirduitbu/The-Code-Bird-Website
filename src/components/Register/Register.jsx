@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./register.css";
+import { Divider } from "@mui/material";
 // import './App.css';
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
       <div className="body5 ">
         <div className="containerr">
           <div class="title">Registration</div>
-          <form className="form2" action="#" onSubmit={handleSubmit}>
+          <div className="form2" action="#" onSubmit={handleSubmit}>
             <div class="user-details">
               <div class="input-box">
                 <span class="details">Full Name</span>
@@ -123,6 +124,15 @@ function App() {
               </div>
             </div>
             <div class="domain-details">
+            <input type="radio" name="gender" id="dot-1"/>
+       <input type="radio" name="gender" id="dot-2"/>
+        <input type="radio" name="gender" id="dot-3"/>
+        <input type="radio" name="gender" id="dot-4"/>
+       <input type="radio" name="gender" id="dot-5"/>
+        <input type="radio" name="gender" id="dot-6"/>
+        <input type="radio" name="gender" id="dot-7"/>
+       <input type="radio" name="gender" id="dot-8"/>
+        <input type="radio" name="gender" id="dot-9"/>
               <span class="domain-title">Domain of Interest</span>
               <div class="category">
                 <label for="dot-1">
@@ -256,7 +266,7 @@ function App() {
             <div class="button">
               <input type="submit" value="Register"></input>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
