@@ -47,6 +47,7 @@ function App() {
             <Route path="/cybersecurity" element={<CyberSecurity />} />
             <Route path="/web3" element={<Web3 />} />
             <Route path="/gamedev" element={<GameDev />} />
+            <Route path="/robotshardware" element={<RobotsHardware />} />
           </Routes>
         </div>
         <Footer />
