@@ -20,6 +20,8 @@ import MLandAI from "./components/Domains/MLandAI";
 import CyberSecurity from "./components/Domains/CyberSecurity";
 import Web3 from "./components/Domains/Web3";
 import GameDev from "./components/Domains/GameDev";
+import RobotsHardware from "./components/Domains/RobotsHardware";
+
 function App() {
   return (
     <BrowserRouter>
@@ -45,6 +47,7 @@ function App() {
             <Route path="/cybersecurity" element={<CyberSecurity />} />
             <Route path="/web3" element={<Web3 />} />
             <Route path="/gamedev" element={<GameDev />} />
+            <Route path="/robotshardware" element={<RobotsHardware />} />
           </Routes>
         </div>
         <Footer />

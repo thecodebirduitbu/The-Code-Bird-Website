@@ -223,11 +223,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/robotshardware"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          Hardware
+                          Hardware / Robotics
                         </a>
                       </li>
                     </ul>
