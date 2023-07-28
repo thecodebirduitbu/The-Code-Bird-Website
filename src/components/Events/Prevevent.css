@@ -12,10 +12,6 @@
   padding: 7px;
   text-align: center;
 }
-.cardcontainer{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .card1 {
   position: relative;
