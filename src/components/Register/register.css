@@ -37,13 +37,13 @@
   width: 30px;
   background:linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.containerr .form2 .user-details{
+.containerr form .user-details{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
-.form2 .user-details .input-box{
+form .user-details .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
@@ -67,11 +67,11 @@
  .user-details .input-box input:valid{
   border-color:#9b59b6;
  }
- .form2 .domain-details .domain-title{
+ form .domain-details .domain-title{
   font-size: 20px;
   font-weight: 500;
  }
- .form2 .domain-details .category{
+ form .domain-details .category{
   /* display: flex; */
   width: 80%;
   margin: 14px 0;
@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
  }
- .domain-details .category .dot {
+ /* .domain-details .category .dot {
     height: 18px;
     width: 18px;
     background: #d9d9d9;
@@ -90,7 +90,7 @@
     margin-right: 10px;
     border: 5px solid transparent;
     transition: all 0.3s ease;
-  }
+  } */
   #dot-1:checked ~ .category label .one,
   #dot-2:checked ~ .category label .two,
   #dot-3:checked ~ .category label .three,
@@ -104,15 +104,20 @@
     background: #9b59b6;
   }
 
-.form2 input[type="radio"]{
+form input[type="radio"]{
   display: none;
  }
 
- .form2 .button{
+ /* .form2 input[type="checkbox"]{
+  display: none;
+ } */
+
+
+ form .button{
   height: 45px;
   margin: 45px e;
  }
-.form2 .button input{
+form .button input{
  height: 100%;
  width: 100%;
  outline: none;
@@ -122,11 +127,13 @@ font-size: 18px;
 font-weight: 500;
 border-radius: 5px;
 letter-spacing: 1px;
-background: linear-gradient(135deg,#71b7e6,  #9b59b6)
+background: linear-gradient(135deg,#71b7e6,  #9b59b6);
+cursor: pointer;
 }
 
-.form2 .button input:hover{
+form .button input:hover{
   background: linear-gradient(-135deg,#71b7e6,  #9b59b6)
+  
 }
 
 @media (max-width: 584px) {
@@ -134,14 +141,14 @@ background: linear-gradient(135deg,#71b7e6,  #9b59b6)
    max-width: 100%;
    margin-top: 350px;
  }
- .form2 .user-details .input-box{
+ form .user-details .input-box{
   margin-bottom: 15px;
   width: 100%;
  }
- .form2 .domain-details .category{
+ form .domain-details .category{
   width: 100%;
  }
- .containerr .form2 .user-details{
+ .containerr form .user-details{
    max-height: 300px;
    overflow-y: scroll;
  }

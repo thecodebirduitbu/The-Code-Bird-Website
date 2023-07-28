@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../images/logo.png";
-import "./footer.css";
+import "./footer.css"
 
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         <div className="col">
           <h3>Contact us<div className="underline"><span></span></div></h3>
-          <form>
+          <div className="form2">
             <i className="far "><FaEnvelope/></i>
             <input
               type="email"
@@ -67,7 +67,7 @@ const Footer = () => {
             <button type="submit">
               <i className="fas "><FaArrowRight/></i>
             </button>
-          </form>
+          </div>
           <div class="social-icons">
           <i className="fa"><FaLinkedin/></i>
           <i className="fa"><FaFacebook/></i>

@@ -4,6 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+   
   }
   .cardouterlayer{
     max-width: 80%;
@@ -22,7 +23,7 @@
   .cardContainer {
    width: 190px;
     height: 200px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
