@@ -174,11 +174,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/mlandai"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          ML/AI/DL
+                          ML/AI/DS
                         </a>
                       </li>
                     </ul>
@@ -196,7 +196,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="#"
+                          href="/cybersecurity"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -205,7 +205,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/web3"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -214,7 +214,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/gamedev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -223,11 +223,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/robotshardware"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          Hardware
+                          Hardware / Robotics
                         </a>
                       </li>
                     </ul>

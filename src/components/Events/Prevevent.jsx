@@ -65,42 +65,24 @@ const prevData = [
   },
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+
 
 const Prevevent = () => {
   return (
-     <div className="cardCarousel">
-      <Carousel className="gal" responsive={responsive} transitionDuration={1000}>
+     <div className="cardCarousel2">
+     
         {prevData.map((item, key) => {
           return (
-            <div className="card" key={key}>
+            <div className="card1" key={key}>
               <img src={item.imgUrl} alt="" />
-              <div className="card__content">
-                <p className="card__title">{item.name}</p>
-                <p className="card__description">{item.description}</p>
+              <div className="card__content1">
+                <p className="card__title1">{item.name}</p>
+                <p className="card__description1">{item.description}</p>
               </div>
             </div>
           );
         })}
-      </Carousel>
+  
     </div>
   );
 };
