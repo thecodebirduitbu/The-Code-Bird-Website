@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import './Events/Eventpg.css'
 import Prevevent from "./Events/Prevevent";
+import axios from "axios";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import imageCurrent from "../assets/Eventpics/event2.png";
@@ -15,7 +16,6 @@ const Eventpg = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
-
 
 
   return (
@@ -144,10 +144,10 @@ const Eventpg = () => {
           Past Events In The <span className="logoSpan">CodeBird</span>
         </h1>
       </div>
-
       <Prevevent />
     </section>
   );
 };
+
 
 export default Eventpg;
