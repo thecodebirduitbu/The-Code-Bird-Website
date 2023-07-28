@@ -1,8 +1,5 @@
 import React from "react";
 import "./Prevevent.css";
-import axios from "axios";
-import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
 import Image1 from "../../assets/Eventpics/event2.png";
 import Image2 from "../../assets/Eventpics/event3.png";
 import Image3 from "../../assets/Eventpics/event1.png";
