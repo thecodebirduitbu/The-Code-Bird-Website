@@ -6,7 +6,9 @@ import TestimonialsSlider from "../TestimonialsSlider/TestimonialsSlider";
 import BlogUI1 from "../Blog/BlogUI1";
 import Achivements from "../MyComponent/Achivements";
 
+
 export default function HomePages() {
+  
   return (
     //Its the Homepage / Index page of this site
     <div>
