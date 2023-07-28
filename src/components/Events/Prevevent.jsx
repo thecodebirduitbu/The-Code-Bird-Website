@@ -67,15 +67,15 @@ const prevData = [
 
 const Prevevent = () => {
   return (
-     <div className="cardCarousel">
+     <div className="cardCarousel2">
      
         {prevData.map((item, key) => {
           return (
-            <div className="card" key={key}>
+            <div className="card1" key={key}>
               <img src={item.imgUrl} alt="" />
-              <div className="card__content">
-                <p className="card__title">{item.name}</p>
-                <p className="card__description">{item.description}</p>
+              <div className="card__content1">
+                <p className="card__title1">{item.name}</p>
+                <p className="card__description1">{item.description}</p>
               </div>
             </div>
           );
