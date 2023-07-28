@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
  }
- .domain-details .category .dot {
+ /* .domain-details .category .dot {
     height: 18px;
     width: 18px;
     background: #d9d9d9;
@@ -90,7 +90,7 @@
     margin-right: 10px;
     border: 5px solid transparent;
     transition: all 0.3s ease;
-  }
+  } */
   #dot-1:checked ~ .category label .one,
   #dot-2:checked ~ .category label .two,
   #dot-3:checked ~ .category label .three,
@@ -107,6 +107,11 @@
 .form2 input[type="radio"]{
   display: none;
  }
+
+ /* .form2 input[type="checkbox"]{
+  display: none;
+ } */
+
 
  .form2 .button{
   height: 45px;

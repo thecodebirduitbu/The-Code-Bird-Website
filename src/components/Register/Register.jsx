@@ -124,141 +124,136 @@ function App() {
               </div>
             </div>
             <div class="domain-details">
-            <input type="radio" name="gender" id="dot-1"/>
-       <input type="radio" name="gender" id="dot-2"/>
-        <input type="radio" name="gender" id="dot-3"/>
-        <input type="radio" name="gender" id="dot-4"/>
-       <input type="radio" name="gender" id="dot-5"/>
-        <input type="radio" name="gender" id="dot-6"/>
-        <input type="radio" name="gender" id="dot-7"/>
-       <input type="radio" name="gender" id="dot-8"/>
-        <input type="radio" name="gender" id="dot-9"/>
+        {/* <input type="checkbox"  id="dot-1"/>
+       <input type="checkbox"  id="dot-2"/>
+        <input type="checkbox" id="dot-3"/>
+        <input type="checkbox"  id="dot-4"/>
+       <input type="checkbox" id="dot-5"/>
+        <input type="checkbox" id="dot-6"/>
+        <input type="checkbox" id="dot-7"/>
+       <input type="checkbox"  id="dot-8"/>
+        <input type="checkbox"  id="dot-9"/> */}
               <span class="domain-title">Domain of Interest</span>
               <div class="category">
-                <label for="dot-1">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot one"
+                    type="checkbox"
+                    id="dot-1"
                     name="domain"
                     value="Web Development"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Web Development" ? true : false
                     }
-                    id="dot-1"
                   />
-                  <span class="dot one"></span>
+                  
                   <span class="domain">Web Development</span>
                 </label>
-                <label for="dot-2">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot two"
+                    type="checkbox"
                     name="domain"
                     value="App Development"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "App Development" ? true : false
                     }
-                    id="dot-2"
+                    
                   />
-                  <span class="dot two"></span>
                   <span class="domain">App Development</span>
                 </label>
-                <label for="dot-3">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot three"
+                    type="checkbox"
                     name="domain"
                     value="ML/AI/DL"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "ML/AI/DL" ? true : false
                     }
-                    id="dot-3"
+
                   />
-                  <span class="dot three"></span>
                   <span class="domain">ML/AI/DL</span>
                 </label>
-                <label for="dot-4">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot four"
+                    type="checkbox"
                     name="domain"
                     value="Hardware"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Hardware" ? true : false
                     }
-                    id="dot-4"
+
                   />
-                  <span class="dot four"></span>
+          
                   <span class="domain">Hardware</span>
                 </label>
-                <label for="dot-5">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot five"
+                    type="checkbox"
                     name="domain"
                     value="CP/DSA"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "CP/DSA" ? true : false
                     }
-                    id="dot-5"
+          
                   />
-                  <span class="dot five"></span>
+  
                   <span class="domain">CP/DSA</span>
                 </label>
-                <label for="dot-6">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot six"
+                    type="checkbox"
                     name="domain"
                     value="Cybersecurity"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Cybersecurity" ? true : false
                     }
-                    id="dot-6"
+         
                   />
-                  <span class="dot six"></span>
                   <span class="domain">Cybersecurity</span>
                 </label>
-                <label for="dot-7">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot seven"
+                    type="checkbox"
                     name="domain"
                     value="Blockchain/Web3"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Blockchain/Web3" ? true : false
                     }
-                    id="dot-7"
+
                   />
-                  <span class="dot seven"></span>
                   <span class="domain">Blockchain/Web3</span>
                 </label>
-                <label for="dot-8">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot eight"
+                    type="checkbox"
                     name="domain"
                     value="Gate"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Gate" ? true : false
                     }
-                    id="dot-8"
+               
                   />
-                  <span class="dot eight"></span>
+          
                   <span class="domain">Gate</span>
                 </label>
-                <label for="dot-9">
-                  <input
-                    type="radio"
+                <label >
+                  <input className="dot nine"
+                    type="checkbox"
                     name="domain"
                     value="Game Development"
                     onChange={handleDomainChange}
                     checked={
                       formData.domain === "Game Development" ? true : false
                     }
-                    id="dot-9"
+
                   />
-                  <span class="dot nine"></span>
                   <span class="domain">Game Development</span>
                 </label>
               </div>
