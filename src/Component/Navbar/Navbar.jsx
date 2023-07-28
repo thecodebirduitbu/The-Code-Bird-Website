@@ -98,7 +98,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="/"
+                          href="/ourstory"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -107,7 +107,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/founders"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -125,7 +125,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/devteam"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -147,7 +147,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="#"
+                          href="/webdev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -156,16 +156,16 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/androiddev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          App
+                          Android
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/cpanddsa"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -174,11 +174,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/mlandai"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
-                          ML/AI/DL
+                          ML/AI/DS
                         </a>
                       </li>
                     </ul>
@@ -196,7 +196,7 @@ const Navbar = () => {
                     <ul className="dropdown__list">
                       <li>
                         <a
-                          href="#"
+                          href="/cybersecurity"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -205,7 +205,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/web3"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -214,7 +214,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/gamedev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
@@ -236,13 +236,10 @@ const Navbar = () => {
               </div>
             </li>
 
-            <li className="dropdown__item">
-              <div
-                className="nav__link dropdown__button"
-                onClick={() => toggleDropdown(1)}
-              >
+            <li>
+              <a href="/advisor" className="nav__link" onClick={toggleMenu}>
                 Advisor
-              </div>
+              </a>
             </li>
 
             <li>
@@ -258,7 +255,7 @@ const Navbar = () => {
             </li>
 
             <li className="dropdown__item">
-            <a href="/register" className="nav__link" onClick={toggleMenu}>
+              <a href="/register" className="nav__link" onClick={toggleMenu}>
                 Register
               </a>
             </li>

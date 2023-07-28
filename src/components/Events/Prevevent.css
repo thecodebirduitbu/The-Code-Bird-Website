@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    max-width: 70%;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: 60%;
     margin: 40px auto 0 auto;
 }
 .gal{
