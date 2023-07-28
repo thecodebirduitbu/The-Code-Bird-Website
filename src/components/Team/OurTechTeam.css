@@ -4,8 +4,6 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 30px;
-    gap: 2rem;
   }
   .cardouterlayer{
     max-width: 80%;
@@ -16,12 +14,12 @@
     row-gap: 5rem;
     flex-wrap: wrap;
   }
-  
+  .thisWev{
+    color: #915eff;
+  }
   
   
   .cardContainer {
-   /* width: 240px;
-    height: 260px; */
    width: 190px;
     height: 200px;
     background-color: rgb(255, 255, 255);
@@ -61,7 +59,6 @@
   }
   
   .cardContainer:hover .profileDiv { 
-    /* CHANGE KORECHI Y TA 20% CHILO */
     transform: translateX(-25%) translateY(-23.5%); 
     transition-duration: .5s;
   }
