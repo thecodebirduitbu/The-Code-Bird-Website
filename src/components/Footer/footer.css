@@ -63,7 +63,7 @@ ul li a{
     color: #fff;
 }
 
-form{
+ .form2{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -72,28 +72,28 @@ form{
     margin-bottom: 50px;
 }
 
-form .far{
+.form2 .far{
     font-size: 18px;
    margin-right: 10px;
 }
-form input{
+.form2 input{
    width: 100%;
     background: transparent;
     color: #ccc;
     border:0;
    outline: none;
 }
-form button{
+.form2 button{
     background: transparent;
     border:0;
     outline: none;
     cursor: pointer;
  }
 
- form button .fas{
+ .form2 button .fas{
     font-size: 16px;
     color: #ccc;
- }
+ } 
 
  .social-icons .fa {
     width: 40px;

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./register.css";
-import { Divider } from "@mui/material";
-// import './App.css';
+
 
 function App() {
   const [formData, setFormData] = useState({
@@ -45,7 +44,7 @@ function App() {
       <div className="body5 ">
         <div className="containerr">
           <div class="title">Registration</div>
-          <div className="form2" action="#" onSubmit={handleSubmit}>
+          <form  action="#" onSubmit={handleSubmit}>
             <div class="user-details">
               <div class="input-box">
                 <span class="details">Full Name</span>
@@ -124,15 +123,7 @@ function App() {
               </div>
             </div>
             <div class="domain-details">
-        {/* <input type="checkbox"  id="dot-1"/>
-       <input type="checkbox"  id="dot-2"/>
-        <input type="checkbox" id="dot-3"/>
-        <input type="checkbox"  id="dot-4"/>
-       <input type="checkbox" id="dot-5"/>
-        <input type="checkbox" id="dot-6"/>
-        <input type="checkbox" id="dot-7"/>
-       <input type="checkbox"  id="dot-8"/>
-        <input type="checkbox"  id="dot-9"/> */}
+
               <span class="domain-title">Domain of Interest</span>
               <div class="category">
                 <label >
@@ -261,7 +252,7 @@ function App() {
             <div class="button">
               <input type="submit" value="Register"></input>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

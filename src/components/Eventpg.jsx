@@ -115,7 +115,7 @@ const Eventpg = () => {
           </p>
 
           <p>
-            <span>Prof Sumit Guptaaaaaa</span>
+            <span>Prof Sumit Gupta</span>
             <br />
             <span>Faculty Advisor, The Code Bird &</span>
             <br />
