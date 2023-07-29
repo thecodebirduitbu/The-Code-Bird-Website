@@ -23,9 +23,9 @@ function TestimonialsSlider() {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatibus quibusdam, eligendi exercitationem molestias
-                possimus facere.
+                The CodeBird coding club at University Institute of Technology,
+                Burdwan, is known for its innovation, diverse offerings, and
+                fostering skill development in a collaborative coding culture.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -62,9 +62,10 @@ function TestimonialsSlider() {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatibus quibusdam, eligendi exercitationem molestias
-                possimus facere.
+                The CodeBird excels in its unique structure, encouraging members
+                to explore diverse domains like web development, data science,
+                mobile apps, and competitive coding, helping each member find
+                their niche and thrive.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -83,8 +84,8 @@ function TestimonialsSlider() {
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
-              <p className="text-xl font-semibold leading-tight">Anuraj</p>
-              <p className="text-sm uppercase">Dev</p>
+              <p className="text-xl font-semibold leading-tight">Anuraj Kumar</p>
+              <p className="text-sm uppercase">Web-Dev lead of The Codebird</p>
             </div>
           </div>
           <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
@@ -99,9 +100,10 @@ function TestimonialsSlider() {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatibus quibusdam, eligendi exercitationem molestias
-                possimus facere.
+                The CodeBird's commitment to skill development is evident
+                through coding challenges and hands-on workshops. Engaging
+                members in real-world projects enhances coding skills,
+                problem-solving, and teamwork.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -120,8 +122,8 @@ function TestimonialsSlider() {
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
-              <p className="text-xl font-semibold leading-tight">Aditya</p>
-              <p className="text-sm uppercase">Dev</p>
+              <p className="text-xl font-semibold leading-tight">Aditya Raj</p>
+              <p className="text-sm uppercase">Android/DSA lead of The Codebird</p>
             </div>
           </div>
           <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
@@ -136,9 +138,9 @@ function TestimonialsSlider() {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatibus quibusdam, eligendi exercitationem molestias
-                possimus facere.
+                The CodeBird's dedication to open-source contributions is
+                commendable. Encouraging members to contribute to larger
+                projects promotes knowledge-sharing and collaboration globally.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -157,8 +159,8 @@ function TestimonialsSlider() {
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
-              <p className="text-xl font-semibold leading-tight">Rajdeep</p>
-              <p className="text-sm uppercase">Dev</p>
+              <p className="text-xl font-semibold leading-tight">Mohtasheem Ejaz</p>
+              <p className="text-sm uppercase">President of the Codebird</p>
             </div>
           </div>
         </div>

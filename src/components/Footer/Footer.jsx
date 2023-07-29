@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="col">
-          <h3>Office<div className="underline"><span></span></div></h3>
+          <h3>Office<div className="underline2"><span></span></div></h3>
           <p>Golapbag Road</p>
           <p>Golapbag, Burdwan</p>
           <p>Golapbag, PIN 777777, India</p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         <div className="col">
-          <h3>Links<div className="underline"><span></span></div></h3>
+          <h3>Links<div className="underline2"><span></span></div></h3>
           <ul>
             <li>
               <a href="/">Home</a>
@@ -56,7 +56,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col">
-          <h3>Contact us<div className="underline"><span></span></div></h3>
+          <h3>Contact us<div className="underline2"><span></span></div></h3>
           <div className="form2">
             <i className="far "><FaEnvelope/></i>
             <input
