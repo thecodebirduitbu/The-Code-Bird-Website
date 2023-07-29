@@ -62,6 +62,17 @@ app.post('/register', async (req, res) => {
 });
 
 
+app.get("/events", async(res, req) => {
+    try{
+        const events = await Event.find({});
+        res.json(events);
+    }
+    catch(error){
+        res.status(500).json({ error: "Internal server error"});
+    }
+});
+
+
 app.listen(PORT, () => {
     console.log(`server started on port ${PORT}`)
 })
