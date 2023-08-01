@@ -12,7 +12,7 @@ const Achievements = () => {
           Achievements
         </h2>
       </div>
-      <section className="text-gray-700 body-font">
+      <section className="">
         <div className="container px-2 py-24 mx-auto">
           <div className="flex flex-row -m-4 text-center">
             <div className="p-4 lg:w-1/4 md:w-1/2">
