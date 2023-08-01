@@ -13,7 +13,7 @@ const teamMembersData = [
   },
   {
     name: "Anuraj Kumar",
-    position: "Web Developer",
+    position: "Developer",
     image: "demoimg.png",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
@@ -22,7 +22,7 @@ const teamMembersData = [
   },
   {
     name: "Amrit Dhandharia",
-    position: "Web Developer",
+    position: "Developer",
     image: "demoimg.png",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
@@ -31,7 +31,7 @@ const teamMembersData = [
   },
   {
     name: "Puskar Roy",
-    position: "Web Developer",
+    position: "Developer",
     image: "demoimg.png",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
