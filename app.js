@@ -1,67 +1,35 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const mongoose = require('mongoose');
-// import User from "./models/user"
-const User = require('./models/user');
-require('dotenv').config()
-
-
+const dotenv = require("dotenv");
+const cokkie = require("cookie-parser");
+const router = require('./router/route');
 const app = express();
-const PORT = 8000;
+dotenv.config();
+const PORT = process.env.PORT || 9000; 
+require('./database/connectDatabase')
 
+
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true,
+};
+app.use(cors(corsOptions));
+app.use(cokkie());
 app.use(bodyParser.json());
-app.use(cors());
-
-
-const mongoURI = process.env.MONGODB_URI;
-mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-
-// const PORT = process.env.PORT || 8000; 
-// app.use(express.json());
-
-
-app.post('/register', async (req, res) => {
-    const {
-    fullName,
-    roll,
-    branch,
-    batch,
-    age,
-    contactNumber,
-    dob,
-    domain
-    } = req.body;
-
-    try {
-        const newUser = new User({
-            fullName,
-            roll,
-            branch,
-            batch,
-            age,
-            contactNumber,
-            dob,
-            domain
-        })
-
-        await newUser.save();
-        res.status(201).json({
-            message: "User registered successfully",
-        });
+app.use(express.urlencoded({ extended: true }));
+app.use("/api",router);
+app.get("/events", async(res, req) => {
+    try{
+        const events = await Event.find({});
+        res.json(events);
     }
-    catch (error) {
-        console.error("Error saving user:", error);
-        res.status(500).json({
-            error: "Failed to register user"
-        });
+    catch(error){
+        res.status(500).json({ error: "Internal server error"});
     }
 });
 
 
 app.listen(PORT, () => {
-    console.log(`server started on port ${PORT}`)
+   console.log(`Server started on port ${PORT}`)
 })

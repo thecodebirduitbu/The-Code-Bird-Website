@@ -8,7 +8,6 @@ import AboutUs from "./Component/Aboutus/AboutUs";
 import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
-import Register from "./components/Register/Register";
 import Advisor from "./components/Advisor/Advisor";
 import Founders from "./components/CodebirdTeamMegaNav/Founders";
 import OurStory from "./components/CodebirdTeamMegaNav/OurStory";
@@ -21,6 +20,9 @@ import CyberSecurity from "./components/Domains/CyberSecurity";
 import Web3 from "./components/Domains/Web3";
 import GameDev from "./components/Domains/GameDev";
 import RobotsHardware from "./components/Domains/RobotsHardware";
+import RegisterCodebird from "./components/RegisterCoadbird/RegisterCoadbird";
+import Payment from "./components/RegisterCoadbird/Payment";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
             <Route path="/faQs" element={<FAQComponent />} />
             <Route path="/team" element={<Team />} />
             <Route path="/event" element={<Eventpg />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Payment/>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/membership" element={<RegisterCodebird />} />
             <Route path="/ourstory" element={<OurStory />} />
             <Route path="/founders" element={<Founders />} />
             <Route path="/devteam" element={<DevTeam />} />
