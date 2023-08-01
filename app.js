@@ -9,6 +9,7 @@ dotenv.config();
 const PORT = process.env.PORT || 9000; 
 require('./database/connectDatabase')
 
+
 const corsOptions = {
   origin: "http://localhost:3000",
   credentials: true,
@@ -18,6 +19,18 @@ app.use(cokkie());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api",router);
+=======
+app.get("/events", async(res, req) => {
+    try{
+        const events = await Event.find({});
+        res.json(events);
+    }
+    catch(error){
+        res.status(500).json({ error: "Internal server error"});
+    }
+});
+
+
 app.listen(PORT, () => {
    console.log(`Server started on port ${PORT}`)
 })
