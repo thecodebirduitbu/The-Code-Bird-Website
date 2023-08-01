@@ -32,7 +32,7 @@ const teamMembersData = [
   {
     name: "Puskar Roy",
     position: "Developer",
-    image: "Puskar.jpeg",
+    image: "Pushkar.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
     instagram: "https://instagram.com/link",
