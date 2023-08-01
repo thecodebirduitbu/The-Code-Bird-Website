@@ -16,7 +16,7 @@ const Achievements = () => {
         <div className="container px-2 py-24 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 mx-auto text-center">
             <div className="p-4  ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiCheckCircle className="text-white w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   100+
@@ -25,7 +25,7 @@ const Achievements = () => {
               </div>
             </div>
             <div className="p-4  ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiUsers className="text-white w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   150+
@@ -34,7 +34,7 @@ const Achievements = () => {
               </div>
             </div>
             <div className="p-4  ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiCalendar className="text-white w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   70+
@@ -43,7 +43,7 @@ const Achievements = () => {
               </div>
             </div>
             <div className="p-4  ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiCalendar className="text-white w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   70+
