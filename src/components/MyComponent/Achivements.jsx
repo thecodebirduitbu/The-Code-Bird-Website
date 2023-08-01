@@ -14,7 +14,7 @@ const Achievements = () => {
       </div>
       <section className="">
         <div className="container px-2 py-24 mx-auto">
-          <div className="flex flex-row justify-between text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 mx-auto text-center">
             <div className="p-4  ">
               <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
                 <FiCheckCircle className="text-white w-12 h-12 mb-3 inline-block" />
