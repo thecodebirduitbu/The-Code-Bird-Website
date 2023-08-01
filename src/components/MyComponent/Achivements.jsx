@@ -19,7 +19,7 @@ const Achievements = () => {
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiCheckCircle className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  100+
+                  50+
                 </h2>
                 <p className="leading-relaxed">Projects</p>
               </div>
@@ -28,25 +28,25 @@ const Achievements = () => {
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiUsers className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  150+
+                  350+
                 </h2>
-                <p className="leading-relaxed">Participant</p>
+                <p className="leading-relaxed">Members</p>
               </div>
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
                 <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  70+
+                  25+
                 </h2>
                 <p className="leading-relaxed">Events</p>
               </div>
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
+                <FiAward className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  20+
+                  15+
                 </h2>
                 <p className="leading-relaxed">Mentorship Programs</p>
               </div>
