@@ -1,106 +1,54 @@
 import React from "react";
-import "./style.css"; // Import the custom CSS file
+import { FiCheckCircle, FiUsers, FiCalendar, FiAward } from "react-icons/fi";
 
-const Achivements = () => {
+const Achievements = () => {
   return (
-    <div>
-      <div className="sm:px-16 px-6 ">
-        <p
-          className={
-            " sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"
-          }
-        >
+    <div className="">
+      <div className="px-6">
+        <p className="text-[18px] sm:text-[14px] text-secondary uppercase tracking-wider">
           The codebird
         </p>
-        <h2
-          className={
-            "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
-          }
-        >
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Achievements
         </h2>
       </div>
-      <section className="text-gray-700 body-font">
+      <section className="">
         <div className="container px-2 py-24 mx-auto">
-          <div className="flex flex-row -m-4 text-center">
-            <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="text-gray-200 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                  <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                </svg>
+          <div className="grid grid-cols-2 md:grid-cols-4 mx-auto text-center">
+            <div className="p-4  ">
+              <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
+                <FiCheckCircle className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  100+
+                  50+
                 </h2>
                 <p className="leading-relaxed">Projects</p>
               </div>
             </div>
-            <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="text-gray-200 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                </svg>
+            <div className="p-4  ">
+              <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
+                <FiUsers className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  150+
+                  350+
                 </h2>
-                <p className="leading-relaxed">Participant</p>
+                <p className="leading-relaxed">Members</p>
               </div>
             </div>
-            <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="text-gray-200 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                  <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-                </svg>
+            <div className="p-4  ">
+              <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
+                <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  70+
+                  25+
                 </h2>
-                <p className="leading-relaxed">Hosting Events</p>
+                <p className="leading-relaxed">Events</p>
               </div>
             </div>
-            <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="text-gray-200 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+            <div className="p-4  ">
+              <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
+                <FiAward className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  50+
+                  15+
                 </h2>
-                <p className="leading-relaxed">Mentorship Program</p>
+                <p className="leading-relaxed">Mentorship Programs</p>
               </div>
             </div>
           </div>
@@ -110,4 +58,4 @@ const Achivements = () => {
   );
 };
 
-export default Achivements;
+export default Achievements;
