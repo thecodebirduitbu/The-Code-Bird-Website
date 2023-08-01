@@ -3,26 +3,42 @@ import OurTechTeam from "../Team/OurTechTeam";
 import "../Team/OurTechTeam.css";
 const teamMembersData = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    imgUrl: "john-doe-img-url.jpg",
-    github: "https://github.com/johndoe",
-    linkedin: "https://linkedin.com/in/johndoe",
-    // No Instagram or Facebook links for John Doe
+    name: "@ImKKingshuk",
+    position: "Developer",
+    image: "demoimg.png",
+    github: "https://github.com/ImKKingshuk",
+    linkedin: "https://linkedin.com/in/",
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/",
   },
   {
-    name: "Jane Smith",
+    name: "Anuraj Kumar",
     position: "Web Developer",
-    imgUrl: "jane-smith-img-url.jpg",
-    github: "https://github.com/janesmith",
-    linkedin: "https://linkedin.com/in/janesmith",
-    instagram: "https://instagram.com/janesmith",
-    facebook: "https://facebook.com/janesmith",
+    image: "demoimg.png",
+    github: "https://github.com/link",
+    linkedin: "https://linkedin.com/in/link",
+    instagram: "https://instagram.com/link",
+    facebook: "https://facebook.com/link",
   },
-  // Add more team members as needed
+  {
+    name: "Amrit Dhandharia",
+    position: "Web Developer",
+    image: "demoimg.png",
+    github: "https://github.com/link",
+    linkedin: "https://linkedin.com/in/link",
+    instagram: "https://instagram.com/link",
+    facebook: "https://facebook.com/link",
+  },
+  {
+    name: "Puskar Roy",
+    position: "Web Developer",
+    image: "demoimg.png",
+    github: "https://github.com/link",
+    linkedin: "https://linkedin.com/in/link",
+    instagram: "https://instagram.com/link",
+    facebook: "https://facebook.com/link",
+  },
 ];
-
-// In your parent component
 
 function DevTeam() {
   return (

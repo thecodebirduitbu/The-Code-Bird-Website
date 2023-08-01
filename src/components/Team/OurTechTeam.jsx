@@ -10,7 +10,7 @@ function OurTechTeam({ teamMembers }) {
           return (
             <div key={index} className="cardContainer">
               <div className="profileDiv">
-                <img src={item.imgUrl} alt="img" />
+                <img src={`/eventimg/${image}`} alt="img" />
               </div>
               <div className="infoDiv">
                 <div className="nameDiv">
