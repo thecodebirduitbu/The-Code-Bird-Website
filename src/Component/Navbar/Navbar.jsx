@@ -237,8 +237,8 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="/advisor" className="nav__link" onClick={toggleMenu}>
-                Advisor
+              <a href="/membership" className="nav__link" onClick={toggleMenu}>
+                Membership
               </a>
             </li>
 
@@ -257,6 +257,11 @@ const Navbar = () => {
             <li className="dropdown__item">
               <a href="/register" className="nav__link" onClick={toggleMenu}>
                 Register
+              </a>
+            </li>
+            <li className="dropdown__item">
+              <a href="/login" className="nav__link" onClick={toggleMenu}>
+                Login
               </a>
             </li>
           </ul>

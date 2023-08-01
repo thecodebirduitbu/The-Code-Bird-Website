@@ -1,13 +1,30 @@
-import React, { useCallback } from "react";
+import React, { useCallback , useEffect } from "react";
 import './Events/Eventpg.css'
 import Prevevent from "./Events/Prevevent";
 import axios from "axios";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import imageCurrent from "../assets/Eventpics/event2.png";
+import { useNavigate } from "react-router-dom";
 
 
 const Eventpg = () => {
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    axios
+      .get("http://localhost:9000/api/user", {
+        withCredentials: true,
+      })
+      .then((response) => {
+        const { name, email, phone } = response.data.data;
+      })
+      .catch((error) => {
+        navigate("/login");
+        console.log(error);
+      });
+  }, []);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -17,7 +34,12 @@ const Eventpg = () => {
     await console.log(container);
   }, []);
 
-
+  const compitition = "Coading"
+  const evnImg ="https://hips.hearstapps.com/hmg-prod/images/quiz-questions-answers-1669651278.jpg";
+  const programDate = "Friday, 25-11-2022";
+  const deadline = "Thursday, 24-11-2022, latest by 12 noon";
+  const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi alias ipsum similique, vel ipsam cum. Alias consequatur quae omnis placeat minus nam hic voluptatem accusamus! Error, ratione. Qui eius voluptate in alias itaque dignissimos nemo numquam porro voluptatibus unde."
+  
   return (
     <section className="eventPageContainer">
       <div>
@@ -101,17 +123,13 @@ const Eventpg = () => {
         </h1>
         <div className="contentPresent">
           <h1>
-            Poster Making <span className="presentHeading">Compitition</span>
+            {compitition} <span className="presentHeading">Compitition</span>
           </h1>
           <p>
             <span>Hello Everyone</span>
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            eligendi alias ipsum similique, vel ipsam cum. Alias consequatur
-            quae omnis placeat minus nam hic voluptatem accusamus! Error,
-            ratione. Qui eius voluptate in alias itaque dignissimos nemo numquam
-            porro voluptatibus unde.
+            {description}
           </p>
 
           <p>
@@ -123,8 +141,8 @@ const Eventpg = () => {
           </p>
           <p>
             <span className="details"> Event Details :-</span> <br />
-            <br /> 🟣 Programme Date: Friday, 25-11-2022 <br /> 🟣 Registration
-            Deadline: Thursday, 24-11-2022, latest by 12 noon <br /> 🟣 Mode :
+            <br /> 🟣 Programme Date: {programDate} <br /> 🟣 Registration
+            Deadline:{deadline} <br /> 🟣 Mode :
             Offline at UIT Campus <br />
             <br />
             <span className="note">
@@ -133,10 +151,9 @@ const Eventpg = () => {
               year can register irrespective of their branch.
             </span>
           </p>
-
           <button className="presentBtn">Register Now</button>
         </div>
-        <img src={imageCurrent} alt="" />
+        <img src={evnImg} alt="" />
       </div>
 
       <div className="containerPast">
