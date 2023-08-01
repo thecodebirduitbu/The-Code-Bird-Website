@@ -43,7 +43,7 @@ const teamMembersData = [
 function DevTeam() {
   return (
     <div className="py-[10rem]">
-      <h1 className="text-[3rem] text-center text-white">
+      <h1 className="text-[2rem] text-center text-white">
         Developers of <span className="thisWev">this Website</span>
       </h1>
       <div className="pt-10">
