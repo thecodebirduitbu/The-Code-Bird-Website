@@ -1,84 +1,119 @@
-import React,{useState , useCallback} from 'react'
+import React, { useState, useCallback, useEffect } from "react";
 import "./Registercb.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import axios from 'axios';
-import { Toaster,toast} from 'react-hot-toast'
+import axios from "axios";
+import { Toaster, toast } from "react-hot-toast";
+import { useNavigate } from 'react-router-dom'
+
+
+
 
 const RegisterCodebird = () => {
+  const navigate = useNavigate();
 
-const [formData, setFormData] = useState({
-  name: "",
-  roll: "",
-  domain: "GATE",
-  department:"CSE",
-  batch:"",
-  age:"",
-  phone:"",
-  dob:""
-});
-
-const handleInputChange = (event) => {
-  const { name, value } = event.target;
-  setFormData({
-    ...formData,
-    [name]: value,
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
   });
-};
+    
+  useEffect(() => {
+    axios
+      .get("http://localhost:9000/api/user", {
+        withCredentials: true,
+      })
+      .then((response) => {
+        const { name, email, phone } = response.data.data;
+        setFormData({
+          name: name,
+          email: email,
+          phone: phone,
+        });
+      })
+      .catch((error) => {
+        navigate('/login');
+        console.log(error);
+      });
+  }, []);
 
-const numberAsString = formData.roll.toString();
-const length = numberAsString.length;
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-const registerUserSubmit =async (e) => {
+  const numberAsString = formData.phone.toString();
+  const length = numberAsString.length;
+
+ 
+  const registerUserSubmitt = async (e) => {
     e.preventDefault();
-    if ( !formData.name || !formData.roll || !formData.domain || !formData.department || !formData.batch || !formData.age || !formData.dob || !formData.phone) {
-       toast.error("Please fill all required fields!");
-    }else if(length !== 8){
-       toast.error("Please fill a valid Roll Number!");
-    }
-    else{
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone
+    ){
+      toast.error("Please fill all required fields!");
+    } else if (length !== 10) {
+      toast.error("Please fill a valid Mobile Number!");
+    } else {
       try {
+        const data = await axios.get("http://localhost:9000/api/razor/key");
         const response = await axios.post(
-          `http://localhost:8000/api/register`,
-          formData
+          "http://localhost:9000/api/paymentVerify",
+          { amount: 1 }
         );
         if (response) {
-          toast.success("Registration successfully!");
+          const options = {
+            key: data.data.key, 
+            amount: response.data.amount,
+            currency: "INR",
+            name: "The CodeBird",
+            description: "Become A Member Of The CodeBird",
+            image:
+              "https://media.licdn.com/dms/image/C4D0BAQGlAGVKIGb3ag/company-logo_200_200/0/1611584390861?e=1698883200&v=beta&t=y25gPNGkqTgJOB42gmO5UrXmMTKg438a8KAT8VWkt_w",
+            order_id: response.data.id,
+            callback_url: "http://localhost:9000/api/payment",
+            prefill: {
+              name: formData.name,
+              email: formData.email,
+              contact: formData.phone,
+            },
+            notes: {
+              address: "UIT,BU",
+            },
+            theme: {
+              color: "#915eff",
+            }
+          };
+          const razor = new window.Razorpay(options);
+          razor.open();
         } else {
-          toast.error("Registration Failed!");
+          toast.error("Payment Failed!");
         }
       } catch (error) {
-        console.log(error);
-        toast.error("Registration Failed!");
+        toast.error("Payment Failed!");
       }
     }
-    
-   setFormData({
-     ...formData,
-     name: "",
-     roll: "",
-     domain: "GATE",
-     department: "CSE",
-     batch: "",
-     age: "",
-     phone: "",
-     dob: "",
-   });
-  }
 
+    setFormData({
+      ...formData,
+      name: "",
+      phone: "",
+      email: "",
+    });
+  };
 
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
 
-    const particlesInit = useCallback(async (engine) => {
-      // console.log(engine);
-      await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-      await console.log(container);
-    }, []);
-
-
-
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
 
   return (
     <div className="registerContainer">
@@ -159,138 +194,58 @@ const registerUserSubmit =async (e) => {
         <h1>
           Become A Member Of <span className="brand">The CodeBird</span>
         </h1>
-        <h2>
-          Register <span className="brand">Here</span>
-        </h2>
+        <h4>
+          Join Our <span className="brand">Community</span>
+        </h4>
 
-        <form className="form" onSubmit={registerUserSubmit}>
-          <div className="formSet">
-            <div className="inputs">
-              <label htmlFor="name">Full Name</label>
-              <input
-                name="name"
-                type="text"
-                placeholder="Enter Your Name..."
-                className="input"
-                id="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="inputs">
-              <label htmlFor="roll">Roll</label>
-              <input
-                name="roll"
-                type="number"
-                placeholder="Enter Your Roll..."
-                className="input"
-                id="roll"
-                value={formData.roll}
-                onChange={handleInputChange}
-              />
-            </div>
+        <form className="form Payment" onSubmit={registerUserSubmitt}>
+          <div className="inputs">
+            <label htmlFor="name">Full Name</label>
+            <input
+              name="name"
+              type="text"
+              placeholder="Enter Your Name..."
+              className="input"
+              id="name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
           </div>
-          <div className="formSet">
-            <div className="inputs">
-              <label htmlFor="department">Department</label>
-              <select
-                id="department"
-                name="department"
-                value={formData.department}
-                onChange={handleInputChange}
-              >
-                <option value="CSE">
-                  Computer Science & Engineering (CSE)
-                </option>
-                <option value="IT">Information Technology (IT)</option>
-                <option value="ECE">
-                  Electronics & Communication Engineering (ECE)
-                </option>
-                <option value="EE">Electrical Engineering (EE)</option>
-                <option value="CE">Civil Engineering (CE)</option>
-                <option value="AEIE">
-                  Applied Electronics & Instrumentation Engineering (AEIE)
-                </option>
-              </select>
-            </div>
-            <div className="inputs">
-              <label htmlFor="batch">Batch</label>
-              <input
-                name="batch"
-                type="text"
-                placeholder="Enter Your Batch..."
-                className="input"
-                id="batch"
-                value={formData.batch}
-                onChange={handleInputChange}
-              />
-            </div>
+          <div className="inputs">
+            <label htmlFor="roll">Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter Your Email..."
+              className="input"
+              id="email"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
           </div>
-          <div className="formSet">
-            <div className="inputs">
-              <label htmlFor="age">Age</label>
-              <input
-                name="age"
-                type="number"
-                placeholder="Enter Your Age..."
-                className="input"
-                id="age"
-                value={formData.age}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="inputs">
-              <label htmlFor="phone">Contact Number</label>
-              <input
-                name="phone"
-                type="number"
-                placeholder="Enter Your Contact Number..."
-                className="input"
-                id="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-              />
-            </div>
+          <div className="inputs">
+            <label htmlFor="phone">Contact Number</label>
+            <input
+              name="phone"
+              type="number"
+              placeholder="Enter Your Contact Number..."
+              className="input"
+              id="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+            />
           </div>
-          <div className="formSet">
-            <div className="inputs">
-              <label htmlFor="dob">DOB</label>
-              <input
-                name="dob"
-                type="date"
-                placeholder="Enter Your DOB..."
-                className="input"
-                id="dob"
-                value={formData.dob}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="inputs">
-              <label htmlFor="domain">Select Domain</label>
-              <select
-                id="domain"
-                name="domain"
-                value={formData.domain}
-                onChange={handleInputChange}
-              >
-                <option value="GATE">GATE</option>
-                <option value="WebDevelopment">Web Development</option>
-                <option value="Web3">Web 3.0/Blockchain</option>
-                <option value="Ai/Ml/DL">Ai/Ml/DL</option>
-                <option value="AndroidDevelopment">Android Development</option>
-                <option value="DSA/CP">DSA/CP</option>
-                <option value="CyberSecurity">Cyber Security</option>
-                <option value="GameDevlopment">Game Devlopment</option>
-                <option value="Hardware">Hardware</option>
-              </select>
-            </div>
-          </div>
-          <input type="submit" value={"Register"} className="regBtn" />
+
+          <input
+            type="submit"
+            value={"Proceed to Payment "}
+            className="registerPBtn"
+          />
         </form>
       </div>
       <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
-}
+};
 
-export default RegisterCodebird
+export default RegisterCodebird;

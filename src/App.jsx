@@ -21,6 +21,8 @@ import Web3 from "./components/Domains/Web3";
 import GameDev from "./components/Domains/GameDev";
 import RobotsHardware from "./components/Domains/RobotsHardware";
 import RegisterCodebird from "./components/RegisterCoadbird/RegisterCoadbird";
+import Payment from "./components/RegisterCoadbird/Payment";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
             <Route path="/faQs" element={<FAQComponent />} />
             <Route path="/team" element={<Team />} />
             <Route path="/event" element={<Eventpg />} />
-            <Route path="/register" element={<RegisterCodebird />} />
+            <Route path="/register" element={<Payment/>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/membership" element={<RegisterCodebird />} />
             <Route path="/ourstory" element={<OurStory />} />
             <Route path="/founders" element={<Founders />} />
             <Route path="/devteam" element={<DevTeam />} />

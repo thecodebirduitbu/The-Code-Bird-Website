@@ -233,6 +233,7 @@ a {
 }
 .dropdown__link:hover {
   color: var(--title-color);
+  /* color: yellow; */
 }
 
 /* Rotate dropdown icon */
