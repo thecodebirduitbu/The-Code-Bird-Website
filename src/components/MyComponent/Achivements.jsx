@@ -14,21 +14,10 @@ const Achievements = () => {
       </div>
       <section className="">
         <div className="container px-2 py-24 mx-auto">
-          <div className="flex flex-row -m-4 text-center">
-            <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="text-gray-200 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                  <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                </svg>
+          <div className="grid grid-cols-2 md:grid-cols-4 mx-auto text-center">
+            <div className="p-4  ">
+              <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
+                <FiCheckCircle className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   50+
                 </h2>
