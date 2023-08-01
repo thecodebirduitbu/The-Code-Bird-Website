@@ -34,11 +34,12 @@ const Eventpg = () => {
     await console.log(container);
   }, []);
 
-  const compitition = "Quize"
+  const compitition = "Coading"
   const evnImg ="https://hips.hearstapps.com/hmg-prod/images/quiz-questions-answers-1669651278.jpg";
   const programDate = "Friday, 25-11-2022";
   const deadline = "Thursday, 24-11-2022, latest by 12 noon";
   const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi alias ipsum similique, vel ipsam cum. Alias consequatur quae omnis placeat minus nam hic voluptatem accusamus! Error, ratione. Qui eius voluptate in alias itaque dignissimos nemo numquam porro voluptatibus unde."
+  
   return (
     <section className="eventPageContainer">
       <div>
