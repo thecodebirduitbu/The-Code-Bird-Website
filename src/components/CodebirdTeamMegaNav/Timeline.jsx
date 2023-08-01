@@ -10,7 +10,7 @@ function TimelineCard({ date, description, image, index }) {
 
   return (
     <motion.div
-      className={`flex mx-auto mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96 ${
+      className={`flex mx-auto mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-80 md:w-[30rem] ${
         index % 2 === 0 ? "self-start" : "self-end"
       }`}
       data-aos={cardAnimation}
