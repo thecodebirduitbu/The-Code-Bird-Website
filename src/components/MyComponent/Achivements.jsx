@@ -26,7 +26,7 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiUsers className="text-white w-12 h-12 mb-3   " />
+                <FiUsers className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   150+
                 </h2>
@@ -35,7 +35,7 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiCalendar className="text-white w-12 h-12 mb-3   " />
+                <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   70+
                 </h2>
@@ -44,7 +44,7 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiCalendar className="text-white w-12 h-12 mb-3   " />
+                <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   70+
                 </h2>
