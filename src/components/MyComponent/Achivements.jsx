@@ -14,8 +14,8 @@ const Achievements = () => {
       </div>
       <section className="">
         <div className="container px-2 py-24 mx-auto">
-          <div className="flex flex-row -m-4 text-center">
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className="flex flex-row justify-between text-center">
+            <div className="p-4  ">
               <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
                 <FiCheckCircle className="text-white w-12 h-12 mb-3 inline-block" />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
@@ -24,7 +24,7 @@ const Achievements = () => {
                 <p className="leading-relaxed">Projects</p>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+            <div className="p-4  ">
               <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
                 <FiUsers className="text-white w-12 h-12 mb-3 inline-block" />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
@@ -33,7 +33,7 @@ const Achievements = () => {
                 <p className="leading-relaxed">Participant</p>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+            <div className="p-4  ">
               <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
                 <FiCalendar className="text-white w-12 h-12 mb-3 inline-block" />
                 <h2 className="title-font font-medium text-3xl text-gray-900">
