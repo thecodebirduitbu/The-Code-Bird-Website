@@ -5,7 +5,7 @@ const teamMembersData = [
   {
     name: "@ImKKingshuk",
     position: "Developer",
-    image: "demoimg.png",
+    image: "Kingshuk.jpeg",
     github: "https://github.com/ImKKingshuk",
     linkedin: "https://linkedin.com/in/",
     instagram: "https://instagram.com/",
@@ -14,7 +14,7 @@ const teamMembersData = [
   {
     name: "Anuraj Kumar",
     position: "Developer",
-    image: "demoimg.png",
+    image: "Anuraj.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
     instagram: "https://instagram.com/link",
@@ -23,7 +23,7 @@ const teamMembersData = [
   {
     name: "Amrit Dhandharia",
     position: "Developer",
-    image: "demoimg.png",
+    image: "Amrit.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
     instagram: "https://instagram.com/link",
@@ -32,7 +32,7 @@ const teamMembersData = [
   {
     name: "Puskar Roy",
     position: "Developer",
-    image: "demoimg.png",
+    image: "Puskar.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
     instagram: "https://instagram.com/link",
