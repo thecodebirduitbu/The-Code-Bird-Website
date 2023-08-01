@@ -39,16 +39,7 @@ const Achievements = () => {
                 <h2 className="title-font font-medium text-3xl text-gray-900">
                   70+
                 </h2>
-                <p className="leading-relaxed">Hosting Events</p>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <FiAward className="text-white w-12 h-12 mb-3 inline-block" />
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  50+
-                </h2>
-                <p className="leading-relaxed">Mentorship Program</p>
+                <p className="leading-relaxed">Events</p>
               </div>
             </div>
           </div>
