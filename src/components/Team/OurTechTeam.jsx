@@ -4,8 +4,8 @@ import "./OurTechTeam.css";
 
 function OurTechTeam({ teamMembers }) {
   return (
-    <div>
-      <div className="cardouterlayer">
+    <div className="mx-auto">
+      <div className=" cardouterlayer ">
         {teamMembers.map((item, index) => {
           return (
             <div key={index} className="cardContainer">
