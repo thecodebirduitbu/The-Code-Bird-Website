@@ -19,7 +19,6 @@ app.use(cokkie());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api",router);
-=======
 app.get("/events", async(res, req) => {
     try{
         const events = await Event.find({});
