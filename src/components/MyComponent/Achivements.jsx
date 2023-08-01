@@ -24,8 +24,7 @@ const Achivements = () => {
         <div className="container px-2 py-24 mx-auto">
           <div className="flex flex-row -m-4 text-center">
             <div className="p-1 lg:w-full ">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-              
+              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">   
                 <svg
                   fill="none"
                   stroke="currentColor"
