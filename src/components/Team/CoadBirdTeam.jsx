@@ -87,48 +87,49 @@ const teamMembers = [
 
 const CoadBirdTeam = () => {
   return (
-    <section className="our__team">
-      <div className="container">
-        <div className="team__content">
-          {/* <h6 className="subtitle">Our Core Team</h6> */}
-          <h2>
-            Our <span className="highlight">Core Team</span>
-          </h2>
-        </div>
-        <div className="team__wrapper">
-          {teamMembers.map((item, index) => (
-            <div className="team__item"  key={index}>
-              <div className="team__img">
-                <img src={item.imgUrl} alt="" />
-              </div>
-              <div className="team__details">
-                <h4>{item.name}</h4>
-                <p className="description">{item.position}</p>
+    <div className="pt-14">
+      <div className="our__team">
+        <div className="container">
+          <div className="team__content">
+            <h2>
+              Our <span className="highlight">Core Team</span>
+            </h2>
+          </div>
+          <div className="team__wrapper">
+            {teamMembers.map((item, index) => (
+              <div className="team__item" key={index}>
+                <div className="team__img">
+                  <img src={item.imgUrl} alt="" />
+                </div>
+                <div className="team__details">
+                  <h4>{item.name}</h4>
+                  <p className="description">{item.position}</p>
 
-                <div className="team__member-social">
-                  <span className="linkedin">
-                    {" "}
-                    <i class="ri-linkedin-line"></i>
-                  </span>
-                  <span className="twitter">
-                    {" "}
-                    <i class="ri-twitter-line"></i>
-                  </span>
-                  <span className="facebook">
-                    {" "}
-                    <i class="ri-facebook-line"></i>
-                  </span>
-                  <span className="instagram">
-                    {" "}
-                    <i class="ri-instagram-line"></i>
-                  </span>
+                  <div className="team__member-social">
+                    <span className="linkedin">
+                      {" "}
+                      <i class="ri-linkedin-line"></i>
+                    </span>
+                    <span className="twitter">
+                      {" "}
+                      <i class="ri-twitter-line"></i>
+                    </span>
+                    <span className="facebook">
+                      {" "}
+                      <i class="ri-facebook-line"></i>
+                    </span>
+                    <span className="instagram">
+                      {" "}
+                      <i class="ri-instagram-line"></i>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

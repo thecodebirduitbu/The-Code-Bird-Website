@@ -10,7 +10,7 @@ function TimelineCard({ date, description, image, index }) {
 
   return (
     <motion.div
-      className={`flex mx-auto mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-96 ${
+      className={`flex mx-auto mb-8 px-4 py-2 bg-white shadow-md rounded-2xl w-80 md:w-[30rem] ${
         index % 2 === 0 ? "self-start" : "self-end"
       }`}
       data-aos={cardAnimation}
@@ -38,7 +38,7 @@ function TimelineCard({ date, description, image, index }) {
 
 function Timeline({ events }) {
   return (
-    <div className="mx-6 md:mx-[3rem] relative overflow-x-scroll">
+    <div className="mx-6 md:mx-[3rem] relative overflow-hidden">
       <motion.div
         className="absolute h-full w-1 left-1/2 bg-gray-300"
         style={{ x: "-50%" }}

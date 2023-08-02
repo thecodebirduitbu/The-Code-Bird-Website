@@ -16,6 +16,7 @@ export default function HomePages() {
       <StarsCanvas />
       <About />
       <Achivements />
+      
       <TestimonialsSlider />
       <BlogUI1 />
       
