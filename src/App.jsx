@@ -23,7 +23,7 @@ import RobotsHardware from "./components/Domains/RobotsHardware";
 import RegisterCodebird from "./components/RegisterCoadbird/RegisterCoadbird";
 import Payment from "./components/RegisterCoadbird/Payment";
 import Login from "./components/Login/Login";
-
+import AlreadyMember from "./components/RegisterCoadbird/AlreadyMember";
 function App() {
   return (
     <BrowserRouter>
@@ -40,6 +40,7 @@ function App() {
             <Route path="/register" element={<Payment/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/membership" element={<RegisterCodebird />} />
+            <Route path="/member" element={<AlreadyMember />} />
             <Route path="/ourstory" element={<OurStory />} />
             <Route path="/founders" element={<Founders />} />
             <Route path="/devteam" element={<DevTeam />} />

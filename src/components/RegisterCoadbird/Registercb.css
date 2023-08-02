@@ -7,6 +7,15 @@
     justify-content: center;
     flex-direction: column;
 }
+.registerContainerAl{
+    width: 100%;
+    height: 80vh;
+    padding: 0 0 4rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .headings{
     margin-top: 8rem;
     font-size: 1.8rem;

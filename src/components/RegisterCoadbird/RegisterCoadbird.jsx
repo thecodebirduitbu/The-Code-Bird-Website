@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom'
 
 const RegisterCodebird = () => {
   const navigate = useNavigate();
-
+  const [member,setMember] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,12 +24,15 @@ const RegisterCodebird = () => {
         withCredentials: true,
       })
       .then((response) => {
-        const { name, email, phone } = response.data.data;
-        setFormData({
-          name: name,
-          email: email,
-          phone: phone,
-        });
+        if (response.data.isPaymentDone === true) {
+          navigate('/member');
+        }else{
+            setFormData({
+              name: response.data.name,
+              email: response.data.email,
+              phone: response.data.phone,
+            });
+        }
       })
       .catch((error) => {
         navigate('/login');
