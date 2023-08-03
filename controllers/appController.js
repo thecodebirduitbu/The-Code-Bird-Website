@@ -43,15 +43,27 @@ const paymentDone = async (req, res) => {
   const isAuthentic = expectedSignature === razorpay_signature;
 
   if (isAuthentic) {
+   const userData = req.userData;
     const payment = new Payment({
       razorpay_order_id,
       razorpay_payment_id,
       razorpay_signature,
+      userName:userData.name,
+      userPhone:userData.phone,
+      userEmail:userData.email
     });
     try {
+      await User.findByIdAndUpdate(
+        {
+          _id: userData._id,
+        },
+        {
+          isPaymentDone: true,
+        }
+      );
       await payment.save();
       res.redirect(
-        `http://localhost:3000/checkout?reference=${razorpay_payment_id}`
+        `http://localhost:3000/paymentdone?reference=${razorpay_payment_id}`
       );
     } catch (error) {
       res.status(400).json({
@@ -156,22 +168,14 @@ const login = async (req, res) => {
       }
     }
   } catch (error) {
-    return res.status(500).send(error);
+     res.status(500).send(error);
   }
 };
 
 
 const userData = async (req,res)=>{
-  const token = req.cookies.access_token;
-  if(!token){
-    return res.status(400).json({"error":"At First Login "});
-  }
-  try {const verify = await jwt.verify(token, process.env.JWT);
-  const data = await User.findOne({ roll: verify.roll });
-      return res.status(200).json({data});
-  } catch (error) {
-    return res.status(400).json(error);
-  }
+   const userData = req.userData;
+   res.status(200).json(userData);
 }
 
 

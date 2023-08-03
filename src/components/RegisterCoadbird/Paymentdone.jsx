@@ -1,58 +1,22 @@
-import React,{useCallback} from "react";
-import OurTechTeam from "../Team/OurTechTeam";
-import "../Team/OurTechTeam.css";
+import React,{useCallback} from 'react'
+import { useSearchParams } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-const teamMembersData = [
-  {
-    name: "@ImKKingshuk",
-    position: "Developer",
-    image: "Kingshuk.jpeg",
-    github: "https://github.com/ImKKingshuk",
-    linkedin: "https://linkedin.com/in/",
-    instagram: "https://instagram.com/",
-    facebook: "https://facebook.com/",
-  },
-  {
-    name: "Anuraj Kumar",
-    position: "Developer",
-    image: "Anuraj.jpeg",
-    github: "https://github.com/link",
-    linkedin: "https://linkedin.com/in/link",
-    instagram: "https://instagram.com/link",
-    facebook: "https://facebook.com/link",
-  },
-  {
-    name: "Amrit Dhandharia",
-    position: "Developer",
-    image: "Amrit.jpeg",
-    github: "https://github.com/link",
-    linkedin: "https://linkedin.com/in/link",
-    instagram: "https://instagram.com/link",
-    facebook: "https://facebook.com/link",
-  },
-  {
-    name: "Puskar Roy",
-    position: "Developer",
-    image: "Pushkar.jpeg",
-    github: "https://github.com/link",
-    linkedin: "https://linkedin.com/in/link",
-    instagram: "https://instagram.com/link",
-    facebook: "https://facebook.com/link",
-  },
-];
+import './Registercb.css'
+import { MdDoneAll } from "react-icons/md";
+const Paymentdone = () => {
+     const seachQuery = useSearchParams()[0];
 
-function DevTeam() {
-    const particlesInit = useCallback(async (engine) => {
-      console.log(engine);
-      await loadFull(engine);
-    }, []);
+     const referenceNum = seachQuery.get("reference");
+     const particlesInit = useCallback(async (engine) => {
+       await loadFull(engine);
+     }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-      await console.log(container);
-    }, []);
+     const particlesLoaded = useCallback(async (container) => {
+       await console.log(container);
+     }, []);
   return (
-    <div className="py-[10rem]">
+    <div className="paymentdone">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -126,14 +90,22 @@ function DevTeam() {
           detectRetina: true,
         }}
       />
-      <h1 className="text-[2rem] text-center text-white">
-        Developers of <span className="thisWev">this Website</span>
-      </h1>
-      <div className="pt-10">
-        <OurTechTeam teamMembers={teamMembersData} />
+      <div style={{ color: "white" }} className="headingsuccess">
+        <div className="pdoneheadings">
+          <MdDoneAll className='tickIcon' />
+          <h1>
+            Payment <span className="brand">Successful</span>
+          </h1>
+        </div>
+        <div className="pdoneheadings">
+          <h2>This Is Your Payment Id</h2>
+          <h2>
+            <span className="brand"> {referenceNum} </span>
+          </h2>
+        </div>
       </div>
     </div>
   );
 }
 
-export default DevTeam;
+export default Paymentdone
