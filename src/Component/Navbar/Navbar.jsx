@@ -107,6 +107,15 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
+                          href="/advisor"
+                          className="text-gray-500 text-md hover:text-blue-500"
+                          onClick={toggleMenu}
+                        >
+                          Our Advisor
+                        </a>
+                      </li>
+                      <li>
+                        <a
                           href="/founders"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
