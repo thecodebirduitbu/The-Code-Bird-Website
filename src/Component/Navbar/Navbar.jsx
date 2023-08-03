@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import Logo from "../images/logo.png";
 import { Icon } from "@iconify/react";
 import "./navbar.css";
 import "./assets/scss/styles.scss";
 import { Link } from "react-router-dom";
 import { CgMenuMotion, CgClose } from "react-icons/cg";
+import { GlobalContext } from "../../states/GlobalState";
+
 
 const Navbar = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
-
+  const { state, dispatch } = useContext(GlobalContext);
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
   };
@@ -26,6 +28,11 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const logout = ()=>{
+    console.log('log out');
+    dispatch({ type: "LOGOUT" });
+  }
 
   const toggleDropdown = (index) => {
     const dropdownContainer = document.querySelectorAll(".dropdown__container");
@@ -49,9 +56,9 @@ const Navbar = () => {
           <div className="logo">
             <div className="logo_content">
               <img src={Logo} alt="Codebird Logo" />
-              <a href="/" className="nav__logo">
+              <Link to="/" className="nav__logo">
                 The CodeBird
-              </a>
+              </Link>
             </div>
           </div>
           <div
@@ -69,9 +76,9 @@ const Navbar = () => {
         >
           <ul className="nav__list">
             <li>
-              <a href="/" className="nav__link" onClick={toggleMenu}>
+              <Link to="/" className="nav__link" onClick={toggleMenu}>
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="dropdown__item">
@@ -97,49 +104,49 @@ const Navbar = () => {
                     </Link>
                     <ul className="dropdown__list">
                       <li>
-                        <a
-                          href="/ourstory"
+                        <Link
+                          to="/ourstory"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Our Story
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/advisor"
+                        <Link
+                          to="/advisor"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Our Advisor
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/founders"
+                        <Link
+                          to="/founders"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Our Founders
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/team"
+                        <Link
+                          to="/team"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Core Committee
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/devteam"
+                        <Link
+                          to="/devteam"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Website Creating Team
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -155,40 +162,40 @@ const Navbar = () => {
 
                     <ul className="dropdown__list">
                       <li>
-                        <a
-                          href="/webdev"
+                        <Link
+                          to="/webdev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Web
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/androiddev"
+                        <Link
+                          to="/androiddev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Android
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/cpanddsa"
+                        <Link
+                          to="/cpanddsa"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           CP/DSA
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/mlandai"
+                        <Link
+                          to="/mlandai"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           ML/AI/DS
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -204,40 +211,40 @@ const Navbar = () => {
 
                     <ul className="dropdown__list">
                       <li>
-                        <a
-                          href="/cybersecurity"
+                        <Link
+                          to="/cybersecurity"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Cybersecurity
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/web3"
+                        <Link
+                          to="/web3"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Blockchain/Web3
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/gamedev"
+                        <Link
+                          to="/gamedev"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Game Development
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/robotshardware"
+                        <Link
+                          to="/robotshardware"
                           className="text-gray-500 text-md hover:text-blue-500"
                           onClick={toggleMenu}
                         >
                           Hardware / Robotics
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -246,24 +253,48 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="/membership" className="nav__link" onClick={toggleMenu}>
+              <Link to="/membership" className="nav__link" onClick={toggleMenu}>
                 Membership
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/event" className="nav__link" onClick={toggleMenu}>
+              <Link to="/event" className="nav__link" onClick={toggleMenu}>
                 Events
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/faQs" className="nav__link" onClick={toggleMenu}>
+              <Link to="/faQs" className="nav__link" onClick={toggleMenu}>
                 FAQS
-              </a>
+              </Link>
             </li>
+            {state.isLoggedIn ? (
+              <li className="dropdown__item">
+                <Link to="/login" onClick={logout} className="nav__link" >
+                  Logout
+                </Link>
+              </li>
+            ) : (
+              <>
+                <li className="dropdown__item">
+                  <Link
+                    to="/register"
+                    className="nav__link"
+                    onClick={toggleMenu}
+                  >
+                    Register
+                  </Link>
+                </li>
+                <li className="dropdown__item">
+                  <Link to="/login" className="nav__link" onClick={toggleMenu}>
+                    Login
+                  </Link>
+                </li>
+              </>
+            )}
 
-            <li className="dropdown__item">
+            {/* <li className="dropdown__item">
               <a href="/register" className="nav__link" onClick={toggleMenu}>
                 Register
               </a>
@@ -272,7 +303,7 @@ const Navbar = () => {
               <a href="/login" className="nav__link" onClick={toggleMenu}>
                 Login
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

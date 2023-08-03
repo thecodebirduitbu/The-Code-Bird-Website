@@ -1,14 +1,14 @@
-import React ,{useCallback , useState}from 'react'
+import React ,{useCallback , useState , useContext}from 'react'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 import './Login.css'
 import { useNavigate } from "react-router-dom";
-
+import { GlobalContext } from "../../states/GlobalState";
 
 const Login = () => {
-
+  const { state, dispatch } = useContext(GlobalContext);
 
   const navigate = useNavigate();
  axios.defaults.withCredentials = true;
@@ -43,9 +43,13 @@ const Login = () => {
                 withCredentials: true,
               }
             );
+            dispatch({
+              type: "LOGIN",
+              payload: { username: "exampleuser" },
+            });
             toast.success("Login Done!");
             console.log(response.data);
-            navigate('/login');
+            navigate('/event');
          } catch (error) {
             console.log(error);
            toast.error("Login Failed!");

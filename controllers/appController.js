@@ -48,6 +48,9 @@ const paymentDone = async (req, res) => {
       razorpay_order_id,
       razorpay_payment_id,
       razorpay_signature,
+      userName:userData.name,
+      userPhone:userData.phone,
+      userEmail:userData.email
     });
     try {
       await User.findByIdAndUpdate(
@@ -60,7 +63,7 @@ const paymentDone = async (req, res) => {
       );
       await payment.save();
       res.redirect(
-        `http://localhost:3000/checkout?reference=${razorpay_payment_id}`
+        `http://localhost:3000/paymentdone?reference=${razorpay_payment_id}`
       );
     } catch (error) {
       res.status(400).json({
@@ -165,7 +168,7 @@ const login = async (req, res) => {
       }
     }
   } catch (error) {
-    return res.status(500).send(error);
+     res.status(500).send(error);
   }
 };
 

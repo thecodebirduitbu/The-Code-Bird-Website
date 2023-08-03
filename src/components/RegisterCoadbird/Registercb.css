@@ -129,6 +129,29 @@
     font-size: 1.3rem;
 }
 
+.paymentdone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.headingsuccess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.pdoneheadings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tickIcon{
+    font-size: 4rem;
+}
+
 
 
 
@@ -148,6 +171,12 @@
     font-size: 1rem;
 
 
+}
+}
+
+@media(max-width:545px){
+.pdoneheadings h2{
+    font-size: 2rem;
 }
 }
 
@@ -173,6 +202,17 @@
     font-size: 2rem;
 }
 }
+
+@media(max-width:545px){
+.pdoneheadings h2{
+    font-size: 1.5rem;
+}
+.pdoneheadings h1{
+    font-size: 1.4rem;
+}
+}
+
+
 @media(max-width:432px){
 .inputs input {
     width: 20rem;
