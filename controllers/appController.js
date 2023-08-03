@@ -177,6 +177,11 @@ const login = async (req, res) => {
   }
 };
 
+const logout = (req,res)=>{
+   res.clearCookie("access_token");
+   res.status(200).json({msg:"Log Out"})
+}
+
 
 const userData = async (req,res)=>{
    const userData = req.userData;
@@ -208,4 +213,4 @@ const userData = async (req,res)=>{
 
 
 
-module.exports = { register, paymentOrder, paymentDone , login , userData };
+module.exports = { register, paymentOrder, paymentDone , login , userData , logout};
