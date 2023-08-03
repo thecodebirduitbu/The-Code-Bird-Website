@@ -154,8 +154,13 @@ const login = async (req, res) => {
           { id: userExist._id, roll: userExist.roll },
           process.env.JWT
         );
+        const expirationDate = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000); // 1 year from now
+        const options = {
+          expires: expirationDate,
+          httpOnly: true,
+        };
           return res
-            .cookie("access_token", token, { httpOnly: true })
+            .cookie("access_token", token, options)
             .status(201)
             .json({
               msg: "Log In Done !",
