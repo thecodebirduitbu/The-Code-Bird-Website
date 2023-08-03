@@ -154,8 +154,13 @@ const login = async (req, res) => {
           { id: userExist._id, roll: userExist.roll },
           process.env.JWT
         );
+        const expirationDate = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000); // 1 year from now
+        const options = {
+          expires: expirationDate,
+          httpOnly: true,
+        };
           return res
-            .cookie("access_token", token, { httpOnly: true })
+            .cookie("access_token", token, options)
             .status(201)
             .json({
               msg: "Log In Done !",
@@ -171,6 +176,11 @@ const login = async (req, res) => {
      res.status(500).send(error);
   }
 };
+
+const logout = (req,res)=>{
+   res.clearCookie("access_token");
+   res.status(200).json({msg:"Log Out"})
+}
 
 
 const userData = async (req,res)=>{
@@ -203,4 +213,4 @@ const userData = async (req,res)=>{
 
 
 
-module.exports = { register, paymentOrder, paymentDone , login , userData };
+module.exports = { register, paymentOrder, paymentDone , login , userData , logout};
