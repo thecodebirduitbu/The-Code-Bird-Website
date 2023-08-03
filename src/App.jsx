@@ -24,6 +24,7 @@ import RegisterCodebird from "./components/RegisterCoadbird/RegisterCoadbird";
 import Payment from "./components/RegisterCoadbird/Payment";
 import Login from "./components/Login/Login";
 import AlreadyMember from "./components/RegisterCoadbird/AlreadyMember";
+import Paymentdone from "./components/RegisterCoadbird/Paymentdone";
 function App() {
   return (
     <BrowserRouter>
@@ -40,6 +41,7 @@ function App() {
             <Route path="/register" element={<Payment/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/membership" element={<RegisterCodebird />} />
+            <Route path="/paymentdone" element={<Paymentdone />} />
             <Route path="/member" element={<AlreadyMember />} />
             <Route path="/ourstory" element={<OurStory />} />
             <Route path="/founders" element={<Founders />} />

@@ -14,6 +14,9 @@ const verifyUser = async (req, res, next) => {
     return res.status(400).json({ error: "Authentication Error " });
   }
 };
+
+
+
 const verifyToken = async (req, res, next) => {
    const token = req.cookies.access_token;
    if (!token) {
@@ -39,8 +42,6 @@ const verifyToken = async (req, res, next) => {
     }
    }
 };
-
-
 
 
 module.exports = {verifyUser , verifyToken};
