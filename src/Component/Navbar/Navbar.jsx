@@ -3,12 +3,13 @@ import Logo from "../images/logo.png";
 import { Icon } from "@iconify/react";
 import "./navbar.css";
 import "./assets/scss/styles.scss";
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 import { CgMenuMotion, CgClose } from "react-icons/cg";
 import { GlobalContext } from "../../states/GlobalState";
-
+import axios from 'axios'
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isMenuVisible, setMenuVisible] = useState(false);
   const { state, dispatch } = useContext(GlobalContext);
   const toggleMenu = () => {
@@ -29,9 +30,15 @@ const Navbar = () => {
     };
   }, []);
 
-  const logout = ()=>{
-    console.log('log out');
-    dispatch({ type: "LOGOUT" });
+  const logout = async ()=>{
+    try {
+      await axios.get("http://localhost:9000/api/logout");
+      console.log("log out");
+      dispatch({ type: "LOGOUT" });
+      navigate('/login')
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   const toggleDropdown = (index) => {
@@ -271,7 +278,7 @@ const Navbar = () => {
             </li>
             {state.isLoggedIn ? (
               <li className="dropdown__item">
-                <Link to="/login" onClick={logout} className="nav__link" >
+                <Link onClick={logout} className="nav__link" >
                   Logout
                 </Link>
               </li>

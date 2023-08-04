@@ -2,7 +2,6 @@ import React, { createContext, useReducer, useEffect } from "react";
 
 const initialState = {
   isLoggedIn: JSON.parse(localStorage.getItem("isLoggedIn")) || false,
-  // Add other state properties here...
 };
 
 const reducer = (state, action) => {
@@ -17,7 +16,6 @@ const reducer = (state, action) => {
         ...state,
         isLoggedIn: false,
       };
-    // Handle other actions here...
     default:
       return state;
   }
@@ -39,3 +37,5 @@ export const GlobalStateProvider = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
+
+
