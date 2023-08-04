@@ -11,7 +11,7 @@ router.post("/login",verifyUser,login);
 router.post("/paymentVerify",paymentOrder);
 router.post("/payment",verifyToken,paymentDone);
 router.get("/user",verifyToken,userData);
-router.get("/logout",verifyToken,logout);
+router.get("/logout",logout);
 router.get("/razor/key", (req, res) => {
   res.status(200).json({ key: process.env.RAZOR_KEY });
 });

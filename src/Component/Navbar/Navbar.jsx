@@ -1,12 +1,12 @@
-import React, { useState, useEffect,useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Logo from "../images/logo.png";
 import { Icon } from "@iconify/react";
 import "./navbar.css";
 import "./assets/scss/styles.scss";
-import { Link , useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CgMenuMotion, CgClose } from "react-icons/cg";
 import { GlobalContext } from "../../states/GlobalState";
-import axios from 'axios'
+import axios from "axios";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -30,16 +30,18 @@ const Navbar = () => {
     };
   }, []);
 
-  const logout = async ()=>{
+  const logout = async () => {
     try {
-      await axios.get("http://localhost:9000/api/logout");
+      await axios.get("http://localhost:9000/api/logout", {
+        withCredentials: true,
+      });
       console.log("log out");
       dispatch({ type: "LOGOUT" });
-      navigate('/login')
+      navigate("/login");
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   const toggleDropdown = (index) => {
     const dropdownContainer = document.querySelectorAll(".dropdown__container");
@@ -278,7 +280,7 @@ const Navbar = () => {
             </li>
             {state.isLoggedIn ? (
               <li className="dropdown__item">
-                <Link onClick={logout} className="nav__link" >
+                <Link onClick={logout} className="nav__link">
                   Logout
                 </Link>
               </li>
