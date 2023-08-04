@@ -25,6 +25,10 @@ const paymentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  timestamp: {
+    type: Date,
+    default: () => new Date(), // Set the default value to the current date and time
+  },
 });
 
 const Payment = mongoose.model("Payment", paymentSchema);
