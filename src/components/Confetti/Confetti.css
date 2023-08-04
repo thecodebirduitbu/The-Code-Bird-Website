@@ -1,0 +1,13 @@
+.confetti-container {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+  }
+  
+  .confetti-container.show {
+    opacity: 1;
+  }
+  
+  .confetti-container.hide {
+    pointer-events: none;
+  }
+  
