@@ -67,7 +67,7 @@ const RegisterCodebird = () => {
         const data = await axios.get("http://localhost:9000/api/razor/key");
         const response = await axios.post(
           "http://localhost:9000/api/paymentVerify",
-          { amount: 1 }
+          { amount: 200 }
         );
         if (response) {
           const options = {

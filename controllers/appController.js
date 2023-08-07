@@ -179,7 +179,7 @@ const login = async (req, res) => {
 
 const logout = (req,res)=>{
    res.clearCookie("access_token");
-   res.status(200).json({msg:"Log Out"})
+   res.status(200).json({msg:'logout'})
 }
 
 
@@ -213,4 +213,4 @@ const userData = async (req,res)=>{
 
 
 
-module.exports = { register, paymentOrder, paymentDone , login , userData , logout};
+module.exports = { register, paymentOrder, paymentDone , login , userData , logout };
