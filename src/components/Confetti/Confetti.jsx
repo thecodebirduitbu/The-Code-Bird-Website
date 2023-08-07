@@ -18,7 +18,7 @@ const ConfettiComponent = () => {
       <Confetti
         width={window.innerWidth}
         height={window.innerHeight}
-        numberOfPieces={200}
+        numberOfPieces={400}
       />
     </div>
   );
