@@ -38,7 +38,7 @@ const Eventpg = () => {
     await console.log(container);
   }, []);
 
-  const compitition = "Coading";
+  const compitition = "Codeing";
   const evnImg =
     "https://hips.hearstapps.com/hmg-prod/images/quiz-questions-answers-1669651278.jpg";
   const programDate = "Friday, 25-11-2022";
