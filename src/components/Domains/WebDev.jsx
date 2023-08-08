@@ -90,6 +90,7 @@ function WebDev() {
           detectRetina: true,
         }}
       />
+      
       <h1 className="text-[2.7rem] text-white text-center">Web <span className="brand">Development</span></h1>
       <p className="text-lg mb-6 pt-16 text-justify">
         Welcome to the Web Development domain! This exciting field empowers you
