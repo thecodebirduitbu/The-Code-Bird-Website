@@ -28,7 +28,9 @@ app.get("/events", async(res, req) => {
         res.status(500).json({ error: "Internal server error"});
     }
 });
-
+app.get('/', (req, res) => {
+    res.send('Hey this is my API running 🥳')
+  })
 
 app.listen(PORT, () => {
    console.log(`Server started on port ${PORT}`)
