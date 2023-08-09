@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0ead2ecf.css",
+    "main.js": "/static/js/main.47c51c79.js",
+    "static/media/event2.png": "/static/media/event2.5810642d12ff2ea71b9f.png",
+    "static/media/event3.png": "/static/media/event3.e08b331902962230c3ac.png",
+    "static/media/event1.png": "/static/media/event1.d3245a82dd5f3acf932a.png",
+    "static/media/bitcoin.jpeg": "/static/media/bitcoin.72c0e30f659f114a3ca0.jpeg",
+    "static/media/profile-pic.png": "/static/media/profile-pic.f9b892c561d1f2fdee6d.png",
+    "static/media/logo.png": "/static/media/logo.488061e9e5addd753f16.png",
+    "static/media/unreal-engine.webp": "/static/media/unreal-engine.a3843a9bbc4b1cf304e8.webp",
+    "static/media/web.png": "/static/media/web.c0cb2cc13791a26822d3.png",
+    "static/media/backend.png": "/static/media/backend.08c8d93b8142c41a9e63.png",
+    "static/media/mobile.png": "/static/media/mobile.15e7b89f1018dcdba6e7.png",
+    "static/media/creator.png": "/static/media/creator.f8923ce18390029928ac.png",
+    "static/media/react.webp": "/static/media/react.d12d6121dfac2bc0f90a.webp",
+    "index.html": "/index.html",
+    "main.0ead2ecf.css.map": "/static/css/main.0ead2ecf.css.map",
+    "main.47c51c79.js.map": "/static/js/main.47c51c79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ead2ecf.css",
+    "static/js/main.47c51c79.js"
+  ]
+}
