@@ -36,7 +36,7 @@ const Login = () => {
        } else {
         console.log(formData);
          try {
-            const response = await axios.post(
+            await axios.post(
               "http://localhost:9000/api/login",
               formData,
               {
@@ -48,8 +48,9 @@ const Login = () => {
               payload: { username: "exampleuser" },
             });
             toast.success("Login Done!");
-            console.log(response.data);
-            navigate('/event');
+            setTimeout(() => {
+            navigate("/event"); 
+            }, Math.floor(Math.random() * 1001) + 700);
          } catch (error) {
             console.log(error);
            toast.error("Login Failed!");

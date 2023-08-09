@@ -68,22 +68,20 @@ const Payment = () => {
     } else {
       console.log(formData);
       try {
-        const response = await axios.post(
+        await axios.post(
           `http://localhost:9000/api/register`,
           formData
         );
-      navigate("/login");
-
-        console.log(response.data);
-        toast.success("Thanks For Becomeing a Member Of The CodeBird");
-       
+      toast.success("Registration Successful, LogIn Now!");
+      setTimeout(() => {
+        navigate("/login");
+      }, Math.floor(Math.random() * 1001) + 700);
       } catch (error) {
         console.log(error);
         toast.error("Registration Failed!");
       }
     }
   };
-
   if (navigateToOtherPage) {
     navigate("/register");
   }
