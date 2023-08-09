@@ -36,16 +36,19 @@ const Login = () => {
        } else {
         console.log(formData);
          try {
-            await axios.post(
+            const res = await axios.post(
               "http://localhost:9000/api/login",
               formData,
               {
                 withCredentials: true,
               }
             );
+        
             dispatch({
               type: "LOGIN",
-              payload: { username: "exampleuser" },
+              payload: {
+                userNameState: res.data.userName,
+              },
             });
             toast.success("Login Done!");
             setTimeout(() => {

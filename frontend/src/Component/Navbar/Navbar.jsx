@@ -7,10 +7,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { CgMenuMotion, CgClose } from "react-icons/cg";
 import { GlobalContext } from "../../states/GlobalState";
 import axios from "axios";
-
+import { FaFaceMeh } from "react-icons/fa6";
+import { FaUserCircle } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+import { BiLogOutCircle } from "react-icons/bi";
 const Navbar = () => {
   const navigate = useNavigate();
   const [isMenuVisible, setMenuVisible] = useState(false);
+  const [showProfile , setShowProfile] = useState(false);
   const { state, dispatch } = useContext(GlobalContext);
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
@@ -22,6 +26,7 @@ const Navbar = () => {
         setMenuVisible(false);
       }
     };
+  
 
     window.addEventListener("resize", handleResize);
 
@@ -29,13 +34,12 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   const logout = async () => {
     try {
       await axios.get("http://localhost:9000/api/logout", {
         withCredentials: true,
       });
-      console.log("log out");
+      setShowProfile(!showProfile);
       dispatch({ type: "LOGOUT" });
       navigate("/login");
     } catch (error) {
@@ -280,8 +284,14 @@ const Navbar = () => {
             </li>
             {state.isLoggedIn ? (
               <li className="dropdown__item">
-                <Link onClick={logout} className="nav__link">
-                  Logout
+                <Link
+                  onClick={() => {
+                    setShowProfile(!showProfile);
+                  }}
+                  className="nav__link loginState"
+                >
+                  <FaFaceMeh />
+                  {state.userNameState}
                 </Link>
               </li>
             ) : (
@@ -302,20 +312,21 @@ const Navbar = () => {
                 </li>
               </>
             )}
-
-            {/* <li className="dropdown__item">
-              <a href="/register" className="nav__link" onClick={toggleMenu}>
-                Register
-              </a>
-            </li>
-            <li className="dropdown__item">
-              <a href="/login" className="nav__link" onClick={toggleMenu}>
-                Login
-              </a>
-            </li> */}
           </ul>
         </div>
       </nav>
+
+      {/* ---------Profilenmenu------- */}
+      <div className={showProfile ? "profilemenuActive" : "profilemenu"}>
+        <p className="profileName">
+          <FaUserCircle /> Profile
+        </p>
+        <hr />
+        <p onClick={logout} className="profileLogOut">
+          <BiLogOutCircle />
+          Log out
+        </p>
+      </div>
     </header>
   );
 };

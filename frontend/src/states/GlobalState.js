@@ -2,6 +2,7 @@ import React, { createContext, useReducer, useEffect } from "react";
 
 const initialState = {
   isLoggedIn: JSON.parse(localStorage.getItem("isLoggedIn")) || false,
+  userNameState : localStorage.getItem("userNameState") || ""
 };
 
 const reducer = (state, action) => {
@@ -10,11 +11,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         isLoggedIn: true,
+        userNameState: action.payload.userNameState,
       };
     case "LOGOUT":
       return {
         ...state,
         isLoggedIn: false,
+        userNameState: "",
       };
     default:
       return state;
@@ -27,9 +30,9 @@ export const GlobalStateProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    // Update localStorage whenever the login state changes
     localStorage.setItem("isLoggedIn", state.isLoggedIn);
-  }, [state.isLoggedIn]);
+    localStorage.setItem("userNameState", state.userNameState);
+  }, [state.isLoggedIn, state.userNameState]);
 
   return (
     <GlobalContext.Provider value={{ state, dispatch }}>

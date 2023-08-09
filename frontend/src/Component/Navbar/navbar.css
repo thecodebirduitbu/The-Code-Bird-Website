@@ -241,6 +241,37 @@ a {
   transform: rotate(180deg);
 }
 
+.profilemenu{
+  display: none;
+}
+
+.profilemenuActive{
+  background-color: #915eff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 8rem;
+  width: 10rem;
+  gap: 1px;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  right: 170px;
+}
+.profileName , .profileLogOut{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
@@ -272,6 +303,10 @@ a {
   }
   .nav__link:hover {
     background-color: initial;
+  }
+
+  .loginState{
+    gap: 10px;
   }
   /* Dropdown */
   .dropdown__button {
@@ -342,6 +377,10 @@ a {
     cursor: initial;
   }
 }
+
+
+
+
 @media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
