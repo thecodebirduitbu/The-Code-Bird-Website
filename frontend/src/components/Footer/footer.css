@@ -39,8 +39,8 @@ footer{
 .logo1{
     width: 80px;
     margin-bottom: 30px;
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(1) invert(1);
+    /* -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1); */
 }
 .col h3{
     width: fit-content;

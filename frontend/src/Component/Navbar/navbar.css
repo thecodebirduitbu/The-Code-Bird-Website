@@ -93,8 +93,7 @@ a {
 .logo img {
   height: 60px;
   cursor: pointer;
-  -webkit-filter: grayscale(1) invert(1);
-  filter: grayscale(1) invert(1);
+ 
 }
 .logo_content {
   display: flex;

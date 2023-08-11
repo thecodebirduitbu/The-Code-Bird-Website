@@ -7,7 +7,6 @@ import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
-import "./BlogUI1.css";
 import { styles } from "../../styles.jsx";
 
 const BlogUI1 = () => {
@@ -193,7 +192,7 @@ const BlogUI1 = () => {
               <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
                 <div>
                   <img
-                    className="logo2 w-[13rem] h-[10rem] rounded-2xl ml-8"
+                    className="logo2 w-[11rem] h-[10rem] rounded-2xl ml-12"
                     src={logo}
                     alt="Image of Developer"
                     sizes="fill"
