@@ -8,7 +8,7 @@ import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
 import "./BlogUI1.css";
-import { styles } from "../../styles.js";
+import { styles } from "../../styles.jsx";
 
 const BlogUI1 = () => {
   return (
