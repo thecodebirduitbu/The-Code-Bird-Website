@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import ScrollDown from "./Scroll/ScrollDown";
 
 const Hero = () => {
   return (
@@ -26,10 +27,9 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 bg-gray-700 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -43,7 +43,11 @@ const Hero = () => {
             />
           </div>
         </a>
+      </div> */}
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+        <ScrollDown/>
       </div>
+      
     </section>
   );
 };
