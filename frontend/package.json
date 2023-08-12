@@ -59,10 +59,10 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "test": "vite test",
-    "serve": "vite preview"
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
