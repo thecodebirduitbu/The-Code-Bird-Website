@@ -7,7 +7,7 @@ import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
-import { styles } from "../../styles.jsx";
+import { styles } from "../../styles";
 
 const BlogUI1 = () => {
   return (
