@@ -4,6 +4,7 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+
 dependencies:
   '@emailjs/browser':
     specifier: ^3.11.0
