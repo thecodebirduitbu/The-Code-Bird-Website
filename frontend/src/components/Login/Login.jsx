@@ -35,7 +35,7 @@ const Login = () => {
         console.log(formData);
          try {
             const res = await axios.post(
-              "https://the-code-bird-website-bp9h.vercel.app/",
+              "https://the-code-bird-website-bp9h.vercel.app/api/login",
               formData,
               {
                 withCredentials: true,
