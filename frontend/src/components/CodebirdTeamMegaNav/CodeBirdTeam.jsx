@@ -32,7 +32,7 @@ function CodeBirdTeam() {
 
       <div className="flex flex-wrap justify-center gap-8">
         {teamMembers.map((item, index) => (
-          <div className="bg-gray-900 rounded-lg w-1/4" key={index}>
+          <div className="outline outline-white rounded-lg w-1/4" key={index}>
             <div className="w-full h-40 bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
               <img
                 src={item.imgUrl}
