@@ -74,7 +74,9 @@ function MemberList({ members }) {
 export default function Founders() {
   return (
     <div className="py-[10rem] mx-6">
-      <h1 className="text-[3rem] text-white text-center ">Our Founders</h1>
+      <h1 className="text-[3rem] text-white text-center pb-10 ">
+        Our Founders
+      </h1>
 
       <MemberList members={membersData} />
     </div>
