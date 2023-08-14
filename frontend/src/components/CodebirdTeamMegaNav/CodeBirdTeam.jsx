@@ -36,7 +36,7 @@ function CodeBirdTeam() {
             <div className="w-full h-40 bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
               <img
                 src={item.imgUrl}
-                alt=""
+                alt={`${item.name}'s photo`}
                 className="w-3/4 h-auto transform scale-125"
               />
             </div>
