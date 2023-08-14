@@ -1,88 +1,20 @@
 import React from "react";
+import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import "./CoadBirdTeam.css";
 
 const teamMembers = [
   {
-    imgUrl:
-      "https://media.licdn.com/dms/image/C4D03AQHCLj6vHP3CVQ/profile-displayphoto-shrink_800_800/0/1517888173567?e=1694649600&v=beta&t=ynZkdJFnJBBzZh0JcTM2R5MNIEI9YnhxYFfj4dMmIfc",
-    name: "Sumit Gupta",
-    position: "Proffesor",
+    name: "John Doe",
+    position: "CEO",
+    imgUrl: "john-doe.jpg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/johndoe/",
+      twitter: "https://twitter.com/johndoe/",
+      facebook: "https://www.facebook.com/johndoe/",
+      instagram: "https://www.instagram.com/johndoe/",
+    },
   },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQGWdODukzIhYg/profile-displayphoto-shrink_800_800/0/1685526998739?e=1694649600&v=beta&t=EMbcEsROGohT7brV3sr5rCui3hHKWMQU8YyEZk_B-bY",
-    name: "Ngwe Pu",
-    position: "Product Designer",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQFHCT_8j_Y-JQ/profile-displayphoto-shrink_400_400/0/1670044850784?e=1694649600&v=beta&t=919eapUz--FfLLCvcaXDe51Up_EVBx4T4v-e_SaoZXU",
-    name: "OK Tal Mg Lay",
-    position: "Customer Service",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5635AQFsOgsyKlSibA/profile-framedphoto-shrink_800_800/0/1669031295280?e=1689850800&v=beta&t=Baa4LF6-xZdguo58_uKIhKoyONLLW85zEsQgMrtUX0g",
-    name: "Ma Ma Saung",
-    position: "Project Leader",
-  },
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/C4D03AQHCLj6vHP3CVQ/profile-displayphoto-shrink_800_800/0/1517888173567?e=1694649600&v=beta&t=ynZkdJFnJBBzZh0JcTM2R5MNIEI9YnhxYFfj4dMmIfc",
-    name: "Sumit Gupta",
-    position: "Proffesor",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQGWdODukzIhYg/profile-displayphoto-shrink_800_800/0/1685526998739?e=1694649600&v=beta&t=EMbcEsROGohT7brV3sr5rCui3hHKWMQU8YyEZk_B-bY",
-    name: "Ngwe Pu",
-    position: "Product Designer",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQFHCT_8j_Y-JQ/profile-displayphoto-shrink_400_400/0/1670044850784?e=1694649600&v=beta&t=919eapUz--FfLLCvcaXDe51Up_EVBx4T4v-e_SaoZXU",
-    name: "OK Tal Mg Lay",
-    position: "Customer Service",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5635AQFsOgsyKlSibA/profile-framedphoto-shrink_800_800/0/1669031295280?e=1689850800&v=beta&t=Baa4LF6-xZdguo58_uKIhKoyONLLW85zEsQgMrtUX0g",
-    name: "Ma Ma Saung",
-    position: "Project Leader",
-  },
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/C4D03AQHCLj6vHP3CVQ/profile-displayphoto-shrink_800_800/0/1517888173567?e=1694649600&v=beta&t=ynZkdJFnJBBzZh0JcTM2R5MNIEI9YnhxYFfj4dMmIfc",
-    name: "Sumit Gupta",
-    position: "Proffesor",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQGWdODukzIhYg/profile-displayphoto-shrink_800_800/0/1685526998739?e=1694649600&v=beta&t=EMbcEsROGohT7brV3sr5rCui3hHKWMQU8YyEZk_B-bY",
-    name: "Ngwe Pu",
-    position: "Product Designer",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5603AQFHCT_8j_Y-JQ/profile-displayphoto-shrink_400_400/0/1670044850784?e=1694649600&v=beta&t=919eapUz--FfLLCvcaXDe51Up_EVBx4T4v-e_SaoZXU",
-    name: "OK Tal Mg Lay",
-    position: "Customer Service",
-  },
-
-  {
-    imgUrl:
-      "https://media.licdn.com/dms/image/D5635AQFsOgsyKlSibA/profile-framedphoto-shrink_800_800/0/1669031295280?e=1689850800&v=beta&t=Baa4LF6-xZdguo58_uKIhKoyONLLW85zEsQgMrtUX0g",
-    name: "Ma Ma Saung",
-    position: "Project Leader",
-  },
+  // Add more team members
 ];
 
 const CoadBirdTeam = () => {
@@ -106,22 +38,18 @@ const CoadBirdTeam = () => {
                   <p className="description">{item.position}</p>
 
                   <div className="team__member-social">
-                    <span className="linkedin">
-                      {" "}
-                      <i class="ri-linkedin-line"></i>
-                    </span>
-                    <span className="twitter">
-                      {" "}
-                      <i class="ri-twitter-line"></i>
-                    </span>
-                    <span className="facebook">
-                      {" "}
-                      <i class="ri-facebook-line"></i>
-                    </span>
-                    <span className="instagram">
-                      {" "}
-                      <i class="ri-instagram-line"></i>
-                    </span>
+                    <a href={item.social.linkedin} className="linkedin">
+                      <FaLinkedin />
+                    </a>
+                    <a href={item.social.twitter} className="twitter">
+                      <FaTwitter />
+                    </a>
+                    <a href={item.social.facebook} className="facebook">
+                      <FaFacebook />
+                    </a>
+                    <a href={item.social.instagram} className="instagram">
+                      <FaInstagram />
+                    </a>
                   </div>
                 </div>
               </div>
