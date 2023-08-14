@@ -63,7 +63,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
 
 function MemberList({ members }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
       {members.map((member, index) => (
         <MemberCard key={index} {...member} />
       ))}
@@ -73,7 +73,7 @@ function MemberList({ members }) {
 
 export default function Founders() {
   return (
-    <div className="py-[10rem]">
+    <div className="py-[10rem] mx-6">
       <h1 className="text-[3rem] text-white text-center ">Our Founders</h1>
 
       <MemberList members={membersData} />
