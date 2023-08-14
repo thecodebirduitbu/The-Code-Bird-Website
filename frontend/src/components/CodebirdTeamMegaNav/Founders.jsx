@@ -3,9 +3,9 @@ import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const socialLinkData = [
   { id: "github", icon: FaGithub, color: "black" },
-  { id: "twitter", icon: FaTwitter, color: "blue-500" },
-  { id: "linkedin", icon: FaLinkedin, color: "sky-500" },
-  { id: "instagram", icon: FaInstagram, color: "pink-500" },
+  { id: "twitter", icon: FaTwitter, color: "blue" },
+  { id: "linkedin", icon: FaLinkedin, color: "sky" },
+  { id: "instagram", icon: FaInstagram, color: "pink" },
 ];
 
 const membersData = [
@@ -28,7 +28,7 @@ function SocialIcon({ href, icon: Icon, color }) {
   return (
     <a
       href={href}
-      className={`text-${color} `}
+      className={`text-${color}-300`}
       target="_blank"
       rel="noopener noreferrer"
     >
