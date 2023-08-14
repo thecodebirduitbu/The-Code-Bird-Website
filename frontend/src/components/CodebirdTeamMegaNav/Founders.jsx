@@ -57,18 +57,7 @@ const membersData = [
       { ...socialLinkData[3], href: "https://instagram.com/developer1" },
     ],
   },
-  {
-    id: "developer 3",
-    name: " ",
-    role: " ",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    socialLinks: [
-      { ...socialLinkData[0], href: "https://github.com/developer1" },
-      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
-      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
-      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
-    ],
-  },
+
   {
     id: "developer 3",
     name: "Navneet Prashant",
@@ -109,6 +98,18 @@ const membersData = [
     id: "developer 3",
     name: "Rahul Bhattacharjee",
     role: "Executive Committee Member(IT 2014-18)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 3",
+    name: "Piyush Kumar",
+    role: "Executive Committee Member(ECE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
