@@ -140,7 +140,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
       <div className="w-full md:w-2/5 h-80">
         <img
           className="object-center object-cover w-full h-full"
-          src="/Images/demoimg.png"
+          src="/Images/demomg.png"
           alt={`${name}'s photo`}
         />
       </div>
