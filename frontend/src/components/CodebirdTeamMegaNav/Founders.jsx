@@ -52,7 +52,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
 
 function MemberList({ members }) {
   return (
-    <div>
+    <div className="grid">
       {members.map((member, index) => (
         <MemberCard key={index} {...member} />
       ))}
