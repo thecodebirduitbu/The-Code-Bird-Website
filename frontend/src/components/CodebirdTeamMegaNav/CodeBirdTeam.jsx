@@ -78,7 +78,7 @@ function CodeBirdTeam() {
         Our <span className="text-blue-500">Core Team</span>
       </h2>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {teamMembers.map((item, index) => (
           <div
             className="outline outline-white rounded-lg w-1/4 text-center"
