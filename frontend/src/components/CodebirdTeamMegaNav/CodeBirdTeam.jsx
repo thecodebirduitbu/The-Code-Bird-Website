@@ -49,7 +49,7 @@ function CodeBirdTeam() {
               </h4>
               <p className="text-gray-400">{item.position}</p>
 
-              <div className="flex items-center justify-center mt-3 space-x-2 ">
+              <div className="flex items-center justify-center mt-3 space-x-2 text-xl ">
                 <a
                   href={item.social.github}
                   className="text-white   hover:bg-gray-700   rounded-full"
