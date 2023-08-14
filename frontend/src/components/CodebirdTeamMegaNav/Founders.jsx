@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const membersData = [
   {
-    name: "Dany Bailey",
+    name: "Developer",
     role: "Software Engineer",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
