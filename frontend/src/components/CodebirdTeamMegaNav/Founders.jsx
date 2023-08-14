@@ -1,6 +1,21 @@
 import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
+const membersData = [
+  {
+    name: "Dany Bailey",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { href: "#", icon: FaGithub },
+      { href: "#", icon: FaTwitter },
+      { href: "#", icon: FaLinkedin },
+      { href: "#", icon: FaInstagram },
+    ],
+  },
+  // Add more members here
+];
+
 function SocialIcon({ href, icon: Icon }) {
   return (
     <a href={href} className="text-gray-500 hover:text-gray-600">
@@ -44,21 +59,6 @@ function MemberList({ members }) {
     </div>
   );
 }
-
-const membersData = [
-  {
-    name: "Dany Bailey",
-    role: "Software Engineer",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    socialLinks: [
-      { href: "#", icon: FaGithub },
-      { href: "#", icon: FaTwitter },
-      { href: "#", icon: FaLinkedin },
-      { href: "#", icon: FaInstagram },
-    ],
-  },
-  // Add more members here
-];
 
 export default function Founders() {
   return (
