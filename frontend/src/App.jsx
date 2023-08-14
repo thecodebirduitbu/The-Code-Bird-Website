@@ -25,28 +25,23 @@ import Login from "./components/Login/Login";
 import AlreadyMember from "./components/RegisterCoadbird/AlreadyMember";
 import Paymentdone from "./components/RegisterCoadbird/Paymentdone";
 import { GlobalStateProvider } from "../src/states/GlobalState";
+import CodeBirdTeam from "./components/CodebirdTeamMegaNav/CodeBirdTeam";
 // import ConfettiComponent from "./components/Confetti/Confetti";
 
-
-
-
-
 function App() {
-
-
   return (
     <BrowserRouter>
       <GlobalStateProvider>
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          {/* <ConfettiComponent/> */}
+            {/* <ConfettiComponent/> */}
             <Navbar />
-            
+
             <Routes>
               <Route path="/" element={<HomePages />} />
-             
+
               <Route path="/faQs" element={<FAQComponent />} />
-              <Route path="/team" element={<Team />} />
+              <Route path="/team" element={<CodeBirdTeam />} />
               <Route path="/event" element={<Eventpg />} />
               <Route path="/register" element={<Payment />} />
               <Route path="/login" element={<Login />} />
