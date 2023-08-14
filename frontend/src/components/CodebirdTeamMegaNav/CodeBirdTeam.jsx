@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: "@ImKKingshuk",
     position: "Core Team Member",
-    imgUrl: "kingshuk.png",
+    imgUrl: "/Images/demoimg.png",
     social: {
       github: "https://github.com/ImKKingshuk",
       linkedin: "https://www.linkedin.com/in/imkkingshuk/",
@@ -77,7 +77,7 @@ function CodeBirdTeam() {
               <img
                 src={item.imgUrl}
                 alt={`${item.name}'s photo`}
-                className="w-3/4 h-auto transform scale-125"
+                className="w-full h-full"
               />
             </div>
             <div className="p-5">
