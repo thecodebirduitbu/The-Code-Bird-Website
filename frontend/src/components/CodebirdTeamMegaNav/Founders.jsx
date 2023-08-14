@@ -71,8 +71,8 @@ const membersData = [
   },
   {
     id: "developer 3",
-    name: " ",
-    role: " ",
+    name: "Navneet Prashant",
+    role: "Core Committee Member(CSE 2015-19)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
