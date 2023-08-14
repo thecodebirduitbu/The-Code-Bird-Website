@@ -26,7 +26,7 @@ const teamMembers = [
 
 function CodeBirdTeam() {
   return (
-    <div className="py-[8rem]">
+    <div className="py-[8rem] mx-6">
       <h2 className="text-[3rem] text-center text-white">
         Our <span className="text-blue-500">Core Team</span>
       </h2>
