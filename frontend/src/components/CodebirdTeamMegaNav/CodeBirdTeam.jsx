@@ -20,54 +20,7 @@ const teamMembers = [
       instagram: "https://www.instagram.com/imkkingshuk/",
     },
   },
-  {
-    name: "@ImKKingshuk",
-    position: "Core Team Member",
-    imgUrl: "kingshuk.png",
-    social: {
-      github: "https://github.com/ImKKingshuk",
-      linkedin: "https://www.linkedin.com/in/imkkingshuk/",
-      twitter: "https://twitter.com/imkkingshuk/",
-      facebook: "https://www.facebook.com/imkkingshuk/",
-      instagram: "https://www.instagram.com/imkkingshuk/",
-    },
-  },
-  {
-    name: "@ImKKingshuk",
-    position: "Core Team Member",
-    imgUrl: "kingshuk.png",
-    social: {
-      github: "https://github.com/ImKKingshuk",
-      linkedin: "https://www.linkedin.com/in/imkkingshuk/",
-      twitter: "https://twitter.com/imkkingshuk/",
-      facebook: "https://www.facebook.com/imkkingshuk/",
-      instagram: "https://www.instagram.com/imkkingshuk/",
-    },
-  },
-  {
-    name: "@ImKKingshuk",
-    position: "Core Team Member",
-    imgUrl: "kingshuk.png",
-    social: {
-      github: "https://github.com/ImKKingshuk",
-      linkedin: "https://www.linkedin.com/in/imkkingshuk/",
-      twitter: "https://twitter.com/imkkingshuk/",
-      facebook: "https://www.facebook.com/imkkingshuk/",
-      instagram: "https://www.instagram.com/imkkingshuk/",
-    },
-  },
-  {
-    name: "@ImKKingshuk",
-    position: "Core Team Member",
-    imgUrl: "kingshuk.png",
-    social: {
-      github: "https://github.com/ImKKingshuk",
-      linkedin: "https://www.linkedin.com/in/imkkingshuk/",
-      twitter: "https://twitter.com/imkkingshuk/",
-      facebook: "https://www.facebook.com/imkkingshuk/",
-      instagram: "https://www.instagram.com/imkkingshuk/",
-    },
-  },
+
   // Add more team members
 ];
 
