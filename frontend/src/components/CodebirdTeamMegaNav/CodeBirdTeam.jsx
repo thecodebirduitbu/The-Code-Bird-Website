@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: "@ImKKingshuk",
     position: "Core Team Member",
-    imgUrl: "/Images/demoimg.png",
+    imgUrl: "/demoimg.png",
     social: {
       github: "https://github.com/ImKKingshuk",
       linkedin: "https://www.linkedin.com/in/imkkingshuk/",
