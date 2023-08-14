@@ -17,13 +17,6 @@ const membersData = [
   // Add more members here
 ];
 
-const socialLinkData = [
-  { id: "github", icon: FaGithub, color: "blue-500" },
-  { id: "twitter", icon: FaTwitter, color: "green-500" },
-  { id: "linkedin", icon: FaLinkedin, color: "indigo-500" },
-  { id: "instagram", icon: FaInstagram, color: "pink-500" },
-];
-
 function SocialIcon({ href, icon: Icon, color }) {
   return (
     <a
