@@ -24,7 +24,7 @@ const membersData = [
   {
     id: "developer2",
     name: "Amit Kumar",
-    role: "Software Engineer",
+    role: "Core Committee Member(CSE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
