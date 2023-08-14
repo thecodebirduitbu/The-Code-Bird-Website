@@ -97,7 +97,7 @@ function CodeBirdTeam() {
               </h4>
               <p className="text-gray-400">{item.position}</p>
 
-              <div className="flex items-center justify-center mt-3 space-x-2 text-xl ">
+              <div className="flex items-center justify-between mt-3 px-6 text-xl ">
                 <a
                   href={item.social.github}
                   className="text-white    hover:text-gray-700    "
