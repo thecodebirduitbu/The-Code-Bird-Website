@@ -96,7 +96,7 @@ const membersData = [
   {
     id: "developer 3",
     name: "Keshav Singh",
-    role: " ",
+    role: "Executive Committee Member(IT 2013-17)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
