@@ -27,8 +27,6 @@ const Login = () => {
        });
      };
 
-  
-
      const registerUserSubmit = async (e) => {
        e.preventDefault();
        if (!formData.email || !formData.password) {
