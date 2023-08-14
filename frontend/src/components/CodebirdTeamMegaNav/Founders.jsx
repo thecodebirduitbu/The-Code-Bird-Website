@@ -21,6 +21,30 @@ const membersData = [
       { ...socialLinkData[3], href: "https://instagram.com/developer1" },
     ],
   },
+  {
+    id: "developer2",
+    name: "Developer 2",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 3",
+    name: "Developer 3",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
   // Add more members here
 ];
 
@@ -71,7 +95,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
 function Founders() {
   return (
     <div className="py-20 mx-6">
-      <h1 className="text-3xl text-white text-center pb-10">Our Founders</h1>
+      <h1 className="text-[3rem] text-white text-center pb-10">Our Founders</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
         {membersData.map((member) => (
           <MemberCard key={member.id} {...member} />
