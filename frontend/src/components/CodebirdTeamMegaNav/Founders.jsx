@@ -46,7 +46,7 @@ const membersData = [
     ],
   },
   {
-    id: "developer 3",
+    id: "developer 4",
     name: "Kumar Saurav",
     role: "Core Committee Member(CSE 2015-19)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -59,7 +59,7 @@ const membersData = [
   },
 
   {
-    id: "developer 3",
+    id: "developer 5",
     name: "Navneet Prashant",
     role: "Core Committee Member(CSE 2015-19)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -71,7 +71,7 @@ const membersData = [
     ],
   },
   {
-    id: "developer 3",
+    id: "developer 6",
     name: "Ayush Kumar",
     role: "Core Committee Member(CSE 2015-19)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -83,7 +83,7 @@ const membersData = [
     ],
   },
   {
-    id: "developer 3",
+    id: "developer 7",
     name: "Keshav Singh",
     role: "Executive Committee Member(IT 2013-17)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -95,7 +95,7 @@ const membersData = [
     ],
   },
   {
-    id: "developer 3",
+    id: "developer 8",
     name: "Rahul Bhattacharjee",
     role: "Executive Committee Member(IT 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -107,7 +107,7 @@ const membersData = [
     ],
   },
   {
-    id: "developer 3",
+    id: "developer 9",
     name: "Piyush Kumar",
     role: "Executive Committee Member(ECE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
