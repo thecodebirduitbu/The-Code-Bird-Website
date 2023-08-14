@@ -1,12 +1,18 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 import "./CoadBirdTeam.css";
 
 const teamMembers = [
   {
-    name: "John Doe",
-    position: "CEO",
-    imgUrl: "john-doe.jpg",
+    name: "@ImKKingshuk",
+    position: "Core Team Member",
+    imgUrl: "kingshuk.png",
     social: {
       linkedin: "https://www.linkedin.com/in/johndoe/",
       twitter: "https://twitter.com/johndoe/",
@@ -38,6 +44,9 @@ const CoadBirdTeam = () => {
                   <p className="description">{item.position}</p>
 
                   <div className="team__member-social">
+                    <a href={item.social.github} className="github">
+                      <FaGithub />
+                    </a>
                     <a href={item.social.linkedin} className="linkedin">
                       <FaLinkedin />
                     </a>
