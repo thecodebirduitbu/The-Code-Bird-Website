@@ -78,10 +78,10 @@ function CodeBirdTeam() {
         Our <span className="text-blue-500">Core Team</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-6 mx-auto">
         {teamMembers.map((item, index) => (
           <div
-            className="outline outline-white rounded-lg w-1/4 text-center"
+            className="outline outline-white rounded-lg w-14 h-fit text-center"
             key={index}
           >
             <div className="w-full h-40 bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
