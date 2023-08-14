@@ -14,6 +14,18 @@ const membersData = [
       { ...socialLinkData[3], href: "https://instagram.com/developer1" },
     ],
   },
+  {
+    id: "developer1",
+    name: "Developer 1",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
   // Add more members here
 ];
 
