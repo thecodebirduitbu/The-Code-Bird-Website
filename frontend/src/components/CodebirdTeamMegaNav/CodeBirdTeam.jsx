@@ -64,7 +64,7 @@ function CodeBirdTeam() {
   return (
     <div className="py-[8rem]">
       <h2 className="text-[3rem] text-center text-white">
-        Our <span className="text-purple-500">Core Team</span>
+        Our <span className="text-purple-600">Core Team</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6 mx-10">
