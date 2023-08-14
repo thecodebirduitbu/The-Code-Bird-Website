@@ -15,8 +15,8 @@ const membersData = [
     ],
   },
   {
-    id: "developer1",
-    name: "Developer 1",
+    id: "developer2",
+    name: "Developer 2",
     role: "Software Engineer",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
