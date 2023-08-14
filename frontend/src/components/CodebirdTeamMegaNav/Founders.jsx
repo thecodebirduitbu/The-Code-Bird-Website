@@ -35,8 +35,8 @@ const membersData = [
   },
   {
     id: "developer 3",
-    name: "Developer 3",
-    role: "Software Engineer",
+    name: "Abhishek Mishra",
+    role: "Core Committee Member(CSE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
