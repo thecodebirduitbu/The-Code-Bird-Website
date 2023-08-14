@@ -28,7 +28,7 @@ function SocialIcon({ href, icon: Icon, color }) {
   return (
     <a
       href={href}
-      className={`text-${color} hover:text-gray-600`}
+      className={`text-${color} `}
       target="_blank"
       rel="noopener noreferrer"
     >
