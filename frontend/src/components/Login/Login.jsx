@@ -27,8 +27,6 @@ const Login = () => {
        });
      };
 
-  
-
      const registerUserSubmit = async (e) => {
        e.preventDefault();
        if (!formData.email || !formData.password) {
@@ -37,7 +35,7 @@ const Login = () => {
         console.log(formData);
          try {
             const res = await axios.post(
-              "http://localhost:9000/api/login",
+              "https://the-code-bird-website-bp9h.vercel.app/api/login",
               formData,
               {
                 withCredentials: true,
