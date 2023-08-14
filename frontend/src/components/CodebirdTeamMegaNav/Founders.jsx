@@ -51,7 +51,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
         <p className="text-base leading-relaxed text-gray-500 font-normal">
           {bio}
         </p>
-        <div className="flex justify-start space-x-2">
+        <div className="flex justify-between mx-6">
           {socialLinks.map((link, index) => (
             <SocialIcon key={index} href={link.href} icon={link.icon} />
           ))}
