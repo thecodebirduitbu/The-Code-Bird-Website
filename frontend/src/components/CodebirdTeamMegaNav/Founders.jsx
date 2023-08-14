@@ -1,13 +1,6 @@
 import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-const socialLinkData = [
-  { id: "github", icon: FaGithub, color: "blue-500" },
-  { id: "twitter", icon: FaTwitter, color: "green-500" },
-  { id: "linkedin", icon: FaLinkedin, color: "indigo-500" },
-  { id: "instagram", icon: FaInstagram, color: "pink-500" },
-];
-
 const membersData = [
   {
     id: "developer1",
@@ -22,6 +15,13 @@ const membersData = [
     ],
   },
   // Add more members here
+];
+
+const socialLinkData = [
+  { id: "github", icon: FaGithub, color: "blue-500" },
+  { id: "twitter", icon: FaTwitter, color: "green-500" },
+  { id: "linkedin", icon: FaLinkedin, color: "indigo-500" },
+  { id: "instagram", icon: FaInstagram, color: "pink-500" },
 ];
 
 function SocialIcon({ href, icon: Icon, color }) {
