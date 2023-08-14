@@ -52,31 +52,31 @@ function CodeBirdTeam() {
               <div className="flex items-center justify-center mt-3 space-x-2 text-xl ">
                 <a
                   href={item.social.github}
-                  className="text-white   hover:bg-gray-700   rounded-full"
+                  className="text-white    hover:text-gray-700    "
                 >
                   <FaGithub />
                 </a>
                 <a
                   href={item.social.linkedin}
-                  className="text-white   hover:bg-blue-500   rounded-full"
+                  className="text-white    hover:text-blue-500    "
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href={item.social.twitter}
-                  className="text-white   hover:bg-blue-400   rounded-full"
+                  className="text-white    hover:text-blue-400    "
                 >
                   <FaTwitter />
                 </a>
                 <a
                   href={item.social.facebook}
-                  className="text-white   hover:bg-blue-800   rounded-full"
+                  className="text-white    hover:text-blue-800    "
                 >
                   <FaFacebook />
                 </a>
                 <a
                   href={item.social.instagram}
-                  className="text-white   hover:bg-pink-600   rounded-full"
+                  className="text-white    hover:text-pink-600    "
                 >
                   <FaInstagram />
                 </a>
