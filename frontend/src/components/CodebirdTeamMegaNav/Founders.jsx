@@ -94,7 +94,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
 
 function Founders() {
   return (
-    <div className="py-20 mx-6">
+    <div className="py-10 mx-6">
       <h1 className="text-[3rem] text-white text-center pb-10">Our Founders</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
         {membersData.map((member) => (
