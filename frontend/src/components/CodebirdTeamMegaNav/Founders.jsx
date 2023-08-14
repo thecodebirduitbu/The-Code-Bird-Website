@@ -1,13 +1,71 @@
 import React from "react";
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-function Founders() {
+function SocialIcon({ href, icon: Icon }) {
   return (
-    <div className="py-[10rem]">
-      <h1 className="text-[3rem] text-white text-center">
-        Founders of The Codebird
-      </h1>
+    <a href={href} className="text-gray-500 hover:text-gray-600">
+      <Icon size={24} />
+    </a>
+  );
+}
+
+function MemberCard({ name, role, bio, socialLinks }) {
+  return (
+    <div className="w-full bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row mb-4">
+      <div className="w-full md:w-2/5 h-80">
+        <img
+          className="object-center object-cover w-full h-full"
+          src="/demo.png"
+          alt="photo"
+        />
+      </div>
+      <div className="w-full md:w-3/5 text-left p-6 md:p-4 space-y-2">
+        <p className="text-xl text-white font-bold">{name}</p>
+        <p className="text-base text-gray-400 font-normal">{role}</p>
+        <p className="text-base leading-relaxed text-gray-500 font-normal">
+          {bio}
+        </p>
+        <div className="flex justify-start space-x-2">
+          {socialLinks.map((link, index) => (
+            <SocialIcon key={index} href={link.href} icon={link.icon} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Founders;
+function MemberList({ members }) {
+  return (
+    <div>
+      {members.map((member, index) => (
+        <MemberCard key={index} {...member} />
+      ))}
+    </div>
+  );
+}
+
+const membersData = [
+  {
+    name: "Dany Bailey",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { href: "#", icon: FaGithub },
+      { href: "#", icon: FaTwitter },
+      { href: "#", icon: FaLinkedin },
+      { href: "#", icon: FaInstagram },
+    ],
+  },
+  // Add more members here
+];
+
+export default function Founders() {
+  return (
+    <div className="py-[10rem]">
+      <h1 className="text-[3rem] text-white text-center ">Our Founders</h1>
+
+      <MemberList members={membersData} />
+    </div>
+  );
+}
