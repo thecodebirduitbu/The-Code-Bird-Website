@@ -44,7 +44,7 @@ function CodeBirdTeam() {
               />
             </div>
             <div className="p-5">
-              <h4 className="text-white font-semibold text-lg mb-2">
+              <h4 className="text-white font-semibold text-xl  mb-2">
                 {item.name}
               </h4>
               <p className="text-gray-400">{item.position}</p>
@@ -52,31 +52,31 @@ function CodeBirdTeam() {
               <div className="flex items-center justify-center mt-3 space-x-2 ">
                 <a
                   href={item.social.github}
-                  className="text-white text-lg hover:bg-gray-700   rounded-full"
+                  className="text-white   hover:bg-gray-700   rounded-full"
                 >
                   <FaGithub />
                 </a>
                 <a
                   href={item.social.linkedin}
-                  className="text-white text-lg hover:bg-blue-500   rounded-full"
+                  className="text-white   hover:bg-blue-500   rounded-full"
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href={item.social.twitter}
-                  className="text-white text-lg hover:bg-blue-400   rounded-full"
+                  className="text-white   hover:bg-blue-400   rounded-full"
                 >
                   <FaTwitter />
                 </a>
                 <a
                   href={item.social.facebook}
-                  className="text-white text-lg hover:bg-blue-800   rounded-full"
+                  className="text-white   hover:bg-blue-800   rounded-full"
                 >
                   <FaFacebook />
                 </a>
                 <a
                   href={item.social.instagram}
-                  className="text-white text-lg hover:bg-pink-600   rounded-full"
+                  className="text-white   hover:bg-pink-600   rounded-full"
                 >
                   <FaInstagram />
                 </a>
