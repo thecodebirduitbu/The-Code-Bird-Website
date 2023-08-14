@@ -1,8 +1,7 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import CoadBirdTeam from "./Team/CoadBirdTeam";
-
+import CodeBirdTeam from "./CodebirdTeamMegaNav/CodeBirdTeam";
 import "./Team/Team.css";
 
 const Team = () => {
@@ -91,7 +90,7 @@ const Team = () => {
           }}
         />
 
-        <CoadBirdTeam />
+        <CodeBirdTeam />
       </div>
     </div>
   );

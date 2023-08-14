@@ -11,8 +11,8 @@ const socialLinkData = [
 const membersData = [
   {
     id: "developer1",
-    name: "Developer 1",
-    role: "Software Engineer",
+    name: "Vishal Kumar",
+    role: "President(CSE 2013-17)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
@@ -23,8 +23,8 @@ const membersData = [
   },
   {
     id: "developer2",
-    name: "Developer 2",
-    role: "Software Engineer",
+    name: "Amit Kumar",
+    role: "Core Committee Member(CSE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
@@ -35,8 +35,81 @@ const membersData = [
   },
   {
     id: "developer 3",
-    name: "Developer 3",
-    role: "Software Engineer",
+    name: "Abhishek Mishra",
+    role: "Core Committee Member(CSE 2014-18)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 4",
+    name: "Kumar Saurav",
+    role: "Core Committee Member(CSE 2015-19)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+
+  {
+    id: "developer 5",
+    name: "Navneet Prashant",
+    role: "Core Committee Member(CSE 2015-19)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 6",
+    name: "Ayush Kumar",
+    role: "Core Committee Member(CSE 2015-19)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 7",
+    name: "Keshav Singh",
+    role: "Executive Committee Member(IT 2013-17)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 8",
+    name: "Rahul Bhattacharjee",
+    role: "Executive Committee Member(IT 2014-18)",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { ...socialLinkData[0], href: "https://github.com/developer1" },
+      { ...socialLinkData[1], href: "https://twitter.com/developer1" },
+      { ...socialLinkData[2], href: "https://linkedin.com/in/developer1" },
+      { ...socialLinkData[3], href: "https://instagram.com/developer1" },
+    ],
+  },
+  {
+    id: "developer 9",
+    name: "Piyush Kumar",
+    role: "Executive Committee Member(ECE 2014-18)",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     socialLinks: [
       { ...socialLinkData[0], href: "https://github.com/developer1" },
@@ -67,7 +140,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
       <div className="w-full md:w-2/5 h-80">
         <img
           className="object-center object-cover w-full h-full"
-          src="/demo.png"
+          src="/Images/demomg.png"
           alt={`${name}'s photo`}
         />
       </div>
@@ -94,7 +167,7 @@ function MemberCard({ name, role, bio, socialLinks }) {
 
 function Founders() {
   return (
-    <div className="py-10 mx-6">
+    <div className="py-[8rem] mx-6">
       <h1 className="text-[3rem] text-white text-center pb-10">Our Founders</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
         {membersData.map((member) => (
