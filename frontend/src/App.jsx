@@ -25,7 +25,7 @@ import Login from "./components/Login/Login";
 import AlreadyMember from "./components/RegisterCoadbird/AlreadyMember";
 import Paymentdone from "./components/RegisterCoadbird/Paymentdone";
 import { GlobalStateProvider } from "../src/states/GlobalState";
-import CodeBirdTeam from "./components/CodebirdTeamMegaNav/CodeBirdTeam";
+
 // import ConfettiComponent from "./components/Confetti/Confetti";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
               <Route path="/" element={<HomePages />} />
 
               <Route path="/faQs" element={<FAQComponent />} />
-              <Route path="/team" element={<CodeBirdTeam />} />
+              <Route path="/team" element={<Team />} />
               <Route path="/event" element={<Eventpg />} />
               <Route path="/register" element={<Payment />} />
               <Route path="/login" element={<Login />} />
