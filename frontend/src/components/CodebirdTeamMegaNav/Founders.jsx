@@ -13,6 +13,17 @@ const membersData = [
       { href: "#", icon: FaInstagram },
     ],
   },
+  {
+    name: "Developer 2",
+    role: "Software Engineer",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    socialLinks: [
+      { href: "#", icon: FaGithub },
+      { href: "#", icon: FaTwitter },
+      { href: "#", icon: FaLinkedin },
+      { href: "#", icon: FaInstagram },
+    ],
+  },
   // Add more members here
 ];
 
