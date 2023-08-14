@@ -6,7 +6,6 @@ import {
   FaInstagram,
   FaGithub,
 } from "react-icons/fa";
-import "./CoadBirdTeam.css";
 
 const teamMembers = [
   {
@@ -14,49 +13,71 @@ const teamMembers = [
     position: "Core Team Member",
     imgUrl: "kingshuk.png",
     social: {
-      linkedin: "https://www.linkedin.com/in/johndoe/",
-      twitter: "https://twitter.com/johndoe/",
-      facebook: "https://www.facebook.com/johndoe/",
-      instagram: "https://www.instagram.com/johndoe/",
+      github: "https://github.com/ImKKingshuk",
+      linkedin: "https://www.linkedin.com/in/imkkingshuk/",
+      twitter: "https://twitter.com/imkkingshuk/",
+      facebook: "https://www.facebook.com/imkkingshuk/",
+      instagram: "https://www.instagram.com/imkkingshuk/",
     },
   },
   // Add more team members
 ];
 
-const CoadBirdTeam = () => {
+function CodeBirdTeam() {
   return (
     <div className="pt-14">
-      <div className="our__team">
-        <div className="container">
-          <div className="team__content">
-            <h2>
-              Our <span className="highlight">Core Team</span>
+      <div className="bg-gray-900 py-20">
+        <div className="container mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-white">
+              Our <span className="text-blue-500">Core Team</span>
             </h2>
           </div>
-          <div className="team__wrapper">
+          <div className="flex flex-wrap justify-center gap-8">
             {teamMembers.map((item, index) => (
-              <div className="team__item" key={index}>
-                <div className="team__img">
-                  <img src={item.imgUrl} alt="" />
+              <div className="bg-gray-900 rounded-lg w-1/4" key={index}>
+                <div className="w-full h-40 bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
+                  <img
+                    src={item.imgUrl}
+                    alt=""
+                    className="w-3/4 h-auto transform scale-125"
+                  />
                 </div>
-                <div className="team__details">
-                  <h4>{item.name}</h4>
-                  <p className="description">{item.position}</p>
+                <div className="p-5">
+                  <h4 className="text-white font-semibold text-lg mb-2">
+                    {item.name}
+                  </h4>
+                  <p className="text-gray-400">{item.position}</p>
 
-                  <div className="team__member-social">
-                    <a href={item.social.github} className="github">
+                  <div className="flex items-center justify-center mt-3 space-x-2">
+                    <a
+                      href={item.social.github}
+                      className="text-white text-lg hover:bg-gray-700 p-1 rounded-full"
+                    >
                       <FaGithub />
                     </a>
-                    <a href={item.social.linkedin} className="linkedin">
+                    <a
+                      href={item.social.linkedin}
+                      className="text-white text-lg hover:bg-blue-500 p-1 rounded-full"
+                    >
                       <FaLinkedin />
                     </a>
-                    <a href={item.social.twitter} className="twitter">
+                    <a
+                      href={item.social.twitter}
+                      className="text-white text-lg hover:bg-blue-400 p-1 rounded-full"
+                    >
                       <FaTwitter />
                     </a>
-                    <a href={item.social.facebook} className="facebook">
+                    <a
+                      href={item.social.facebook}
+                      className="text-white text-lg hover:bg-blue-800 p-1 rounded-full"
+                    >
                       <FaFacebook />
                     </a>
-                    <a href={item.social.instagram} className="instagram">
+                    <a
+                      href={item.social.instagram}
+                      className="text-white text-lg hover:bg-pink-600 p-1 rounded-full"
+                    >
                       <FaInstagram />
                     </a>
                   </div>
@@ -68,6 +89,6 @@ const CoadBirdTeam = () => {
       </div>
     </div>
   );
-};
+}
 
-export default CoadBirdTeam;
+export default CodeBirdTeam;
