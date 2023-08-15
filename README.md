@@ -22,4 +22,4 @@ npm run start:frontend
 OR
 Only Start the backend:
 
-npm start:backend
+npm run start:backend
