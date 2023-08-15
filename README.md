@@ -17,7 +17,7 @@ npm start
 OR
 Only Start the frontend:
 
-npm start:frontend
+npm run start:frontend
 
 OR
 Only Start the backend:
