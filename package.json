@@ -1,0 +1,13 @@
+{
+  "name": "the-codebird-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
