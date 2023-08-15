@@ -18,10 +18,12 @@ Start the backend and frontend servers concurrently :
 
 npm start
 
-Start the frontend:
+OR
+Only Start the frontend:
 
 npm start:frontend
 
-Start the backend:
+OR
+Only Start the backend:
 
-npm start
+npm start:backend
