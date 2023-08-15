@@ -65,6 +65,16 @@
     font-family: 'Work Sans', sans-serif;
     
 }
+.headingContainer{
+    max-width: 600px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.headingContainer p{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
 .details{
     font-weight: bold;
     font-size: 23px;
@@ -73,10 +83,11 @@
     font-style: italic;
 }
 .presentBtn{
-    height: 2rem;
-    width: 6.5rem;
+    height: 2.7rem;
+    width: 7.5rem;
     padding: 5px;
     border-radius: 10px;
+    font-size: 1rem;
    font-family: 'Ubuntu', sans-serif;
     background-color: #915eff;
     color: #fff;
@@ -84,6 +95,7 @@
     font-weight: 500;
     transition: 0.3s ease-in;
     margin-top: 20px;
+    border: none;
 
 
 }
@@ -93,6 +105,13 @@
     transition: 0.3s ease-in;
 
 
+}
+.eventdivformap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
 }
 
 
