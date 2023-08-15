@@ -70,7 +70,7 @@ const ConfettiAnimation = () => {
             width={window.innerWidth}
             height={window.innerHeight}
             recycle={recycleConfetti}
-            gravity={0.10}
+            gravity={0.30}
             colors={[
               '#FF00FF',
               '#00FF00',
