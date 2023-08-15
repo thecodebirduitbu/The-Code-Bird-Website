@@ -3,7 +3,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import "./index.css";
 import Footer from "./components/Footer/Footer";
 import HomePages from "./components/Homepages/HomePages";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
@@ -45,44 +45,44 @@ const App = () => {
 
   return isLoading ? (
     <VideoPreloader />
-    ) : (
+  ) : (
     <BrowserRouter>
       <GlobalStateProvider>
-         {/* <div className="relative z-0 bg-primary"> 
+        {/* <div className="relative z-0 bg-primary"> 
            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">  */}
-            {/* <ConfettiComponent/> */}
-            <Navbar />
+        {/* <ConfettiComponent/> */}
+        <Navbar />
 
-            <Routes>
-              <Route path="/" element={<HomePages />} />
+        <Routes>
+          <Route path="/" element={<HomePages />} />
 
-              <Route path="/faQs" element={<FAQComponent />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/event" element={<Eventpg />} />
-              <Route path="/register" element={<Payment />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/membership" element={<RegisterCodebird />} />
-              <Route path="/paymentdone" element={<Paymentdone />} />
-              <Route path="/member" element={<AlreadyMember />} />
-              <Route path="/ourstory" element={<OurStory />} />
-              <Route path="/founders" element={<Founders />} />
-              <Route path="/devteam" element={<DevTeam />} />
-              <Route path="/advisor" element={<Advisor />} />
-              <Route path="/webdev" element={<WebDev />} />
-              <Route path="/androiddev" element={<AndroidDev />} />
-              <Route path="/cpanddsa" element={<CPandDSA />} />
-              <Route path="/mlandai" element={<MLandAI />} />
-              <Route path="/cybersecurity" element={<CyberSecurity />} />
-              <Route path="/web3" element={<Web3 />} />
-              <Route path="/gamedev" element={<GameDev />} />
-              <Route path="/robotshardware" element={<RobotsHardware />} />
-            </Routes>
-         {/* </div> */}
-          <Footer />
-         {/* </div>  */}
+          <Route path="/faQs" element={<FAQComponent />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/event" element={<Eventpg />} />
+          <Route path="/register" element={<Payment />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/membership" element={<RegisterCodebird />} />
+          <Route path="/paymentdone" element={<Paymentdone />} />
+          <Route path="/member" element={<AlreadyMember />} />
+          <Route path="/ourstory" element={<OurStory />} />
+          <Route path="/founders" element={<Founders />} />
+          <Route path="/devteam" element={<DevTeam />} />
+          <Route path="/advisor" element={<Advisor />} />
+          <Route path="/webdev" element={<WebDev />} />
+          <Route path="/androiddev" element={<AndroidDev />} />
+          <Route path="/cpanddsa" element={<CPandDSA />} />
+          <Route path="/mlandai" element={<MLandAI />} />
+          <Route path="/cybersecurity" element={<CyberSecurity />} />
+          <Route path="/web3" element={<Web3 />} />
+          <Route path="/gamedev" element={<GameDev />} />
+          <Route path="/robotshardware" element={<RobotsHardware />} />
+        </Routes>
+        {/* </div> */}
+        <Footer />
+        {/* </div>  */}
       </GlobalStateProvider>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
