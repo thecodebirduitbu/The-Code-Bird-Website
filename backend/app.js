@@ -11,7 +11,7 @@ require('./database/connectDatabase')
 
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://localhost:5174",
   credentials: true,
 };
 app.use(cors(corsOptions));

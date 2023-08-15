@@ -1,5 +1,9 @@
 const User = require("../models/user.js");
 const Payment = require("../models/payment.js");
+const Team = require('../models/CoreTeam.js');
+const Event = require('../models/Event.js');
+
+const AppliedStudents = require('../models/apply.js')
 const crypto = require("crypto");
 const Razorpay = require("razorpay");
 const bcrypt = require("bcryptjs");
@@ -63,7 +67,7 @@ const paymentDone = async (req, res) => {
       );
       await payment.save();
       res.redirect(
-        `http://localhost:3000/paymentdone?reference=${razorpay_payment_id}`
+        `http://localhost:5174/paymentdone?reference=${razorpay_payment_id}`
       );
     } catch (error) {
       res.status(400).json({
@@ -189,6 +193,55 @@ const userData = async (req,res)=>{
 }
 
 
+const coreTeamData = async (req, res) => {
+  try {
+    const users = await Team.find().exec();
+    res.json(users);
+  } catch (error) {
+    res.status(200).json(error);
+  }
+};
+
+
+
+
+const eventData = async (req, res) => {
+  try {
+    const events = await Event.find().exec();
+    res.json(events);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
+
+const checkRegister = (req,res,next)=>{
+  const { name, eventName } = req.body;
+  const user = AppliedStudents.findOne({name:name});
+  if(eventName == user.eventName){
+     return res.status(400).json(error);
+  }
+  next();
+
+}
+
+
+const singleUser = async (req, res) => {
+  const {name , eventName } = req.body;
+ 
+    try {
+      const newUser = new AppliedStudents({
+        name,
+        eventName,
+      });
+      const done = await newUser.save();
+      if (!done) {
+        return res.status(400).json("Register Unsuccessful");
+      }
+      res.status(200).json(newUser);
+    } catch (error) {
+      res.status(400).json(error);
+    }
+};
 
 
 
@@ -207,10 +260,4 @@ const userData = async (req,res)=>{
 
 
 
-
-
-
-
-
-
-module.exports = { register, paymentOrder, paymentDone , login , userData , logout };
+module.exports = { register, paymentOrder, paymentDone , login , userData , logout , coreTeamData , eventData , singleUser};
