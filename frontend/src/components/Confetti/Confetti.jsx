@@ -7,8 +7,8 @@ const ConfettiAnimation = () => {
   const [originalZIndex, setOriginalZIndex] = useState(null);
 
   useEffect(() => {
-    const confettiDuration = 10000; // 10 seconds in milliseconds
-    const recycleDuration = 5000; // 5 seconds in milliseconds
+    const confettiDuration = 70000; // 10 seconds in milliseconds
+    const recycleDuration = 4000; // 5 seconds in milliseconds
 
     const timeoutId = setTimeout(() => {
       setShowConfetti(false);
@@ -70,7 +70,7 @@ const ConfettiAnimation = () => {
             width={window.innerWidth}
             height={window.innerHeight}
             recycle={recycleConfetti}
-            gravity={0.30}
+            gravity={0.20}
             colors={[
               '#FF00FF',
               '#00FF00',
