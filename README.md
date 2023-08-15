@@ -20,4 +20,8 @@ npm start
 
 Start the frontend:
 
+npm start:frontend
+
 Start the backend:
+
+npm start
