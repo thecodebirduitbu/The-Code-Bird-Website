@@ -8,6 +8,6 @@
     "start:frontend": "cd frontend && npm run dev"
   },
   "dependencies": {
-    "concurrently": "^6.4.0"
+    "concurrently": "^8.2.0"
   }
 }
