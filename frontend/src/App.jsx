@@ -3,7 +3,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import "./index.css";
 import Footer from "./components/Footer/Footer";
 import HomePages from "./components/Homepages/HomePages";
-
+import React, { useState, useEffect } from 'react';
 import FAQComponent from "./components/FAQS/FAQComponent";
 import Team from "./components/Team";
 import Eventpg from "./components/Eventpg";
@@ -25,15 +25,31 @@ import Login from "./components/Login/Login";
 import AlreadyMember from "./components/RegisterCoadbird/AlreadyMember";
 import Paymentdone from "./components/RegisterCoadbird/Paymentdone";
 import { GlobalStateProvider } from "../src/states/GlobalState";
+import VideoPreloader from "./components/PreLoader/VideoPreloader";
 
 // import ConfettiComponent from "./components/Confetti/Confetti";
 
-function App() {
-  return (
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Let create async method to fetch fake data
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 10000);
+    };
+
+    fakeDataFetch();
+  }, []);
+
+  return isLoading ? (
+    <VideoPreloader />
+    ) : (
     <BrowserRouter>
       <GlobalStateProvider>
-        <div className="relative z-0 bg-primary">
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+         {/* <div className="relative z-0 bg-primary"> 
+           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">  */}
             {/* <ConfettiComponent/> */}
             <Navbar />
 
@@ -61,9 +77,9 @@ function App() {
               <Route path="/gamedev" element={<GameDev />} />
               <Route path="/robotshardware" element={<RobotsHardware />} />
             </Routes>
-          </div>
+         {/* </div> */}
           <Footer />
-        </div>
+         {/* </div>  */}
       </GlobalStateProvider>
     </BrowserRouter>
   );

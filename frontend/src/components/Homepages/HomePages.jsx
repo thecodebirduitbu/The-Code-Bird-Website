@@ -10,6 +10,7 @@ import ConfettiComponent from "../Confetti/Confetti";
 
 export default function HomePages() {
   
+  
   return (
     //Its the Homepage / Index page of this site
     <div>
