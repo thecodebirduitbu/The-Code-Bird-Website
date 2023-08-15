@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./about.css";
+import { StarsCanvas } from "./canvas";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -108,7 +109,9 @@ const About = () => {
         <button className="slider-btn next" onClick={goToNextSlide}>
           <FaChevronRight />
         </button>
+        
       </div>
+      <StarsCanvas/>
     </>
   );
 };
