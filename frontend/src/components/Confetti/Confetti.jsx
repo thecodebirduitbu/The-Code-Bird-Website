@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Confetti from 'react-confetti';
+import React, { useState, useEffect } from "react";
+import Confetti from "react-confetti";
 
 const ConfettiAnimation = () => {
   const [showConfetti, setShowConfetti] = useState(true);
@@ -7,7 +7,7 @@ const ConfettiAnimation = () => {
   const [originalZIndex, setOriginalZIndex] = useState(null);
 
   useEffect(() => {
-    const confettiDuration = 70000; // 10 seconds in milliseconds
+    const confettiDuration = 5000; // 10 seconds in milliseconds
     const recycleDuration = 4000; // 5 seconds in milliseconds
 
     const timeoutId = setTimeout(() => {
@@ -27,7 +27,7 @@ const ConfettiAnimation = () => {
 
   const handleConfettiClick = () => {
     if (originalZIndex === null) {
-      const mainContent = document.getElementById('main-content');
+      const mainContent = document.getElementById("main-content");
       if (mainContent) {
         const zIndexValue = window.getComputedStyle(mainContent).zIndex;
         setOriginalZIndex(zIndexValue);
@@ -41,26 +41,24 @@ const ConfettiAnimation = () => {
       <div
         id="main-content"
         style={{
-          position: 'relative',
+          position: "relative",
           zIndex: originalZIndex,
-          transition: 'z-index 0.5s', // Add a transition for a smoother effect
+          transition: "z-index 0.5s", // Add a transition for a smoother effect
         }}
-      >
-
-      </div>
+      ></div>
       <div
         style={{
-          position: 'absolute',
+          position: "absolute",
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          overflow: 'hidden',
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          overflow: "hidden",
           zIndex: showConfetti ? 9999 : -1,
-          transition: 'z-index 0.5s', // Add a transition for a smoother effect
+          transition: "z-index 0.5s", // Add a transition for a smoother effect
         }}
         onClick={handleConfettiClick}
       >
@@ -70,17 +68,17 @@ const ConfettiAnimation = () => {
             width={window.innerWidth}
             height={window.innerHeight}
             recycle={recycleConfetti}
-            gravity={0.20}
+            gravity={0.2}
             colors={[
-              '#FF00FF',
-              '#00FF00',
-              '#0000FF',
-              '#FFFF00',
-              '#FF0000',
-              '#00FFFF',
-              '#FF8000',
-              '#8000FF',
-              '#00FF80',
+              "#FF00FF",
+              "#00FF00",
+              "#0000FF",
+              "#FFFF00",
+              "#FF0000",
+              "#00FFFF",
+              "#FF8000",
+              "#8000FF",
+              "#00FF80",
             ]}
           />
         )}
