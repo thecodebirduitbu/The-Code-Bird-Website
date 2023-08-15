@@ -7,8 +7,8 @@ function AndroidDev() {
         Android Development
       </h1>
       <p className="text-lg mb-6 pt-16 text-justify">
-        Embark on an exciting journey into the world of Android app development!
-        In this domain, you'll master the art of building applications for the
+        Embark on an exciting journey into the world of Android development! In
+        this domain, you'll master the art of building applications for the
         world's most used mobile platform. From designing intuitive user
         interfaces to implementing powerful functionalities, Android development
         offers endless possibilities. Join us as we explore the Android
