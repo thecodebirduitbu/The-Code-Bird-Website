@@ -6,7 +6,7 @@ function TestimonialsSlider() {
     <div>
       <div className="my-8 ">
         <div className="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12">
-          <h1 className="p-4 text-[3rem] font-semibold leading-none text-center">
+          <h1 className="p-4 text-2xl md:text-[3rem] leading-none font-semibold text-center">
             Don't just take our words... Read reviews from our members
           </h1>
         </div>
@@ -84,7 +84,9 @@ function TestimonialsSlider() {
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
-              <p className="text-xl font-semibold leading-tight">Anuraj Kumar</p>
+              <p className="text-xl font-semibold leading-tight">
+                Anuraj Kumar
+              </p>
               <p className="text-sm uppercase">Web-Dev lead of The Codebird</p>
             </div>
           </div>
@@ -123,7 +125,9 @@ function TestimonialsSlider() {
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
               <p className="text-xl font-semibold leading-tight">Aditya Raj</p>
-              <p className="text-sm uppercase">Android/DSA lead of The Codebird</p>
+              <p className="text-sm uppercase">
+                Android/DSA lead of The Codebird
+              </p>
             </div>
           </div>
           <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
@@ -159,7 +163,9 @@ function TestimonialsSlider() {
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
-              <p className="text-xl font-semibold leading-tight">Mohtasheem Ejaz</p>
+              <p className="text-xl font-semibold leading-tight">
+                Mohtasheem Ejaz
+              </p>
               <p className="text-sm uppercase">President of the Codebird</p>
             </div>
           </div>
