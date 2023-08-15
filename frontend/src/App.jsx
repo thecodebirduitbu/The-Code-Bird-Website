@@ -37,7 +37,7 @@ const App = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 10000);
+      }, 4500);
     };
 
     fakeDataFetch();

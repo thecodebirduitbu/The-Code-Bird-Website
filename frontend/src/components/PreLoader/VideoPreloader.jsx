@@ -9,16 +9,12 @@ const VideoPreloader = () => {
   };
 
   return (
-    <div
-      className="mx-auto w-full h-full z-99999 bg-black items-center"
-      onClick={toggleMute}
-    >
+    <div className="video-preloader" onClick={toggleMute}>
       <video
-        src={Loader}
+        src="/CodebirdVideo.mp4"
         autoPlay
-        loop
         muted={isMuted}
-        className="w-full h-full"
+        className="video"
       ></video>
     </div>
   );
