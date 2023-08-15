@@ -6,11 +6,7 @@ Follow these steps to run app
 
 Install dependencies for both the backend and frontend :
 
-npm install
-cd frontend
-npm install
-cd ../backend
-npm install
+npm run install:all
 
 ### Start App
 
@@ -21,9 +17,9 @@ npm start
 OR
 Only Start the frontend:
 
-npm start:frontend
+npm run start:frontend
 
 OR
 Only Start the backend:
 
-npm start:backend
+npm run start:backend
