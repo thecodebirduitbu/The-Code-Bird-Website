@@ -1,4 +1,4 @@
-import React,{useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaLinkedin,
   FaTwitter,
@@ -9,23 +9,20 @@ import {
 import axios from "axios";
 
 function CodeBirdTeam() {
-
-
-const [data, setData] = useState([]);
-useEffect(() => {
-  axios
-    .get(`http://localhost:9000/api/allcoremembers`, {
-      withCredentials: true,
-    })
-    .then((response) => {
-      console.log(response.data);
-      setData(response.data);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-}, []);
-
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`http://localhost:9000/api/allcoremembers`, {
+        withCredentials: true,
+      })
+      .then((response) => {
+        console.log(response.data);
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <div className="py-[8rem]">
@@ -53,13 +50,18 @@ useEffect(() => {
               <p className="text-white font-semibold text-xl  mb-2">
                 {item.clubPosition}
               </p>
-             
 
               <div className="flex items-center justify-between mt-3 px-6 text-xl ">
-            
                 <a
                   href={item.linkedin}
-                  className="text-white    hover:text-blue-500    "
+                  className="text-white    hover:text-black    "
+                >
+                  <FaGithub />
+                </a>
+
+                <a
+                  href={item.linkedin}
+                  className="text-white    hover:text-sky-500    "
                 >
                   <FaLinkedin />
                 </a>
@@ -75,10 +77,7 @@ useEffect(() => {
                 >
                   <FaFacebook />
                 </a>
-                <a
-                  href='#'
-                  className="text-white    hover:text-pink-600    "
-                >
+                <a href="#" className="text-white    hover:text-pink-600    ">
                   <FaInstagram />
                 </a>
               </div>
