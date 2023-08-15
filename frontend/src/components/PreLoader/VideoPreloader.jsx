@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import "./style.css"
-import Loader from "./Glitch Countdown Logo_free.mp4"
+import React, { useState } from "react";
+import "./style.css";
+import Loader from "./Glitch Countdown Logo_free.mp4";
 const VideoPreloader = () => {
   const [isMuted, setIsMuted] = useState(true);
 
@@ -9,13 +9,16 @@ const VideoPreloader = () => {
   };
 
   return (
-    <div className="video-preloader" onClick={toggleMute}>
+    <div
+      className="mx-auto w-full h-full z-99999 bg-black items-center"
+      onClick={toggleMute}
+    >
       <video
         src={Loader}
         autoPlay
         loop
         muted={isMuted}
-        className="video"
+        className="w-full h-full"
       ></video>
     </div>
   );
