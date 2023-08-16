@@ -19,10 +19,10 @@ function OurTechTeam({ teamMembers }) {
                 <img src={`/devimg/${item.image}`} alt="img" />
               </div>
               <div className="infoDiv">
-                <div className="nameDiv">
-                  <p className="name">{item.name}</p>
-                  <p className="text-md text-center">{item.batch}</p>
-                  <p className="role">{item.position}</p>
+                <div className="nameDiv text-center">
+                  <p className=" text-xl font-semibold">{item.name}</p>
+                  <p className="text-md ">{item.batch}</p>
+                  <p className=" text-md font-medium italic">{item.position}</p>
                 </div>
                 <div className="socialDiv">
                   {item.github && (
