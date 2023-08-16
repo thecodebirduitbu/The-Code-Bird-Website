@@ -14,7 +14,7 @@ import { BiLogOutCircle } from "react-icons/bi";
 const Navbar = () => {
   const navigate = useNavigate();
   const [isMenuVisible, setMenuVisible] = useState(false);
-  const [showProfile , setShowProfile] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
   const { state, dispatch } = useContext(GlobalContext);
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
@@ -26,7 +26,6 @@ const Navbar = () => {
         setMenuVisible(false);
       }
     };
-  
 
     window.addEventListener("resize", handleResize);
 
