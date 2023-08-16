@@ -29,6 +29,11 @@ function OurTechTeam({ teamMembers }) {
                       <FaLinkedin className="text-2xl text-gray-600" />
                     </a>
                   )}
+                  {item.twitter && (
+                    <a href={item.twitter}>
+                      <FaTwitter className="text-2xl text-gray-600" />
+                    </a>
+                  )}
                   {item.instagram && (
                     <a href={item.instagram}>
                       <FaInstagram className="text-2xl text-gray-600" />
@@ -36,7 +41,7 @@ function OurTechTeam({ teamMembers }) {
                   )}
                   {item.facebook && (
                     <a href={item.facebook}>
-                      <FaTwitter className="text-2xl text-gray-600" />
+                      <FaFacebook className="text-2xl text-gray-600" />
                     </a>
                   )}
                 </div>
