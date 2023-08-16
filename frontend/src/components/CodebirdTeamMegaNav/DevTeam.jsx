@@ -6,7 +6,7 @@ import { loadFull } from "tsparticles";
 const DevMembersData = [
   {
     name: "@ImKKingshuk",
-    position: "Developer",
+    position: "Full Stack Developer, Web3",
     batch: "CSE 2021-25",
     image: "Kingshuk.jpeg",
     github: "https://github.com/ImKKingshuk",
@@ -17,7 +17,7 @@ const DevMembersData = [
   },
   {
     name: "Anuraj Kumar",
-    position: "Developer",
+    position: "Full Stack Developer(MERN)",
     batch: "CSE 2020-24",
     image: "Anuraj.jpeg",
     github: "https://github.com/link",
@@ -28,7 +28,7 @@ const DevMembersData = [
   },
   {
     name: "Amrit Dhandharia",
-    position: "Developer",
+    position: "Backend Developer",
     batch: "CSE 2020-24",
     image: "Amrit.jpeg",
     github: "https://github.com/link",
@@ -39,7 +39,7 @@ const DevMembersData = [
   },
   {
     name: "Puskar Roy",
-    position: "Developer",
+    position: "Full Stack Developer(MERN)",
     batch: "CSE 2022-26",
     image: "Pushkar.jpeg",
     github: "https://github.com/link",
@@ -52,10 +52,21 @@ const DevMembersData = [
 
 const OtherMembersData = [
   {
-    name: "Puskar Roy",
-    position: "Developer",
-    batch: "CSE 2022-26",
-    image: "Pushkar.jpeg",
+    name: "",
+    position: "HTML",
+    batch: "",
+    image: "",
+    github: "https://github.com/link",
+    linkedin: "https://linkedin.com/in/link",
+    twitter: "https://twitter.com/",
+    instagram: "https://instagram.com/link",
+    facebook: "https://facebook.com/link",
+  },
+  {
+    name: "",
+    position: "HTML",
+    batch: "",
+    image: "",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
     twitter: "https://twitter.com/",
@@ -149,7 +160,7 @@ function DevTeam() {
         }}
       />
 
-      <div className="pt-10 space-y-10">
+      <div className=" space-y-10">
         <div>
           <h1 className="text-[2rem] text-center text-white py-6">
             Developers of <span className="thisWev">this Website</span>
