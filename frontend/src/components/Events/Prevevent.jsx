@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Prevevent.css";
 import Image1 from "../../assets/Eventpics/event2.png";
 import Image2 from "../../assets/Eventpics/event3.png";
 import Image3 from "../../assets/Eventpics/event1.png";
+import axios from 'axios'
 
 const prevData = [
   {
@@ -62,9 +63,22 @@ const prevData = [
 ];
 
 const Prevevent = () => {
+
+const [events, setEvents] = useState([]);
+
+useEffect(() => {
+  axios.get('/events')
+  .then((response) => {
+    setEvents(response.data);
+  })
+  .catch((error) => {
+    console.error("Error fetching events:", error);
+  });
+}, []);
+
   return (
     <div className="cardCarousel2">
-      {prevData.map((item, key) => {
+      {events.map((item, key) => {
         return (
           <div className="card1" key={key}>
             <img src={item.imgUrl} alt="" />

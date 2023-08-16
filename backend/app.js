@@ -25,6 +25,7 @@ app.get("/events", async(res, req) => {
         res.json(events);
     }
     catch(error){
+        console.error("error fetching events:", error)
         res.status(500).json({ error: "Internal server error"});
     }
 });
