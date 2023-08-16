@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import Loader from "./Glitch Countdown Logo_free.mp4";
+
 const VideoPreloader = () => {
   const [isMuted, setIsMuted] = useState(true);
 
