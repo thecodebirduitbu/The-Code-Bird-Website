@@ -160,7 +160,7 @@ function DevTeam() {
         }}
       />
 
-      <div className=" space-y-10">
+      <div className=" space-y-12">
         <div>
           <h1 className="text-[2rem] text-center text-white py-6">
             Developers of <span className="thisWev">this Website</span>
