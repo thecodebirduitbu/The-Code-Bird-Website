@@ -137,13 +137,13 @@ function DevTeam() {
 
       <div className="pt-10 space-y-10">
         <div>
-          <h1 className="text-[2rem] text-center text-white">
+          <h1 className="text-[2rem] text-center text-white py-6">
             Developers of <span className="thisWev">this Website</span>
           </h1>
           <OurTechTeam teamMembers={DevMembersData} />
         </div>
         <div>
-          <h1 className="text-[2rem] text-center text-white">
+          <h1 className="text-[2rem] text-center text-white py-6">
             Other Support Team
           </h1>
           <OurTechTeam teamMembers={OtherMembersData} />
