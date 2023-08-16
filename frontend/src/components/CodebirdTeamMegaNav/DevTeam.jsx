@@ -134,12 +134,16 @@ function DevTeam() {
           detectRetina: true,
         }}
       />
-      <h1 className="text-[2rem] text-center text-white">
-        Developers of <span className="thisWev">this Website</span>
-      </h1>
+
       <div className="pt-10 space-y-10">
-        <div></div>
-        <OurTechTeam teamMembers={DevMembersData} />
+        <div>
+          {" "}
+          <h1 className="text-[2rem] text-center text-white">
+            Developers of <span className="thisWev">this Website</span>
+          </h1>{" "}
+          <OurTechTeam teamMembers={DevMembersData} />
+        </div>
+
         <OurTechTeam teamMembers={OtherMembersData} />
       </div>
     </div>
