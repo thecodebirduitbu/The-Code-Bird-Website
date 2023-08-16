@@ -50,6 +50,20 @@ const DevMembersData = [
   },
 ];
 
+const OtherMembersData = [
+  {
+    name: "Puskar Roy",
+    position: "Developer",
+    batch: "CSE 2022-26",
+    image: "Pushkar.jpeg",
+    github: "https://github.com/link",
+    linkedin: "https://linkedin.com/in/link",
+    twitter: "https://twitter.com/",
+    instagram: "https://instagram.com/link",
+    facebook: "https://facebook.com/link",
+  },
+];
+
 function DevTeam() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
