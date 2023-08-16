@@ -1,5 +1,11 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaFacebook,
+} from "react-icons/fa";
 import "./OurTechTeam.css";
 
 function OurTechTeam({ teamMembers }) {
