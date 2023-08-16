@@ -1,4 +1,4 @@
-import React,{useCallback} from "react";
+import React, { useCallback } from "react";
 import OurTechTeam from "../Team/OurTechTeam";
 import "../Team/OurTechTeam.css";
 import Particles from "react-tsparticles";
@@ -7,6 +7,7 @@ const teamMembersData = [
   {
     name: "@ImKKingshuk",
     position: "Developer",
+    batch: "CSE 2021-25",
     image: "Kingshuk.jpeg",
     github: "https://github.com/ImKKingshuk",
     linkedin: "https://linkedin.com/in/",
@@ -16,6 +17,7 @@ const teamMembersData = [
   {
     name: "Anuraj Kumar",
     position: "Developer",
+    batch: "CSE 2020-24",
     image: "Anuraj.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
@@ -25,6 +27,7 @@ const teamMembersData = [
   {
     name: "Amrit Dhandharia",
     position: "Developer",
+    batch: "CSE 2020-24",
     image: "Amrit.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
@@ -34,6 +37,7 @@ const teamMembersData = [
   {
     name: "Puskar Roy",
     position: "Developer",
+    batch: "CSE 2022-26",
     image: "Pushkar.jpeg",
     github: "https://github.com/link",
     linkedin: "https://linkedin.com/in/link",
@@ -43,14 +47,14 @@ const teamMembersData = [
 ];
 
 function DevTeam() {
-    const particlesInit = useCallback(async (engine) => {
-      console.log(engine);
-      await loadFull(engine);
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-      await console.log(container);
-    }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
   return (
     <div className="py-[10rem]">
       <Particles
