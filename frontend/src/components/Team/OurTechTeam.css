@@ -18,8 +18,8 @@
 }
 
 .cardContainer {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 350px;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -50,8 +50,8 @@
 .profileDiv img {
   /* width: 240px;
     height: 260px; */
-  width: 190px;
-  height: 200px;
+  width: 290px;
+  height: 360px;
   border-radius: 10px;
 }
 
@@ -120,38 +120,4 @@
 
 .infoDiv a {
   width: 50%;
-}
-
-.socials {
-  width: 100%;
-  fill: rgb(14, 14, 14);
-}
-
-.twitter,
-.linkedin,
-.instagram,
-.facebook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  font-size: 20px;
-  color: black;
-}
-
-.linkedin :hover {
-  background-color: #0e76a8;
-  color: #fff;
-}
-.twitter i:hover {
-  background-color: #1da1f2;
-  color: #fff;
-}
-.facebook i:hover {
-  background-color: #1877f2;
-  color: #fff;
-}
-.instagram i:hover {
-  background-color: #e4405f;
-  color: #fff;
 }

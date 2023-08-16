@@ -15,6 +15,7 @@ function OurTechTeam({ teamMembers }) {
               <div className="infoDiv">
                 <div className="nameDiv">
                   <p className="name">{item.name}</p>
+                  <p className="text-md text-center">{item.batch}</p>
                   <p className="role">{item.position}</p>
                 </div>
                 <div className="socialDiv">
@@ -28,6 +29,11 @@ function OurTechTeam({ teamMembers }) {
                       <FaLinkedin className="text-2xl text-gray-600" />
                     </a>
                   )}
+                  {item.twitter && (
+                    <a href={item.twitter}>
+                      <FaTwitter className="text-2xl text-gray-600" />
+                    </a>
+                  )}
                   {item.instagram && (
                     <a href={item.instagram}>
                       <FaInstagram className="text-2xl text-gray-600" />
@@ -35,7 +41,7 @@ function OurTechTeam({ teamMembers }) {
                   )}
                   {item.facebook && (
                     <a href={item.facebook}>
-                      <FaTwitter className="text-2xl text-gray-600" />
+                      <FaFacebook className="text-2xl text-gray-600" />
                     </a>
                   )}
                 </div>
