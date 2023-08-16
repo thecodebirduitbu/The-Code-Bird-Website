@@ -3,7 +3,7 @@ import OurTechTeam from "../Team/OurTechTeam";
 import "../Team/OurTechTeam.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-const teamMembersData = [
+const DevMembersData = [
   {
     name: "@ImKKingshuk",
     position: "Developer",
@@ -137,8 +137,10 @@ function DevTeam() {
       <h1 className="text-[2rem] text-center text-white">
         Developers of <span className="thisWev">this Website</span>
       </h1>
-      <div className="pt-10">
-        <OurTechTeam teamMembers={teamMembersData} />
+      <div className="pt-10 space-y-10">
+        <div></div>
+        <OurTechTeam teamMembers={DevMembersData} />
+        <OurTechTeam teamMembers={OtherMembersData} />
       </div>
     </div>
   );
