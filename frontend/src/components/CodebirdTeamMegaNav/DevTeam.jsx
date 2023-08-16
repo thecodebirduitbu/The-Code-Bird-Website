@@ -137,10 +137,9 @@ function DevTeam() {
 
       <div className="pt-10 space-y-10">
         <div>
-          {" "}
           <h1 className="text-[2rem] text-center text-white">
             Developers of <span className="thisWev">this Website</span>
-          </h1>{" "}
+          </h1>
           <OurTechTeam teamMembers={DevMembersData} />
         </div>
 
