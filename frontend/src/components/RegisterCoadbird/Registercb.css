@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Karla:ital,wght@0,300;1,200&family=Montserrat:wght@200;600&family=Poppins:wght@200&family=Roboto:wght@300;400&family=Ubuntu:wght@300;500&family=Work+Sans:wght@300&display=swap');
+.registerContainer{
+    width: 100%;
+    padding: 0 0 4rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.registerContainerAl{
+    width: 100%;
+    height: 80vh;
+    padding: 0 0 4rem 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.headings{
+    margin-top: 8rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.headings h1{
+    text-align: center;
+}
+.paymentDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.paymentDetails h2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.paymentDetails h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+.brandP{
+    color: #915eff;
+    text-decoration: underline;
+}
+.brand{
+    color: #915eff;
+}
+.form{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.formSet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.inputs input{
+    height: 2.5rem;
+    width: 26rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0 1rem ;
+}
+.inputs input:focus{
+   outline: 2px solid #915eff;
+    box-shadow: none;
+}
+.inputs select{
+    height: 2.5rem;
+    width: 26rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0 1rem ;
+}
+.inputs select option{
+    font-size: 1rem;
+    /* padding: 2rem; */
+    border: none;
+}
+.inputs select:focus{
+    outline: 2px solid #915eff;
+    box-shadow: none;
+    /* color: ; */
+}
+.registerPBtn{
+    height: 2.5rem;
+    width: 26rem;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: #915eff;
+    color: #fff;
+    border-radius: 10px;
+    
+    font-size: 1rem;
+}
+.regBtn{
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background-color: #915eff;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+
+.paymentdone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.headingsuccess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.pdoneheadings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tickIcon{
+    font-size: 4rem;
+}
+
+
+
+
+@media(max-width:996px){
+.formSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem
+}
+.regBtn{
+    height: 2.5rem;
+    width: 26rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+
+
+}
+}
+
+@media(max-width:545px){
+.pdoneheadings h2{
+    font-size: 2rem;
+}
+}
+
+@media(max-width:500px){
+.inputs input {
+    width: 22rem;
+}
+.inputs select{
+    width: 22rem;
+}
+.registerPBtn {
+    width: 22rem;
+    
+}
+.regBtn{
+    height: 2.5rem;
+    width: 22rem;
+}
+#department option{
+    width: 10rem;
+}
+.headings h1{
+    font-size: 2rem;
+}
+}
+
+@media(max-width:545px){
+.pdoneheadings h2{
+    font-size: 1.5rem;
+}
+.pdoneheadings h1{
+    font-size: 1.4rem;
+}
+}
+
+
+@media(max-width:432px){
+.inputs input {
+    width: 20rem;
+}
+.registerPBtn {
+    width: 20rem;
+}
+.regBtn {
+    width: 20rem;
+}
+.inputs select{
+    width: 20rem;
+}
+#department option{
+    width: 10rem;
+}
+}
+@media(max-width:395px){
+.inputs input {
+    width: 17rem;
+}
+.registerPBtn {
+    width: 17rem;
+}
+.regBtn{
+    width: 17rem;
+}
+.inputs select{
+    width: 17rem;
+}
+#department option{
+    width: 10rem;
+}
+}
