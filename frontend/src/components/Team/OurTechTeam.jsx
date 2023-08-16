@@ -15,6 +15,7 @@ function OurTechTeam({ teamMembers }) {
               <div className="infoDiv">
                 <div className="nameDiv">
                   <p className="name">{item.name}</p>
+                  <p className="name">{item.batch}</p>
                   <p className="role">{item.position}</p>
                 </div>
                 <div className="socialDiv">
