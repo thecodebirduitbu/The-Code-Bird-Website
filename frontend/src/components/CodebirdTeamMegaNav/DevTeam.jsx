@@ -142,6 +142,12 @@ function DevTeam() {
           </h1>
           <OurTechTeam teamMembers={DevMembersData} />
         </div>
+        <div>
+          <h1 className="text-[2rem] text-center text-white">
+            Developers of <span className="thisWev">this Website</span>
+          </h1>
+          <OurTechTeam teamMembers={DevMembersData} />
+        </div>
 
         <OurTechTeam teamMembers={OtherMembersData} />
       </div>
