@@ -21,7 +21,7 @@ const RegisterCodebird = () => {
     
   useEffect(() => {
     axios
-      .get(`${ServerUrl}/api/user`, {
+      .get(`https://the-codebird-website-server.onrender.com/api/user`, {
         withCredentials: true,
       })
       .then((response) => {
