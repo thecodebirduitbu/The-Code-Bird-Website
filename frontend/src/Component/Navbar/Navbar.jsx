@@ -13,20 +13,22 @@ import { CgProfile } from "react-icons/cg";
 import { BiLogOutCircle } from "react-icons/bi";
 const Navbar = () => {
   const navigate = useNavigate();
+
+
+
   const [isMenuVisible, setMenuVisible] = useState(false);
-  const [showProfile , setShowProfile] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
   const { state, dispatch } = useContext(GlobalContext);
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
   };
-
+  
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1118) {
         setMenuVisible(false);
       }
     };
-  
 
     window.addEventListener("resize", handleResize);
 
@@ -36,7 +38,7 @@ const Navbar = () => {
   }, []);
   const logout = async () => {
     try {
-      await axios.get("http://localhost:9000/api/logout", {
+      await axios.get(`https://the-codebird-website-server.onrender.com/api/logout`, {
         withCredentials: true,
       });
       setShowProfile(!showProfile);

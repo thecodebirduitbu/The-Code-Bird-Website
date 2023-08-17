@@ -160,16 +160,16 @@ function DevTeam() {
         }}
       />
 
-      <div className=" space-y-12">
+      <div className=" space-y-[10rem]">
         <div>
-          <h1 className="text-[2rem] text-center text-white py-6">
+          <h1 className="text-[3rem] text-center text-white py-[6rem]">
             Developers of <span className="thisWev">this Website</span>
           </h1>
           <OurTechTeam teamMembers={DevMembersData} />
         </div>
         <div>
-          <h1 className="text-[2rem] text-center text-white py-6">
-            Other Support Team
+          <h1 className="text-[2.5rem] text-center text-white py-[6rem]">
+            Other support team
           </h1>
           <OurTechTeam teamMembers={OtherMembersData} />
         </div>
