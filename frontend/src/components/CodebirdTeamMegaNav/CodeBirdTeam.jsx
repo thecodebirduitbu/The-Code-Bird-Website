@@ -10,9 +10,10 @@ import axios from "axios";
 
 function CodeBirdTeam() {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     axios
-      .get(`http://localhost:9000/api/allcoremembers`, {
+      .get(`https://the-codebird-website-server.onrender.com/api/allcoremembers`, {
         withCredentials: true,
       })
       .then((response) => {

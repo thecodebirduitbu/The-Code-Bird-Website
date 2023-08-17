@@ -9,10 +9,10 @@ import { useNavigate } from "react-router-dom";
 const AlreadyMember = () => {
 const [data , setData] = useState('')
   const navigate = useNavigate();
-
+  const ServerUrl = process.env.ServerUrl;
     useEffect(() => {
       axios
-        .get("http://localhost:9000/api/user", {
+        .get(`https://the-codebird-website-server.onrender.com/api/user`, {
           withCredentials: true,
         })
         .then((response) => {

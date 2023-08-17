@@ -24,7 +24,7 @@ const navigate = useNavigate();
     } else {
       try {
         await axios.post(
-          "http://localhost:9000/api/applyEvent",
+          `https://the-codebird-website-server.onrender.com/api/applyEvent`,
           { name: state.userNameState, eventName: name },
           {
             withCredentials: true,

@@ -11,6 +11,7 @@ const Payment = () => {
   const seachQuery = useSearchParams()[0];
   const referenceNum = seachQuery.get("reference");
 
+
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -69,7 +70,7 @@ const Payment = () => {
       console.log(formData);
       try {
         await axios.post(
-          `http://localhost:9000/api/register`,
+          `https://the-codebird-website-server.onrender.com/api/register`,
           formData
         );
       toast.success("Registration Successful, LogIn Now!");

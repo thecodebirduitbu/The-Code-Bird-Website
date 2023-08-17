@@ -10,6 +10,8 @@ import { GlobalContext } from "../../states/GlobalState";
 const Login = () => {
   const { state, dispatch } = useContext(GlobalContext);
 
+
+
   const navigate = useNavigate();
  axios.defaults.withCredentials = true;
 
@@ -35,7 +37,7 @@ const Login = () => {
         console.log(formData);
          try {
             const res = await axios.post(
-              "http://localhost:9000/api/login",
+              `https://the-codebird-website-server.onrender.com/api/login`,
               {"email":formData.email , "password":formData.password},
               {
                 withCredentials: true,
