@@ -11,7 +11,7 @@ require('./database/connectDatabase')
 
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://the-code-bird-website.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
