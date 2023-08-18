@@ -17,8 +17,8 @@ const Achievements = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 mx-auto text-center">
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiCheckCircle className="text-gray-600 w-12 h-12 mb-3   " />
-                <h2 className="title-font font-medium text-3xl text-gray-900">
+                <FiCheckCircle className="text-white w-12 h-12 mb-3   " />
+                <h2 className="title-font font-medium text-3xl text-gray-400">
                   50+
                 </h2>
                 <p className="leading-relaxed">Projects</p>
@@ -26,8 +26,8 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiUsers className="text-gray-600 w-12 h-12 mb-3   " />
-                <h2 className="title-font font-medium text-3xl text-gray-900">
+                <FiUsers className="text-white w-12 h-12 mb-3   " />
+                <h2 className="title-font font-medium text-3xl text-gray-400">
                   350+
                 </h2>
                 <p className="leading-relaxed">Members</p>
@@ -35,8 +35,8 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiCalendar className="text-gray-600 w-12 h-12 mb-3   " />
-                <h2 className="title-font font-medium text-3xl text-gray-900">
+                <FiCalendar className="text-white w-12 h-12 mb-3   " />
+                <h2 className="title-font font-medium text-3xl text-gray-400">
                   25+
                 </h2>
                 <p className="leading-relaxed">Events</p>
@@ -44,8 +44,8 @@ const Achievements = () => {
             </div>
             <div className="p-4  ">
               <div className="   px-4 py-6 rounded-lg   duration-500 hover:scale-110">
-                <FiAward className="text-gray-600 w-12 h-12 mb-3   " />
-                <h2 className="title-font font-medium text-3xl text-gray-900">
+                <FiAward className="text-white w-12 h-12 mb-3   " />
+                <h2 className="title-font font-medium text-3xl text-gray-400">
                   15+
                 </h2>
                 <p className="leading-relaxed">Mentorship Programs</p>

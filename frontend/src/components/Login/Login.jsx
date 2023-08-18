@@ -37,7 +37,7 @@ const Login = () => {
         console.log(formData);
          try {
             const res = await axios.post(
-              `https://the-codebird-website-server.onrender.com/api/login`,
+              `https://the-codebird-sever.vercel.app/api/login`,
               {"email":formData.email , "password":formData.password},
               {
                 withCredentials: true,

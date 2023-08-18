@@ -70,7 +70,7 @@ const Payment = () => {
       console.log(formData);
       try {
         await axios.post(
-          `https://the-codebird-website-server.onrender.com/api/register`,
+          `https://the-codebird-sever.vercel.app/api/register`,
           formData
         );
       toast.success("Registration Successful, LogIn Now!");

@@ -21,7 +21,7 @@ const RegisterCodebird = () => {
     
   useEffect(() => {
     axios
-      .get(`https://the-codebird-website-server.onrender.com/api/user`, {
+      .get(`https://the-codebird-sever.vercel.app/api/user`, {
         withCredentials: true,
       })
       .then((response) => {
@@ -65,9 +65,9 @@ const RegisterCodebird = () => {
       toast.error("Please fill a valid Mobile Number!");
     } else {
       try {
-        const data = await axios.get(`https://the-codebird-website-server.onrender.com/api/razor/key`);
+        const data = await axios.get(`https://the-codebird-sever.vercel.app/razor/key`);
         const response = await axios.post(
-          `https://the-codebird-website-server.onrender.com/api/paymentVerify`,
+          `https://the-codebird-sever.vercel.app/paymentVerify`,
           { amount: 200 }
         );
         if (response) {
@@ -80,7 +80,7 @@ const RegisterCodebird = () => {
             image:
               "https://media.licdn.com/dms/image/C4D0BAQGlAGVKIGb3ag/company-logo_200_200/0/1611584390861?e=1698883200&v=beta&t=y25gPNGkqTgJOB42gmO5UrXmMTKg438a8KAT8VWkt_w",
             order_id: response.data.id,
-            callback_url: `https://the-codebird-website-server.onrender.com/api/payment`,
+            callback_url: `https://the-codebird-sever.vercel.app/api/payment`,
             prefill: {
               name: formData.name,
               email: formData.email,
