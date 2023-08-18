@@ -37,7 +37,7 @@ const Login = () => {
         console.log(formData);
          try {
             const res = await axios.post(
-              `${process.env.BACKEND_URL}/api/login`,
+              `https://the-codebird-website-server.onrender.com/api/login`,
               {"email":formData.email , "password":formData.password},
               {
                 withCredentials: true,
