@@ -13,7 +13,7 @@ function CodeBirdTeam() {
 
   useEffect(() => {
     axios
-      .get(`https://the-codebird-website-server.onrender.com/api/allcoremembers`, {
+      .get(`${process.env.BACKEND_URL}/api/allcoremembers`, {
         withCredentials: true,
       })
       .then((response) => {

@@ -70,7 +70,7 @@ const Payment = () => {
       console.log(formData);
       try {
         await axios.post(
-          `https://the-codebird-website-server.onrender.com/api/register`,
+          `${process.env.BACKEND_URL}/api/register`,
           formData
         );
       toast.success("Registration Successful, LogIn Now!");

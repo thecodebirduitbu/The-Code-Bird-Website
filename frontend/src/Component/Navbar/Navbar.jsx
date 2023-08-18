@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
   const logout = async () => {
     try {
-      await axios.get(`https://the-codebird-website-server.onrender.com/api/logout`, {
+      await axios.get(`${process.env.BACKEND_URL}/api/logout`, {
         withCredentials: true,
       });
       setShowProfile(!showProfile);

@@ -12,7 +12,7 @@ const [data , setData] = useState('')
   
     useEffect(() => {
       axios
-        .get(`https://the-codebird-website-server.onrender.com/api/user`, {
+        .get(`${process.env.BACKEND_URL}/api/user`, {
           withCredentials: true,
         })
         .then((response) => {
