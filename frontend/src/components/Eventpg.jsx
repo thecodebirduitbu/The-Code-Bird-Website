@@ -21,7 +21,7 @@ const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
-      .get(`https://the-codebird-website-server.onrender.com/api/events`, {
+      .get(`https://the-codebird-sever.vercel.app/api/events`, {
         withCredentials: true,
         
       })
