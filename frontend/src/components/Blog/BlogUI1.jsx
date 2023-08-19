@@ -258,9 +258,13 @@ function BlogUI1() {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {twoDaysBefore.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(twoDaysBefore)}
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
