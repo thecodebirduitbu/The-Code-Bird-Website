@@ -7,12 +7,12 @@ import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
 
-const formatDate = (date) => {
-  const options = { day: "numeric", month: "short" };
-  return new Intl.DateTimeFormat("en-US", options).format(date);
-};
-
 function BlogUI1() {
+  const formatDate = (date) => {
+    const options = { day: "numeric", month: "short" };
+    return new Intl.DateTimeFormat("en-US", options).format(date);
+  };
+
   const [currentDate, setCurrentDate] = useState(null);
   const [oneDayBefore, setOneDayBefore] = useState(null);
   const [twoDaysBefore, setTwoDaysBefore] = useState(null);
