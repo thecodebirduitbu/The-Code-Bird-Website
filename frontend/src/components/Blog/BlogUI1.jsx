@@ -190,6 +190,14 @@ function BlogUI1() {
                         349
                       </span>
                     </p>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {oneDayBefore.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(oneDayBefore)}
+                      </span>
+                    </p>
                   </div>
                   <div className="flex flex-row ">
                     <img
