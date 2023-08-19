@@ -18,7 +18,6 @@ export default function HomePages() {
       <Achivements />
       <TestimonialsSlider />
       <BlogUI1 />
-      {/*  */}
     </div>
   );
 }
