@@ -1,15 +1,30 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
 import { Link } from "react-router-dom";
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
-import { styles } from "../../styles";
 
-const BlogUI1 = () => {
+function BlogUI1() {
+  const [currentDate, setCurrentDate] = useState(null);
+  const [oneDayBefore, setOneDayBefore] = useState(null);
+  const [twoDaysBefore, setTwoDaysBefore] = useState(null);
+
+  useEffect(() => {
+    const now = new Date();
+    setCurrentDate(now.toISOString().slice(0, 10));
+
+    const oneDayAgo = new Date(now);
+    oneDayAgo.setDate(oneDayAgo.getDate() - 1);
+    setOneDayBefore(oneDayAgo.toISOString().slice(0, 10));
+
+    const twoDaysAgo = new Date(now);
+    twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+    setTwoDaysBefore(twoDaysAgo.toISOString().slice(0, 10));
+  }, []);
+
   return (
     <div className="py-[8rem] mx-auto ">
       <div className="sm:px-16 px-6 sm:py-16 py-10">
@@ -309,7 +324,7 @@ const BlogUI1 = () => {
                       width={10}
                       height={10}
                     />
-                    
+
                     <p className="pl-3 text-sm  my-auto ">@codebird</p>
                   </div>
                 </div>
@@ -320,6 +335,6 @@ const BlogUI1 = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BlogUI1;
