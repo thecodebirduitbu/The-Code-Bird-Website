@@ -179,7 +179,10 @@ const Login = () => {
         </form>
 
         <span className="already">
-          Dont have an account? <Link to="/register">Register Here </Link>
+          Dont have an account?{" "}
+          <Link to="/register">
+            <span className="hover:text-purple-500">Register Here</span>
+          </Link>
         </span>
       </div>
       <Toaster position="top-center" reverseOrder={false} />
