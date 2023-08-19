@@ -7,6 +7,11 @@ import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
 
+const formatDate = (date) => {
+  const options = { day: "numeric", month: "short" };
+  return new Intl.DateTimeFormat("en-US", options).format(date);
+};
+
 function BlogUI1() {
   const [currentDate, setCurrentDate] = useState(null);
   const [oneDayBefore, setOneDayBefore] = useState(null);
@@ -14,17 +19,16 @@ function BlogUI1() {
 
   useEffect(() => {
     const now = new Date();
-    setCurrentDate(now.toISOString().slice(0, 10));
+    setCurrentDate(now);
 
     const oneDayAgo = new Date(now);
     oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-    setOneDayBefore(oneDayAgo.toISOString().slice(0, 10));
+    setOneDayBefore(oneDayAgo);
 
     const twoDaysAgo = new Date(now);
     twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
-    setTwoDaysBefore(twoDaysAgo.toISOString().slice(0, 10));
+    setTwoDaysBefore(twoDaysAgo);
   }, []);
-
   return (
     <div className="py-[8rem] mx-auto ">
       <div className="sm:px-16 px-6 sm:py-16 py-10">
@@ -57,7 +61,7 @@ function BlogUI1() {
               @codebird
             </a>
             <p className="inline text-sm text-gray-400 font-medium mt-0 mr-1 mb-0 ml-1">
-              · 07th, August 2023 ·
+              · {currentDate} ·
             </p>
           </div>
         </div>
@@ -118,9 +122,13 @@ function BlogUI1() {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {currentDate.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(currentDate)}
+                      </span>
                     </p>
                   </div>
 
@@ -181,10 +189,6 @@ function BlogUI1() {
                         </svg>
                         349
                       </span>
-                    </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
