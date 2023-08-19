@@ -1,15 +1,34 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
 import { Link } from "react-router-dom";
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
-import { styles } from "../../styles";
 
-const BlogUI1 = () => {
+function BlogUI1() {
+  const formatDate = (date) => {
+    const options = { day: "numeric", month: "short" };
+    return new Intl.DateTimeFormat("en-US", options).format(date);
+  };
+
+  const [currentDate, setCurrentDate] = useState(null);
+  const [oneDayBefore, setOneDayBefore] = useState(null);
+  const [twoDaysBefore, setTwoDaysBefore] = useState(null);
+
+  useEffect(() => {
+    const now = new Date();
+    setCurrentDate(now);
+
+    const oneDayAgo = new Date(now);
+    oneDayAgo.setDate(oneDayAgo.getDate() - 1);
+    setOneDayBefore(oneDayAgo);
+
+    const twoDaysAgo = new Date(now);
+    twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+    setTwoDaysBefore(twoDaysAgo);
+  }, []);
   return (
     <div className="py-[8rem] mx-auto ">
       <div className="sm:px-16 px-6 sm:py-16 py-10">
@@ -42,7 +61,7 @@ const BlogUI1 = () => {
               @codebird
             </a>
             <p className="inline text-sm text-gray-400 font-medium mt-0 mr-1 mb-0 ml-1">
-              · 07th, August 2023 ·
+              {currentDate.getDate()}
             </p>
           </div>
         </div>
@@ -103,9 +122,13 @@ const BlogUI1 = () => {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {currentDate.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(currentDate)}
+                      </span>
                     </p>
                   </div>
 
@@ -167,9 +190,13 @@ const BlogUI1 = () => {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {oneDayBefore.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(oneDayBefore)}
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
@@ -231,9 +258,13 @@ const BlogUI1 = () => {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {twoDaysBefore.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(twoDaysBefore)}
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
@@ -295,9 +326,13 @@ const BlogUI1 = () => {
                         349
                       </span>
                     </p>
-                    <p className="flex flex-col text-right ">
-                      <span className="text-3xl font-semibold ">07</span>
-                      <span className=" uppercase">Aug</span>
+                    <p className="flex flex-col text-right">
+                      <span className="text-3xl font-semibold">
+                        {twoDaysBefore.getDate()}
+                      </span>
+                      <span className="uppercase">
+                        {formatDate(twoDaysBefore)}
+                      </span>
                     </p>
                   </div>
                   <div className="flex flex-row ">
@@ -309,7 +344,7 @@ const BlogUI1 = () => {
                       width={10}
                       height={10}
                     />
-                    
+
                     <p className="pl-3 text-sm  my-auto ">@codebird</p>
                   </div>
                 </div>
@@ -320,6 +355,6 @@ const BlogUI1 = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BlogUI1;
