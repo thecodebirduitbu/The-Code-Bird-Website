@@ -36,8 +36,8 @@ function Advisor() {
             Coding Culture at our institution and eagerly anticipate achieving
             many more milestones under his esteemed guidance.
           </h1>
-          <div className=" pt-6 mx-auto text-center text-white text-3xl space-x-3 flex-row">
-            <FaLinkedin /> <FaFacebook /> <FaInstagram />
+          <div className=" pt-6 mx-auto text-center text-white text-3xl space-x-3 flex-row cursor-pointer">
+            <a href="https://www.linkedin.com/in/sumit-gupta-sgp-168109151/"><FaLinkedin /></a> <a href="https://www.facebook.com/SumitGupta.SGP"><FaFacebook /></a> <FaInstagram />
             <FaWhatsapp /> <FaDiscord />
           </div>
         </div>

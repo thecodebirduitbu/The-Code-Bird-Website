@@ -19,17 +19,15 @@ const Footer = () => {
         <div className="col">
           <img src={Logo} className="logo1"></img>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            sapiente! Esse in iure deleniti repellendus magni vero assumenda
+          Every student of UIT, irrespective of their stream or year can make great things, CODEBIRD helps you to achieve that, for FREE !! 😀🏆 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, explicabo, aliquam beatae nostrum fuga libero eos odio molestiae nulla minima ipsa maxime maiores assumenda aliquid?
           </p>
         </div>
         <div className="col">
           <h3>Office<div className="underline2"><span></span></div></h3>
-          <p>Golapbag Road</p>
-          <p>Golapbag, Burdwan</p>
-          <p>Golapbag, PIN 777777, India</p>
-          <p className="email-id">codebird@gmail.com</p>
-          <h4>+91-0123456789</h4>
+          <p>UIT Campus, Burdwan</p>
+          <p>West Bengal, PIN 713104, India</p>
+          <p className="email-id">thecodebird.uitbu@gmail.com</p>
+          <h4>1800 111 363</h4>
         </div>
 
         <div className="col">
@@ -39,19 +37,19 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="/ourstory">About</a>
             </li>
             <li>
-              <a href="/">Advisor</a>
+              <a href="/advisor">Advisor</a>
             </li>
             <li>
-              <a href="/">Events</a>
+              <a href="/event">Events</a>
             </li>
             <li>
-              <a href="/">FaQs</a>
+              <a href="/faQs">FaQs</a>
             </li>
             <li>
-              <a href="/">Register</a>
+              <a href="/login">Register</a>
             </li>
           </ul>
         </div>
