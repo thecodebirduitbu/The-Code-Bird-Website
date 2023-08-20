@@ -12,7 +12,7 @@ function Advisor() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[3rem] mx-10">
         <div className="mx-auto my-auto rounded-full p-4 ">
           <img
-            src="/Images/demoimg.png"
+            src="/Images/Advisor.jpeg"
             alt="Image of Advisor"
             sizes="fill"
             width={300}
