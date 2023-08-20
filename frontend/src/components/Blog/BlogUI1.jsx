@@ -1,34 +1,9 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
 import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
 
 function BlogUI1() {
-  const formatDate = (date) => {
-    const options = { day: "numeric", month: "short" };
-    return new Intl.DateTimeFormat("en-US", options).format(date);
-  };
-
-  const [currentDate, setCurrentDate] = useState(null);
-  const [oneDayBefore, setOneDayBefore] = useState(null);
-  const [twoDaysBefore, setTwoDaysBefore] = useState(null);
-
-  useEffect(() => {
-    const now = new Date();
-    setCurrentDate(now);
-
-    const oneDayAgo = new Date(now);
-    oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-    setOneDayBefore(oneDayAgo);
-
-    const twoDaysAgo = new Date(now);
-    twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
-    setTwoDaysBefore(twoDaysAgo);
-  }, []);
   return (
     <div className="py-[8rem] mx-auto ">
       <div className="sm:px-16 px-6 sm:py-16 py-10">
@@ -61,7 +36,7 @@ function BlogUI1() {
               @codebird
             </a>
             <p className="inline text-sm text-gray-400 font-medium mt-0 mr-1 mb-0 ml-1">
-              {currentDate.getDate()}
+              · 23 th, August 2023 ·
             </p>
           </div>
         </div>
@@ -79,277 +54,253 @@ function BlogUI1() {
       <div className="pt-12">
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-8  ">
           {
-            <Link href="/Blog/posts?id=1">
-              <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
-                <div>
-                  <img
-                    className=" w-[17rem] h-[10rem]   rounded-2xl "
-                    src={web3}
-                    alt="Image of Developer"
-                    sizes="fill"
-                    width={100}
-                    height={100}
-                  />
+            <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
+              <div>
+                <img
+                  className=" w-[17rem] h-[10rem]   rounded-2xl "
+                  src={web3}
+                  alt="Image of Developer"
+                  sizes="fill"
+                  width={100}
+                  height={100}
+                />
+              </div>
+
+              <div className="pt-3 mx-auto text-center">
+                <p className="text-lg">Introduction to Web3</p>
+
+                <div className=" flex justify-between  pt-3">
+                  <p className="text-left text-md text-blue-500 flex flex-col">
+                    <span>Read More →</span>
+                    <span className="text-sm pt-2 font-medium text-gray-500 flex ">
+                      <svg
+                        className="w-5 h-5 pr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                      349
+                    </span>
+                  </p>
+                  <p className="flex flex-col text-right">
+                    <span className="text-3xl font-semibold">23</span>
+                    <span className="uppercase">Aug</span>
+                  </p>
                 </div>
 
-                <div className="pt-3 mx-auto text-center">
-                  <p className="text-lg">Introduction to Web3</p>
+                <div className="flex flex-row ">
+                  <img
+                    className="logo2 w-8 h-8 rounded-full"
+                    src={logo} // Make sure the path is correct, adjust it if needed
+                    alt="Image of Developer"
+                    width={10} // No need to specify height here, it will automatically scale proportionally
+                  />
 
-                  <div className=" flex justify-between  pt-3">
-                    <p className="text-left text-md text-blue-500 flex flex-col">
-                      <span>Read More →</span>
-                      <span className="text-sm pt-2 font-medium text-gray-500 flex ">
-                        <svg
-                          className="w-5 h-5 pr-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          ></path>
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                          ></path>
-                        </svg>
-                        349
-                      </span>
-                    </p>
-                    <p className="flex flex-col text-right">
-                      <span className="text-3xl font-semibold">
-                        {currentDate.getDate()}
-                      </span>
-                      <span className="uppercase">
-                        {formatDate(currentDate)}
-                      </span>
-                    </p>
-                  </div>
-
-                  <div className="flex flex-row ">
-                    <img
-                      className="logo2 w-8 h-8 rounded-full"
-                      src={logo} // Make sure the path is correct, adjust it if needed
-                      alt="Image of Developer"
-                      width={10} // No need to specify height here, it will automatically scale proportionally
-                    />
-
-                    <p className="pl-3 text-sm  my-auto ">@codebird</p>
-                  </div>
+                  <p className="pl-3 text-sm  my-auto ">@codebird</p>
                 </div>
               </div>
-            </Link>
+            </div>
           }
           {
-            <Link href="/Blog/posts?id=2">
-              <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
-                <div>
-                  <img
-                    className=" w-[17rem] h-[10rem]   rounded-2xl "
-                    src={react}
-                    alt="Image of Developer"
-                    sizes="fill"
-                    width={100}
-                    height={100}
-                  />
-                </div>
-
-                <div className="pt-3 mx-auto text-center">
-                  <p className="text-lg">Introduction to ReactJS</p>
-
-                  <div className=" flex justify-between  pt-3">
-                    <p className="text-left text-md text-blue-500 flex flex-col">
-                      <span>Read More →</span>
-                      <span className="text-sm pt-2 font-medium text-gray-500 flex ">
-                        <svg
-                          className="w-5 h-5 pr-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          ></path>
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                          ></path>
-                        </svg>
-                        349
-                      </span>
-                    </p>
-                    <p className="flex flex-col text-right">
-                      <span className="text-3xl font-semibold">
-                        {oneDayBefore.getDate()}
-                      </span>
-                      <span className="uppercase">
-                        {formatDate(oneDayBefore)}
-                      </span>
-                    </p>
-                  </div>
-                  <div className="flex flex-row ">
-                    <img
-                      className="logo2 w-8 h-8   rounded-full "
-                      src={logo}
-                      alt="Image of Developer"
-                      sizes="fill"
-                      width={10}
-                      height={10}
-                    />
-                    <p className="pl-3 text-sm  my-auto ">@codebird</p>
-                  </div>
-                </div>
+            <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
+              <div>
+                <img
+                  className=" w-[17rem] h-[10rem]   rounded-2xl "
+                  src={react}
+                  alt="Image of Developer"
+                  sizes="fill"
+                  width={100}
+                  height={100}
+                />
               </div>
-            </Link>
-          }
-          {
-            <Link href="/Blog/posts?id=3">
-              <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
-                <div>
+
+              <div className="pt-3 mx-auto text-center">
+                <p className="text-lg">Introduction to ReactJS</p>
+
+                <div className=" flex justify-between  pt-3">
+                  <p className="text-left text-md text-blue-500 flex flex-col">
+                    <span>Read More →</span>
+                    <span className="text-sm pt-2 font-medium text-gray-500 flex ">
+                      <svg
+                        className="w-5 h-5 pr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                      349
+                    </span>
+                  </p>
+                  <p className="flex flex-col text-right">
+                    <span className="text-3xl font-semibold">23</span>
+                    <span className="uppercase">Aug</span>
+                  </p>
+                </div>
+                <div className="flex flex-row ">
                   <img
-                    className="logo2 w-[11rem] h-[10rem] rounded-2xl ml-12"
+                    className="logo2 w-8 h-8   rounded-full "
                     src={logo}
                     alt="Image of Developer"
                     sizes="fill"
-                    width={100}
-                    height={100}
+                    width={10}
+                    height={10}
                   />
-                </div>
-
-                <div className="pt-3 mx-auto text-center">
-                  <p className="text-lg">Introduction to The Code Bird</p>
-
-                  <div className=" flex justify-between  pt-3">
-                    <p className="text-left text-md text-blue-500 flex flex-col">
-                      <span>Read More →</span>
-                      <span className="text-sm pt-2 font-medium text-gray-500 flex ">
-                        <svg
-                          className="w-5 h-5 pr-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          ></path>
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                          ></path>
-                        </svg>
-                        349
-                      </span>
-                    </p>
-                    <p className="flex flex-col text-right">
-                      <span className="text-3xl font-semibold">
-                        {twoDaysBefore.getDate()}
-                      </span>
-                      <span className="uppercase">
-                        {formatDate(twoDaysBefore)}
-                      </span>
-                    </p>
-                  </div>
-                  <div className="flex flex-row ">
-                    <img
-                      className="logo2 w-8 h-8   rounded-full "
-                      src={logo}
-                      alt="Image of Developer"
-                      sizes="fill"
-                      width={10}
-                      height={10}
-                    />
-                    <p className="pl-3 text-sm  my-auto ">@codebird</p>
-                  </div>
+                  <p className="pl-3 text-sm  my-auto ">@codebird</p>
                 </div>
               </div>
-            </Link>
+            </div>
           }
           {
-            <Link href="/Blog/posts?id=4">
-              <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
-                <div>
+            <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
+              <div>
+                <img
+                  className="logo2 w-[11rem] h-[10rem] rounded-2xl ml-12"
+                  src={logo}
+                  alt="Image of Developer"
+                  sizes="fill"
+                  width={100}
+                  height={100}
+                />
+              </div>
+
+              <div className="pt-3 mx-auto text-center">
+                <p className="text-lg">Introduction to The Code Bird</p>
+
+                <div className=" flex justify-between  pt-3">
+                  <p className="text-left text-md text-blue-500 flex flex-col">
+                    <span>Read More →</span>
+                    <span className="text-sm pt-2 font-medium text-gray-500 flex ">
+                      <svg
+                        className="w-5 h-5 pr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                      349
+                    </span>
+                  </p>
+                  <p className="flex flex-col text-right">
+                    <span className="text-3xl font-semibold">23</span>
+                    <span className="uppercase">Aug</span>
+                  </p>
+                </div>
+                <div className="flex flex-row ">
                   <img
-                    className=" w-[17rem] h-[10rem]   rounded-2xl "
-                    src={unreal}
+                    className="logo2 w-8 h-8   rounded-full "
+                    src={logo}
                     alt="Image of Developer"
                     sizes="fill"
-                    width={100}
-                    height={100}
+                    width={10}
+                    height={10}
                   />
-                </div>
-
-                <div className="pt-3 mx-auto text-center">
-                  <p className="text-lg">Introduction to Unreal Engine</p>
-
-                  <div className=" flex justify-between  pt-3">
-                    <p className="text-left text-md text-blue-500 flex flex-col">
-                      <span>Read More →</span>
-                      <span className="text-sm pt-2 font-medium text-gray-500 flex ">
-                        <svg
-                          className="w-5 h-5 pr-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          ></path>
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                          ></path>
-                        </svg>
-                        349
-                      </span>
-                    </p>
-                    <p className="flex flex-col text-right">
-                      <span className="text-3xl font-semibold">
-                        {twoDaysBefore.getDate()}
-                      </span>
-                      <span className="uppercase">
-                        {formatDate(twoDaysBefore)}
-                      </span>
-                    </p>
-                  </div>
-                  <div className="flex flex-row ">
-                    <img
-                      className="logo2 w-8 h-8   rounded-full "
-                      src={logo}
-                      alt="Image of Developer"
-                      sizes="fill"
-                      width={10}
-                      height={10}
-                    />
-
-                    <p className="pl-3 text-sm  my-auto ">@codebird</p>
-                  </div>
+                  <p className="pl-3 text-sm  my-auto ">@codebird</p>
                 </div>
               </div>
-            </Link>
+            </div>
+          }
+          {
+            <div className="p-2  h-fit w-[18rem] rounded-2xl outline outline-gray-500 mx-auto hover:scale-110 duration-300">
+              <div>
+                <img
+                  className=" w-[17rem] h-[10rem]   rounded-2xl "
+                  src={unreal}
+                  alt="Image of Developer"
+                  sizes="fill"
+                  width={100}
+                  height={100}
+                />
+              </div>
+
+              <div className="pt-3 mx-auto text-center">
+                <p className="text-lg">Introduction to Unreal Engine</p>
+
+                <div className=" flex justify-between  pt-3">
+                  <p className="text-left text-md text-blue-500 flex flex-col">
+                    <span>Read More →</span>
+                    <span className="text-sm pt-2 font-medium text-gray-500 flex ">
+                      <svg
+                        className="w-5 h-5 pr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                      349
+                    </span>
+                  </p>
+                  <p className="flex flex-col text-right">
+                    <span className="text-3xl font-semibold">23</span>
+                    <span className="uppercase">Aug</span>
+                  </p>
+                </div>
+                <div className="flex flex-row ">
+                  <img
+                    className="logo2 w-8 h-8   rounded-full "
+                    src={logo}
+                    alt="Image of Developer"
+                    sizes="fill"
+                    width={10}
+                    height={10}
+                  />
+
+                  <p className="pl-3 text-sm  my-auto ">@codebird</p>
+                </div>
+              </div>
+            </div>
           }
         </div>
       </div>

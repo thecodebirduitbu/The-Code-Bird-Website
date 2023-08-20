@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     require: true,
   },
   roll: {
-    type: Number,
+    type: String,
     require: true,
     unique: true,
   },
@@ -43,13 +43,11 @@ const userSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
-  isPaymentDone:{
-    type:Boolean,
-    default:false
-  }
-  
+  isPaymentDone: {
+    type: Boolean,
+    default: false,
+  },
 });
-
 
 userSchema.pre("save", async function (next) {
   if (this.isModified("password")) {
@@ -58,10 +56,6 @@ userSchema.pre("save", async function (next) {
   }
   next();
 });
-
-
-
-
 
 const User = mongoose.model("User", userSchema);
 
