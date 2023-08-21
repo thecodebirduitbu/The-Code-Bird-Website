@@ -7,7 +7,7 @@ const ConfettiAnimation = () => {
   const [originalZIndex, setOriginalZIndex] = useState(null);
 
   useEffect(() => {
-    const confettiDuration = 5000; // 10 seconds in milliseconds
+    const confettiDuration = 7000; // 10 seconds in milliseconds
     const recycleDuration = 4000; // 5 seconds in milliseconds
 
     const timeoutId = setTimeout(() => {
@@ -83,7 +83,7 @@ const ConfettiAnimation = () => {
               ]}
             />
             <img
-              src="/Images/demoimg.png"
+              src="/Images/codebird.png"
               alt="Confetti"
               style={{ position: "absolute", width: "100%", height: "100%" }}
             />
