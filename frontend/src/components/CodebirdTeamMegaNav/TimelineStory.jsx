@@ -10,12 +10,22 @@ const eventsData = [
   },
   {
     date: "September, 2016",
-    description: "First coding contest organized: CodeWiz.",
+    description: "First #WEB DEV PROJECT - 01: Create Your Portfolio Using HTML & CSS.",
     image: "demoimg.png",
   },
   {
-    date: "Meow, 2016",
-    description: "Meow, meow , meow",
+    date: "September, 2016",
+    description: "First coding contest organized: Tecquizz.",
+    image: "demoimg.png",
+  },
+  {
+    date: "March 2017",
+    description: "First online programming Contest will held on Codechef",
+    image: "demoimg.png",
+  },
+  {
+    date: "March 2017",
+    description: "First online programming Contest will held on Codechef",
     image: "demoimg.png",
   },
   //  more events here
