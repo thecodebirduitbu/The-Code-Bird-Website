@@ -23,5 +23,5 @@ npm run start:frontend
 ##### Only Start the backend:
 
 ```bash
-node app.js:backend
+npm run start:backend
 ```
