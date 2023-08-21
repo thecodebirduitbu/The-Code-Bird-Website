@@ -10,6 +10,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./about.css";
 import { StarsCanvas } from "./canvas";
 
+
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full h-[24rem] m-8 d ">
@@ -82,6 +83,22 @@ const About = () => {
       >
         All the Domains in CodeBird
       </motion.p>
+
+      {/* <button className="bg-gray-800 text-white py-2 px-4 rounded-lg flex items-center space-x-2 ">
+      Join our community
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5 text-white"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M13.293 10l-4.147-4.146a.5.5 0 01.708-.708l4.5 4.5a.5.5 0 010 .708l-4.5 4.5a.5.5 0 01-.708-.708L13.293 10z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </button> */}
 
       <div className="mt-20 relative" {...handlers}>
         <div className="card-slider-container">

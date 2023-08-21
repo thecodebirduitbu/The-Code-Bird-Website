@@ -30,8 +30,8 @@ function CodeBirdTeam() {
       <h2 className="text-[3rem] text-center text-white pb-[2rem]">
         Our <span className="text-purple-600">Core Team</span>
       </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-8 mx-10">
+    
+      <div className="grid grid-cols-1 md:grid-cols-3 x4:grid-cols-4 gap-8 mx-10">
         {data.map((item, index) => (
           <div
             className="outline outline-white rounded-lg w-[20rem] h-fit text-center"
