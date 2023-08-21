@@ -2,6 +2,7 @@ import unreal from "./images/unreal-engine.webp";
 import react from "./images/react.webp";
 import logo from "./images/logo.png";
 import web3 from "./images/bitcoin.jpeg";
+import { Link } from "react-router-dom";
 
 function BlogUI1() {
   return (
@@ -71,7 +72,7 @@ function BlogUI1() {
 
                 <div className=" flex justify-between  pt-3">
                   <p className="text-left text-md text-blue-500 flex flex-col">
-                    <span>Read More →</span>
+                  <Link to="https://ethereum.org/en/web3/"><span>Read More →</span></Link>
                     <span className="text-sm pt-2 font-medium text-gray-500 flex ">
                       <svg
                         className="w-5 h-5 pr-1"
@@ -133,7 +134,7 @@ function BlogUI1() {
 
                 <div className=" flex justify-between  pt-3">
                   <p className="text-left text-md text-blue-500 flex flex-col">
-                    <span>Read More →</span>
+                  <Link to="https://legacy.reactjs.org/tutorial/tutorial.html"><span>Read More →</span></Link>
                     <span className="text-sm pt-2 font-medium text-gray-500 flex ">
                       <svg
                         className="w-5 h-5 pr-1"
@@ -195,7 +196,7 @@ function BlogUI1() {
 
                 <div className=" flex justify-between  pt-3">
                   <p className="text-left text-md text-blue-500 flex flex-col">
-                    <span>Read More →</span>
+                    <Link to="https://the-code-bird-website.vercel.app/ourstory"><span>Read More →</span></Link>
                     <span className="text-sm pt-2 font-medium text-gray-500 flex ">
                       <svg
                         className="w-5 h-5 pr-1"
@@ -257,7 +258,7 @@ function BlogUI1() {
 
                 <div className=" flex justify-between  pt-3">
                   <p className="text-left text-md text-blue-500 flex flex-col">
-                    <span>Read More →</span>
+                  <Link to="https://www.unrealengine.com/en-US/classroom-training/an-introduction-to-unreal-engine"><span>Read More →</span></Link>
                     <span className="text-sm pt-2 font-medium text-gray-500 flex ">
                       <svg
                         className="w-5 h-5 pr-1"
