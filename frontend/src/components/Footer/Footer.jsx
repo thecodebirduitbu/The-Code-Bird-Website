@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -34,22 +34,22 @@ const Footer = () => {
           <h3>Links<div className="underline2"><span></span></div></h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/ourstory">About</a>
+              <Link to="/ourstory">About</Link>
             </li>
             <li>
-              <a href="/advisor">Advisor</a>
+              <Link to="/advisor">Advisor</Link>
             </li>
             <li>
-              <a href="/event">Events</a>
+              <Link to="/event">Events</Link>
             </li>
             <li>
-              <a href="/faQs">FaQs</a>
+              <Link to="/faQs">FaQs</Link>
             </li>
             <li>
-              <a href="/login">Register</a>
+              <Link to="/login">Register</Link>
             </li>
           </ul>
         </div>
