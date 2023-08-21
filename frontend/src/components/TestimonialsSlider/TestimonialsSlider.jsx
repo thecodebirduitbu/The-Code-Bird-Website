@@ -1,5 +1,8 @@
 import React from "react";
-import img1 from "./img/profile-pic.png";
+import img1 from "./img/img1.jpg";
+import img2 from "./img/img2.jpg";
+import img3 from "./img/img3.jpg";
+import img4 from "./img/img4.jpeg"
 
 function TestimonialsSlider() {
   return (
@@ -40,14 +43,14 @@ function TestimonialsSlider() {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
               <img
-                src={img1}
+                src={img3}
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
               <p className="text-xl font-semibold leading-tight">
-                @ImKKingshuk
+              Mohtasheem Ejaz
               </p>
-              <p className="text-sm uppercase">Dev</p>
+              <p className="text-sm uppercase">President of the Codebird</p>
             </div>
           </div>
           <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
@@ -120,7 +123,7 @@ function TestimonialsSlider() {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
               <img
-                src={img1}
+                src={img2}
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
@@ -159,14 +162,15 @@ function TestimonialsSlider() {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
               <img
-                src={img1}
-                alt=""
+                src={img4}
+                alt="kingshuk"
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
               <p className="text-xl font-semibold leading-tight">
-                Mohtasheem Ejaz
+                
+                @ImKKingshuk
               </p>
-              <p className="text-sm uppercase">President of the Codebird</p>
+              <p className="text-sm uppercase">Dev</p>
             </div>
           </div>
         </div>

@@ -1,25 +1,27 @@
 # The Codebird Website
 
-Follow these steps to run app
+#### Installation
 
-### Installation
+Install dependencies for both the frontend & backend:
 
-Install dependencies for both the backend and frontend :
-
+```bash
 npm run install:all
+```
 
-### Start App
+##### Start the backend and frontend servers concurrently :
 
-Start the backend and frontend servers concurrently :
-
+```bash
 npm start
+```
 
+##### Only Start the frontend:
 
-Only Start the frontend:
-
+```bash
 npm run start:frontend
+```
 
+##### Only Start the backend:
 
-Only Start the backend:
-
+```bash
 npm run start:backend
+```

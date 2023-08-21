@@ -7,7 +7,7 @@ const ConfettiAnimation = () => {
   const [originalZIndex, setOriginalZIndex] = useState(null);
 
   useEffect(() => {
-    const confettiDuration = 5000; // 10 seconds in milliseconds
+    const confettiDuration = 7000; // 10 seconds in milliseconds
     const recycleDuration = 4000; // 5 seconds in milliseconds
 
     const timeoutId = setTimeout(() => {
@@ -63,24 +63,31 @@ const ConfettiAnimation = () => {
         onClick={handleConfettiClick}
       >
         {showConfetti && (
-          <Confetti
-            numberOfPieces={500}
-            width={window.innerWidth}
-            height={window.innerHeight}
-            recycle={recycleConfetti}
-            gravity={0.2}
-            colors={[
-              "#FF00FF",
-              "#00FF00",
-              "#0000FF",
-              "#FFFF00",
-              "#FF0000",
-              "#00FFFF",
-              "#FF8000",
-              "#8000FF",
-              "#00FF80",
-            ]}
-          />
+          <>
+            <Confetti
+              numberOfPieces={500}
+              width={window.innerWidth}
+              height={window.innerHeight}
+              recycle={recycleConfetti}
+              gravity={0.2}
+              colors={[
+                "#FF00FF",
+                "#00FF00",
+                "#0000FF",
+                "#FFFF00",
+                "#FF0000",
+                "#00FFFF",
+                "#FF8000",
+                "#8000FF",
+                "#00FF80",
+              ]}
+            />
+            <img
+              src="/Images/codebird.png"
+              alt="Confetti"
+              style={{ position: "absolute", width: "100%", height: "100%" }}
+            />
+          </>
         )}
       </div>
     </div>

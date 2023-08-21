@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -19,39 +19,37 @@ const Footer = () => {
         <div className="col">
           <img src={Logo} className="logo1"></img>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            sapiente! Esse in iure deleniti repellendus magni vero assumenda
+          Every student of UIT, irrespective of their stream or year can make great things, CODEBIRD helps you to achieve that, for FREE !! 😀🏆 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, explicabo, aliquam beatae nostrum fuga libero eos odio molestiae nulla minima ipsa maxime maiores assumenda aliquid?
           </p>
         </div>
         <div className="col">
           <h3>Office<div className="underline2"><span></span></div></h3>
-          <p>Golapbag Road</p>
-          <p>Golapbag, Burdwan</p>
-          <p>Golapbag, PIN 777777, India</p>
-          <p className="email-id">codebird@gmail.com</p>
-          <h4>+91-0123456789</h4>
+          <p>UIT Campus, Burdwan</p>
+          <p>West Bengal, PIN 713104, India</p>
+          <p className="email-id">thecodebird.uitbu@gmail.com</p>
+          <h4>1800 111 363</h4>
         </div>
 
         <div className="col">
           <h3>Links<div className="underline2"><span></span></div></h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">About</a>
+              <Link to="/ourstory">About</Link>
             </li>
             <li>
-              <a href="/">Advisor</a>
+              <Link to="/advisor">Advisor</Link>
             </li>
             <li>
-              <a href="/">Events</a>
+              <Link to="/event">Events</Link>
             </li>
             <li>
-              <a href="/">FaQs</a>
+              <Link to="/faQs">FaQs</Link>
             </li>
             <li>
-              <a href="/">Register</a>
+              <Link to="/login">Register</Link>
             </li>
           </ul>
         </div>
