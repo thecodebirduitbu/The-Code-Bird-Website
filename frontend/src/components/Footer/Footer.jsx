@@ -73,11 +73,11 @@ const Footer = () => {
             </button>
           </div>
           <div class="social-icons">
-          <i className="fa"><FaLinkedin/></i>
-          <i className="fa"><FaFacebook/></i>
-          <i className="fa"><FaWhatsapp/></i>
-          <i className="fa"><FaDiscord/></i>
-          <i className="fa"><FaInstagram/></i>
+          <Link to="https://www.linkedin.com/company/thecodebird/mycompany/"><i className="fa"><FaLinkedin/></i></Link>
+          <Link to="https://www.facebook.com/thecodebird"><i className="fa"><FaFacebook/></i></Link>
+          <Link to=""><i className="fa"><FaWhatsapp/></i></Link>
+          <Link to="https://discord.gg/QVP9efsY"><i className="fa"><FaDiscord/></i></Link>
+          <Link to="https://www.instagram.com/thecodebird.exe/"><i className="fa"><FaInstagram/></i></Link>
           
             
           </div>
