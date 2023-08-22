@@ -139,7 +139,7 @@ const eventsData = [
   },
   {
     date: "August 2022",
-    description: "6-year Anniversary",
+    description: "6-year Anniversary ",
     image: "demoimg.png",
   },
   {
@@ -180,6 +180,11 @@ const eventsData = [
   {
     date: "August 2023",
     description: "Hack Wiz 1.0",
+    image: "demoimg.png",
+  },
+  {
+    date: "August 2023",
+    description: "7-year Anniversary 🥳🎂🎉🎇",
     image: "demoimg.png",
   },
   
