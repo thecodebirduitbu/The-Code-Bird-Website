@@ -19,7 +19,13 @@ const Footer = () => {
         <div className="col">
           <img src={Logo} className="logo1"></img>
           <p>
-          Every student of UIT, irrespective of their stream or year can make great things, CODEBIRD helps you to achieve that, for FREE !! 😀🏆 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, explicabo, aliquam beatae nostrum fuga libero eos odio molestiae nulla minima ipsa maxime maiores assumenda aliquid?
+          Every student of UIT, irrespective of their stream or year can make great things, CODEBIRD helps you to achieve that, for FREE !! 😀🏆 Join us in this journey of discovery and creativity. Unleash your potential, At CODEBIRD, we're not just building events;Your journey starts here – let's code, collaborate, and create together!"
+
+
+
+
+
+
           </p>
         </div>
         <div className="col">
