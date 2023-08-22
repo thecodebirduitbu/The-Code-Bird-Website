@@ -6,7 +6,7 @@ import { loadFull } from "tsparticles";
 const DevMembersData = [
   {
     name: "@ImKKingshuk",
-    position: "Full Stack Developer, Web3",
+    position: "Frontend Developer(react)",
     batch: "CSE 2021-25",
     image: "Kingshuk.jpeg",
     github: "https://github.com/ImKKingshuk",
@@ -63,7 +63,7 @@ const OtherMembersData = [
     facebook: "https://facebook.com/link",
   },
   {
-    name: "Sajjad",
+    name: "Sajjad Ansari",
     position: "HTML",
     batch: "CSE 2022-26",
     image: "Sajjad.jpg",
