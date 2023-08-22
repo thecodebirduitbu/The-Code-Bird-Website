@@ -1,0 +1,14 @@
+.codebirdd{
+    animation: grow 3s;
+}
+
+@keyframes grow {
+    from {
+      width: 0%;
+    }
+  
+    to {
+        width: 60%;
+    }
+  }
+
