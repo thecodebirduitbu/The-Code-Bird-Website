@@ -11,7 +11,7 @@ require('./database/connectDatabase');
 
 const allowedOrigins = [
   `${process.env.FRONTEND_URL}`, 
-  'https://the-code-bird-website.vercel.app', 
+  'https://www.thecodebird.in', 
 ];
 
 const corsOptions = {
