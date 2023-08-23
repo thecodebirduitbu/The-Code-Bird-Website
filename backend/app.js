@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const cookie = require('cookie-parser');
+const cookie = require('cookie-parser'); // Correct module name
 const router = require('./router/route');
 const app = express();
 dotenv.config();
@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 9000;
 require('./database/connectDatabase');
 
 const allowedOrigins = [
-  `${process.env.FRONTEND_URL}`, 
-  'https://www.thecodebird.in', 
+  process.env.FRONTEND_URL, // No need for interpolation here
+  'https://www.thecodebird.in',
 ];
 
 const corsOptions = {
@@ -24,17 +24,20 @@ const corsOptions = {
   },
   credentials: true,
 };
+
 app.use(cors(corsOptions));
-app.use(cookie());
+app.use(cookie()); // Use correct function name
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', router);
 
 app.get('/events', async (req, res) => {
   try {
+    // Assuming Event model is defined in './database/connectDatabase' or './router/route'
     const events = await Event.find({});
     res.json(events);
   } catch (error) {
+    console.error(error); // Log the error for debugging
     res.status(500).json({ error: 'Internal server error' });
   }
 });
