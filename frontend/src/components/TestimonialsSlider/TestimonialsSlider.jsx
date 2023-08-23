@@ -1,7 +1,6 @@
 import React from "react";
 import img1 from "./img/img1.jpg";
 import img2 from "./img/img2.jpg";
-import img3 from "./img/img3.jpg";
 import img4 from "./img/img4.jpeg"
 
 function TestimonialsSlider() {
@@ -43,14 +42,15 @@ function TestimonialsSlider() {
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
               <img
-                src={img3}
+                src="/Images/Advisor.jpeg"
                 alt=""
                 className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full  "
               />
               <p className="text-xl font-semibold leading-tight">
-              Mohtasheem Ejaz
+              Mr. Sumit Gupta
               </p>
-              <p className="text-sm uppercase">President of the Codebird</p>
+              <p className="text-sm uppercase">Assistant Professor</p>
+              <p className="text-sm uppercase">Advisor</p>
             </div>
           </div>
           <div className="flex flex-col max-w-sm  m-3 hover:scale-110 duration-300 bg-gray-300 rounded-[22px]">
