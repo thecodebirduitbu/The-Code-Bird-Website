@@ -1,5 +1,6 @@
 .codebirdd{
-    animation: grow 3s;
+
+   animation: grow 3s;
 }
 
 @keyframes grow {
@@ -12,8 +13,8 @@
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
     .codebirdd{
-      
+      margin-top: 200px;
     }
   }

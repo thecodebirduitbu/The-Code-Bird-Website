@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Confetti from "react-confetti";
-import "./confetti.css"
+import "./confetti.css";
 const ConfettiAnimation = () => {
   const [showConfetti, setShowConfetti] = useState(true);
   const [recycleConfetti, setRecycleConfetti] = useState(true);
@@ -82,10 +82,11 @@ const ConfettiAnimation = () => {
                 "#00FF80",
               ]}
             />
-            <img className="codebirdd"
+            <img
+              className="codebirdd"
               src="/Images/codebird.png"
               alt="Confetti"
-              style={{ position: "absolute",width: "70%",marginTop: "80px"}}
+              style={{ position: "absolute", width: "80%", marginTop: "100px" }}
             />
           </>
         )}
