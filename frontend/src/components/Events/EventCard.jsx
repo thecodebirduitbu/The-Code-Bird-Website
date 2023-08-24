@@ -1,11 +1,9 @@
-import React,{useContext} from 'react'
-import './Eventpg.css'
+import React, { useContext } from 'react';
+import './Eventpg.css';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { GlobalContext } from "../../states/GlobalState";
 import { Toaster, toast } from "react-hot-toast";
- 
-
 
 const EventCard = ({
   name,
@@ -15,12 +13,12 @@ const EventCard = ({
   description,
   mode
 }) => {
-  const { state, dispatch } = useContext(GlobalContext);
-const navigate = useNavigate();
+  const { state } = useContext(GlobalContext);
+  const navigate = useNavigate();
 
-  const registerEvent =async () => {
-    if (state.userNameState == undefined || state.userNameState == "") {
-           navigate('/login')
+  const registerEvent = async () => {
+    if (!state.userNameState) {
+      navigate('/login');
     } else {
       try {
         await axios.post(
@@ -32,16 +30,10 @@ const navigate = useNavigate();
         );
         toast.success("Registration Successful, Thank you for Registering !");
       } catch (error) {
-                   toast.error("You Are Already Registered Try Again!");
-
-
+        toast.error("You Are Already Registered!");
       }
     }
-   
-    
-  }
-
-
+  };
 
   return (
     <div className="containerPresent">
@@ -84,4 +76,4 @@ const navigate = useNavigate();
   );
 };
 
-export default EventCard
+export default EventCard;
