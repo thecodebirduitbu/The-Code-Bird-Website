@@ -103,7 +103,15 @@
     
 }
 
-
+.registerPBtn {
+    background-color: #714BCA;
+    /* Other button styles */
+  }
+  
+  .registerPBtn.loading {
+    background-color: #714BCA;
+    cursor: progress; /* Change cursor to indicate loading state */
+  }
 
 @media(max-width:996px){
 .formSet {
@@ -185,3 +193,4 @@
     width: 10rem;
 }
 }
+

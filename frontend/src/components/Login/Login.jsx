@@ -17,6 +17,7 @@ const Login = () => {
     email: "",
     password: "",
   });
+  const [loading, setLoading] = useState(false); // Initialize loading state
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -32,6 +33,7 @@ const Login = () => {
       toast.error("Please fill all required fields!");
     } else {
       try {
+        setLoading(true); // Show loader when login is initiated
         const res = await axios.post(
           `https://the-codebird-sever.vercel.app/api/login`,
           { email: formData.email, password: formData.password },
@@ -46,12 +48,13 @@ const Login = () => {
             userNameState: res.data.userName,
           },
         });
-        // Show success toast only on successful login
+        setLoading(false); // Hide loader on successful login
         toast.success("Login Done!");
         setTimeout(() => {
           navigate("/event");
         }, Math.floor(Math.random() * 1001) + 700);
       } catch (error) {
+        setLoading(false); // Hide loader on login failure
         console.log(error);
         toast.error("Login Failed!");
       }
@@ -109,7 +112,9 @@ const Login = () => {
               onChange={handleInputChange}
             />
           </div>
-          <input type="submit" value={"Login"} className="registerPBtn" />
+          <button type="submit" className={`registerPBtn ${loading ? "loading" : ""}`}>
+            {loading ? "Logging In..." : "Login"}
+          </button>
         </form>
 
         <span className="already">
