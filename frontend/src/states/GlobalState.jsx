@@ -2,7 +2,7 @@ import React, { createContext, useReducer, useEffect } from "react";
 
 const initialState = {
   isLoggedIn: JSON.parse(localStorage.getItem("isLoggedIn")) || false,
-  userNameState : localStorage.getItem("userNameState") || ""
+  userNameState: localStorage.getItem("userNameState") || "",
 };
 
 const reducer = (state, action) => {
@@ -30,7 +30,7 @@ export const GlobalStateProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    localStorage.setItem("isLoggedIn", state.isLoggedIn);
+    localStorage.setItem("isLoggedIn", JSON.stringify(state.isLoggedIn));
     localStorage.setItem("userNameState", state.userNameState);
   }, [state.isLoggedIn, state.userNameState]);
 
@@ -40,5 +40,3 @@ export const GlobalStateProvider = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
-
-
