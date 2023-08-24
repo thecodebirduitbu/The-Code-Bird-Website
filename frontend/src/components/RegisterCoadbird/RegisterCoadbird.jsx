@@ -4,21 +4,17 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
-import { useNavigate } from 'react-router-dom'
-
-
-
+import { useNavigate } from "react-router-dom";
 
 const RegisterCodebird = () => {
   const navigate = useNavigate();
   
-  const [member,setMember] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
   });
-    
+  
   useEffect(() => {
     axios
       .get(`https://the-codebird-sever.vercel.app/api/user`, {
@@ -27,32 +23,31 @@ const RegisterCodebird = () => {
       .then((response) => {
         if (response.data.isPaymentDone === true) {
           navigate('/member');
-        }else{
-            setFormData({
-              name: response.data.name,
-              email: response.data.email,
-              phone: response.data.phone,
-            });
+        } else {
+          setFormData({
+            name: response.data.name,
+            email: response.data.email,
+            phone: response.data.phone,
+          });
         }
       })
       .catch((error) => {
         navigate('/login');
         console.log(error);
       });
-  }, []);
+  }, [navigate]);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   };
 
   const numberAsString = formData.phone.toString();
-  const length = numberAsString.length;
+  const isValidNumber = numberAsString.length === 10;
 
- 
   const registerUserSubmitt = async (e) => {
     e.preventDefault();
     if (
@@ -61,8 +56,8 @@ const RegisterCodebird = () => {
       !formData.phone
     ){
       toast.error("Please fill all required fields!");
-    } else if (length !== 10) {
-      toast.error("Please fill a valid Mobile Number!");
+    } else if (!isValidNumber) {
+      toast.error("Please enter a valid 10-digit Mobile Number!");
     } else {
       try {
         const data = await axios.get(`https://the-codebird-sever.vercel.app/razor/key`);
@@ -72,13 +67,12 @@ const RegisterCodebird = () => {
         );
         if (response) {
           const options = {
-            key: data.data.key, 
+            key: data.data.key,
             amount: response.data.amount,
             currency: "INR",
             name: "The CodeBird",
             description: "Become A Member Of The CodeBird",
-            image:
-              "https://media.licdn.com/dms/image/C4D0BAQGlAGVKIGb3ag/company-logo_200_200/0/1611584390861?e=1698883200&v=beta&t=y25gPNGkqTgJOB42gmO5UrXmMTKg438a8KAT8VWkt_w",
+            image: "https://media.licdn.com/dms/image/C4D0BAQGlAGVKIGb3ag/company-logo_200_200/0/1611584390861?e=1698883200&v=beta&t=y25gPNGkqTgJOB42gmO5UrXmMTKg438a8KAT8VWkt_w",
             order_id: response.data.id,
             callback_url: `https://the-codebird-sever.vercel.app/api/payment`,
             prefill: {
@@ -87,11 +81,11 @@ const RegisterCodebird = () => {
               contact: formData.phone,
             },
             notes: {
-              address: "UIT,BU",
+              address: "UIT, BU",
             },
             theme: {
               color: "#915eff",
-            }
+            },
           };
           const razor = new window.Razorpay(options);
           razor.open();
@@ -104,7 +98,6 @@ const RegisterCodebird = () => {
     }
 
     setFormData({
-      ...formData,
       name: "",
       phone: "",
       email: "",
@@ -242,7 +235,7 @@ const RegisterCodebird = () => {
 
           <input
             type="submit"
-            value={"Proceed to Payment "}
+            value={"Proceed to Payment"}
             className="registerPBtn"
           />
         </form>
