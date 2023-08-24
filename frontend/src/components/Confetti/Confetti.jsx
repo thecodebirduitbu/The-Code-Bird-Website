@@ -35,6 +35,12 @@ const ConfettiAnimation = () => {
     }
     setRecycleConfetti(false);
   };
+  const styles = {
+    position: "absolute",
+    width: "70%",
+    marginTop: "150px",
+
+  };
 
   return (
     <div>
@@ -59,6 +65,7 @@ const ConfettiAnimation = () => {
           overflow: "hidden",
           zIndex: showConfetti ? 9999 : -1,
           transition: "z-index 0.5s", // Add a transition for a smoother effect
+          background: "rgba(0, 0, 0, 0.4)",
         }}
         onClick={handleConfettiClick}
       >
@@ -86,7 +93,7 @@ const ConfettiAnimation = () => {
               className="codebirdd"
               src="/Images/codebird.png"
               alt="Confetti"
-              style={{ position: "absolute", width: "80%", marginTop: "100px" }}
+              style={styles}
             />
           </>
         )}
