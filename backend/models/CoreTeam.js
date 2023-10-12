@@ -12,6 +12,7 @@ const coreTeamSchema = new mongoose.Schema({
   branch: {
     type:String,
   },
+
   clubPosition: {
     type: String,
     required: true,

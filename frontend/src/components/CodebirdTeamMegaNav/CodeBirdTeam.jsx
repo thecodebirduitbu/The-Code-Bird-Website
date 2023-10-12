@@ -51,6 +51,10 @@ function CodeBirdTeam() {
               <p className="text-white font-semibold text-xl  mb-2">
                 {item.clubPosition}
               </p>
+              <p className="text-white font-semibold text-xl  mb-2">
+                {item.branch}
+              </p>
+
 
               <div className="flex items-center justify-between mt-3 px-6 text-xl ">
                 <a
