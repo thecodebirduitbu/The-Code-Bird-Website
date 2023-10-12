@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const coreTeamSchema = new mongoose.Schema({
   pimg: {
     type: String,
-    required: true,
+    default: 'demoimg.png'
   },
   name: {
     type: String,
