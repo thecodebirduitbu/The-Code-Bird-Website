@@ -9,6 +9,9 @@ const coreTeamSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  branch: {
+    type:String,
+  },
   clubPosition: {
     type: String,
     required: true,
@@ -20,7 +23,7 @@ const coreTeamSchema = new mongoose.Schema({
     type: String,
   },
   instagram: {
-    type: Number,
+    type: String,
   },
   facebook: {
     type: String,
